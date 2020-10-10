@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/*Landing page */
 .profile-picture {
   height: 35vmin;
   margin: 5%;
@@ -39,4 +39,28 @@
   .intro {
   padding-top: 25%;
   }
+}
+
+/* About */
+.about {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+/* Experience */
+.experience {
+  background-color: #000000;
+  height: 100vh;
+}
+
+/* Skills */
+.skills {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+/* Contact */
+.contact {
+  background-color: #000000;
+  height: 100vh;
 }
