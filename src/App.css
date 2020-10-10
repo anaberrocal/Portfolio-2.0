@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  line-height: 1.7em;
 }
 
 .navbar-space {
@@ -49,23 +50,41 @@
 /* About */
 .about {
   background-color: #ffffff;
+  padding: 3% 10% 10%;
   height: 100vh;
+}
+
+.about p {
+  padding: 1%;
 }
 
 /* Experience */
 .experience {
   background-color: #000000;
+  color: #ffffff;
+  padding: 5%;
   height: 100vh;
 }
 
-/* Skills */
-.skills {
+.experience h1{
+  color: #ffffff;
+}
+
+/* Projects */
+.projects {
   background-color: #ffffff;
+  padding: 5%;
   height: 100vh;
 }
 
 /* Contact */
 .contact {
   background-color: #000000;
+  color: #ffffff;
+  padding: 3% 10% 10%;
   height: 100vh;
+}
+
+.contact h1{
+  color: #ffffff;
 }
