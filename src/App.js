@@ -8,6 +8,10 @@ import ResponsiveDesign from "./assets/responsive-design.png";
 import GestureLife from "./assets/GestureLife.png";
 import Distanceware from "./assets/Distanceware.png";
 import Eleven22 from "./assets/Eleven22.png";
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneAlt } from 'react-icons/fa';
 import "./App.css";
 
 function App() {
@@ -191,19 +195,20 @@ employees. Gesture Life is a dashboard for Gesture Employees to manage their "li
       <section id="contact">
         <div className="navbar-space"></div>
         <div className="contact">
-          <div className="container">
+          <div className="container-fluid">
           <h1>Contact</h1>
-          <p>
+          <p className="p-3">
             Lorem ipsum dolor sit amet, sed id adhuc molestie adipisci, ut eam
             putent nusquam, te sea tale iuvaret dissentiet. Mel tamquam discere
             at, no doming noster eum. 
           </p>
-          <div className="row">
-            <a></a>
-            <a></a>
-            <a></a>
+          <div className="row p-3">
+            <a className="col-md-3 p-3" href="https://www.linkedin.com/in/anaberrocal/" target="_blank"><FaLinkedin size={60} className="text-white"/></a>
+            <a className="col-md-3 p-3" href="https://github.com/anaberrocal" target="_blank"><FaGithub size={60} className="text-white "/></a>
+            <a className="col-md-3 p-3" href="mailto:anaberrocaldev@gmail.com"><MdEmail size={60} className="text-white"/></a>
+            <a className="col-md-3 p-3" href="tel:9548512668"><FaPhoneAlt size={60} className="text-white"/></a>
           </div>
-          <h6>Want to learn more? Take a look at my resume <a className="text-white" href="https://drive.google.com/file/d/1PTg3hBRUX_cvq_92aMGR_tnR7ayht2gD/view?usp=sharing" target="_blank"><u>here</u></a>.</h6>
+          <h5 className="text-white p-3">Want to learn more? Take a look at my resume <a className="text-white" href="https://drive.google.com/file/d/1PTg3hBRUX_cvq_92aMGR_tnR7ayht2gD/view?usp=sharing" target="_blank"><u>here</u></a>.</h5>
           </div>
         </div>
       </section>
