@@ -51,11 +51,15 @@
 .about {
   background-color: #ffffff;
   padding: 3% 10% 10%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about p {
   padding: 1%;
+}
+
+.dev-icon {
+  width: 150px;
 }
 
 /* Experience */

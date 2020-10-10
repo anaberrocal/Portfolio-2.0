@@ -1,9 +1,17 @@
 import React from "react";
+import DevIcon from "devicon-react-svg";
 import Navbar from "./Components/Navbar";
 import Ana from "./assets/Ana_B&W.png";
+import materialui from "./assets/materialui.png";
+import RestAPI from "./assets/RestfulAPI.png";
+import ResponsiveDesign from "./assets/responsive-design.png";
 import "./App.css";
 
 function App() {
+
+  const devIconStyle = {
+    width: "150px",
+};
   return (
     <div className="App">
       <Navbar />
@@ -48,6 +56,29 @@ function App() {
             JavaScript and other technologies. I am looking to join a team where
             I can utilize and grow my React development skills.
           </p>
+          <div>
+          <DevIcon style={devIconStyle} icon="react"/>
+          <DevIcon style={devIconStyle} icon="javascript"/>
+          <DevIcon style={devIconStyle} icon="css3"/>
+          <DevIcon style={devIconStyle} icon="html5"/>
+          <DevIcon style={devIconStyle} icon="nodejs_small"/>
+          <img src={RestAPI} style={devIconStyle}/>
+          <img src={ResponsiveDesign} style={devIconStyle}/>
+          <img src={materialui} style={devIconStyle}/>
+          <DevIcon style={devIconStyle} icon="bootstrap"/>
+          <DevIcon style={devIconStyle} icon="sass"/>
+          <DevIcon style={devIconStyle} icon="npm"/>
+          <DevIcon style={devIconStyle} icon="git"/>
+          <DevIcon style={devIconStyle} icon="terminal"/>
+          <DevIcon style={devIconStyle} icon="github_badge"/>
+          <DevIcon style={devIconStyle} icon="visualstudio"/>
+          <DevIcon style={devIconStyle} icon="bitbucket"/>
+          <DevIcon style={devIconStyle} icon="trello"/>
+          <DevIcon style={devIconStyle} icon="apple"/>
+          <DevIcon style={devIconStyle} icon="windows"/>
+          <DevIcon style={devIconStyle} icon="photoshop"/>
+
+          </div>
         </div>
       </section>
       {/* Experience */}
