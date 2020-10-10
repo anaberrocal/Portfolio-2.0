@@ -37,6 +37,7 @@ function App() {
         <div className="navbar-space"></div>
         <div className="about">
           <h1>About me</h1>
+          <div className="container-fluid p-3">
           <p>
             I am a Frontend Developer specializing in React and JavaScript. I
             have professional work experience building web applications and
@@ -56,7 +57,8 @@ function App() {
             JavaScript and other technologies. I am looking to join a team where
             I can utilize and grow my React development skills.
           </p>
-          <div>
+          </div>
+          <div className="container">
           <DevIcon style={devIconStyle} icon="react"/>
           <DevIcon style={devIconStyle} icon="javascript"/>
           <DevIcon style={devIconStyle} icon="css3"/>
