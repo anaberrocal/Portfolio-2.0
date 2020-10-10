@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <header className="App-header">
-      Ana Berrocal - React Developer
+      Hello, my name is Ana Berrocal and I am a React Developer.
       </header>
     </div>
   );
