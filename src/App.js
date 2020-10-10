@@ -93,38 +93,78 @@ function App() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-4">
-            <div className="card mb-3 text-dark">
-              <img className="project-img" src={GestureLife} alt="Card image" />
-              <div className="card-body">
-                <h3 className="card-header">Gesture Life</h3>
+                <div className="card mb-3 text-dark h-100">
+                  <h3 className="card-header">Gesture Life</h3>
+                  <img
+                    className="project-img"
+                    src={GestureLife}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Web Application</h5>
+                  </div>
+                  <div className="card-body">
+                    <p>During my time at Gesture I was part of the team of engineers who built a React web application from design to deployment as an internal workflow tool for 75+
+employees. Gesture Life is a dashboard for Gesture Employees to manage their "life" on Gesture. They have the ability to view orders that need to be delivered, add products to the app, add coupons, connect runners, and much much more.</p>
+                  </div>
+                  <div className="card-footer">
+                    <a href="#" class="card-link">
+                      Site
+                    </a>
+                    <a href="#" class="card-link">
+                      Github Repo
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="card-body">
-                <p>About</p>
+              <div className="col-md-4">
+                <div className="card mb-3 text-dark h-100">
+                  <h3 className="card-header">Distanceware</h3>
+                  <img
+                    className="project-img"
+                    src={Distanceware}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Responsive Web Application</h5>
+                  </div>
+                  <div className="card-body">
+                    <p>Distanceware matches users to online degree programs from accredited institutions accross the U.S. During my time as a React Developer at Distanceware, I have heavily utilized and sharpened my skills in React, JavaScript, HTML, CSS, Material-UI and visual design.</p>
+                  </div>
+                  <div className="card-footer">
+                    <a href="#" class="card-link">
+                      Site
+                    </a>
+                    <a href="#" class="card-link">
+                      Github Repo
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-</div>
-<div className="col-md-4">
-            <div className="card mb-3 text-dark">
-              <img className="project-img" src={Distanceware} alt="Card image" />
-              <div className="card-body">
-                <h3 className="card-header">Distanceware</h3>
+              <div className="col-md-4">
+                <div className="card mb-3 text-dark h-100">
+                  <h3 className="card-header">Eleven22</h3>
+                  <img
+                    className="project-img"
+                    src={Eleven22}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Web and mobile site</h5>
+                  </div>
+                  <div className="card-body">
+                    <p>Aenean dignissim malesuada euismod. Maecenas eleifend lacus vitae arcu congue, a bibendum purus posuere. Quisque molestie nisi eget odio ullamcorper, quis faucibus orci euismod. Sed ultrices urna justo, ac mollis augue porta in. Fusce et faucibus metus, eu cursus tortor.</p>
+                  </div>
+                  <div className="card-footer">
+                    <a href="#" class="card-link">
+                      Site
+                    </a>
+                    <a href="#" class="card-link">
+                      Github Repo
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="card-body">
-                <p>About</p>
-              </div>
-            </div>
-</div>
-<div className="col-md-4">
-            <div className="card mb-3 text-dark">
-              <img className="project-img" src={Eleven22} alt="Card image" />
-              <div className="card-body">
-                <h3 className="card-header">Eleven22</h3>
-              </div>
-              <div className="card-body">
-                <p>About</p>
-              </div>
-            </div>
-            </div>
             </div>
           </div>
         </div>
