@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+
+.navbar-space {
+  height: 80px;
+}
+
 /*Landing page */
 .profile-picture {
   height: 35vmin;

@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="navbar-space"></div>
       {/* Landing Page */}
       <header className="App-header">
         <div className="intro">
@@ -25,6 +26,7 @@ function App() {
       </header>
       {/* About */}
       <section id="about">
+      <div className="navbar-space"></div>
         <div className="about">
           <h1>About me</h1>
           <p>
@@ -39,6 +41,7 @@ function App() {
       </section>
     {/* Experience */}
       <section id="experience">
+      <div className="navbar-space"></div>
         <div className="experience">
           <h1>About me</h1>
           <p>
@@ -53,6 +56,7 @@ function App() {
       </section>
       {/* Skills */}
       <section id="skills">
+      <div className="navbar-space"></div>
         <div className="skills">
           <h1>About me</h1>
           <p>
@@ -67,6 +71,7 @@ function App() {
       </section>
       {/* Contact */}
       <section id="contact">
+      <div className="navbar-space"></div>
         <div className="contact">
           <h1>About me</h1>
           <p>
