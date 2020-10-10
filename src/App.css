@@ -2,37 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-picture {
+  height: 35vmin;
+  margin: 5%;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image:url("./assets/ManhattahnB&W.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.intro {
+  height: 100%;
+  padding: 5%;
+}
+
+.intro-title {
   color: white;
+  text-transform: none;;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .intro {
+  padding-top: 15%;
   }
-  to {
-    transform: rotate(360deg);
+  .profile-picture {
+    height: 45vmin;
+    margin: 5%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .intro {
+  padding-top: 25%;
   }
 }
