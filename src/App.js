@@ -12,6 +12,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import "./App.css";
 
 function App() {
@@ -212,6 +213,7 @@ employees. Gesture Life is a dashboard for Gesture Employees to manage their "li
           </div>
         </div>
       </section>
+      <div class="card-footer text-muted bg-primary"><h6 className="text-white">Made with <FaReact size={30}/> by Ana Berrocal.</h6></div>
     </div>
   );
 }
