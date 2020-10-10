@@ -102,6 +102,7 @@ function App() {
                   />
                   <div className="card-body">
                     <h5 class="card-title">Web Application</h5>
+                    <h6 class="card-subtitle text-muted">My role: React Developer</h6>
                   </div>
                   <div className="card-body">
                     <p>During my time at Gesture I was part of the team of engineers who built a React web application from design to deployment as an internal workflow tool for 75+
@@ -127,6 +128,7 @@ employees. Gesture Life is a dashboard for Gesture Employees to manage their "li
                   />
                   <div className="card-body">
                     <h5 class="card-title">Responsive Web Application</h5>
+                    <h6 class="card-subtitle text-muted">My role: React Developer</h6>
                   </div>
                   <div className="card-body">
                     <p>Distanceware matches users to online degree programs from accredited institutions accross the U.S. During my time as a React Developer at Distanceware, I have heavily utilized and sharpened my skills in React, JavaScript, HTML, CSS, Material-UI and visual design.</p>
@@ -151,6 +153,7 @@ employees. Gesture Life is a dashboard for Gesture Employees to manage their "li
                   />
                   <div className="card-body">
                     <h5 class="card-title">Web and mobile site</h5>
+                    <h6 class="card-subtitle text-muted">My role: Frontend Developer</h6>
                   </div>
                   <div className="card-body">
                     <p>Aenean dignissim malesuada euismod. Maecenas eleifend lacus vitae arcu congue, a bibendum purus posuere. Quisque molestie nisi eget odio ullamcorper, quis faucibus orci euismod. Sed ultrices urna justo, ac mollis augue porta in. Fusce et faucibus metus, eu cursus tortor.</p>
@@ -188,15 +191,20 @@ employees. Gesture Life is a dashboard for Gesture Employees to manage their "li
       <section id="contact">
         <div className="navbar-space"></div>
         <div className="contact">
+          <div className="container">
           <h1>Contact</h1>
           <p>
             Lorem ipsum dolor sit amet, sed id adhuc molestie adipisci, ut eam
             putent nusquam, te sea tale iuvaret dissentiet. Mel tamquam discere
-            at, no doming noster eum. Utamur eligendi nec ad, ius brute
-            petentium quaerendum te. Cum iudico rationibus reprehendunt ei. No
-            quo essent utroque assueverit, quando fabulas qualisque cu duo, ne
-            nusquam similique ius.
+            at, no doming noster eum. 
           </p>
+          <div className="row">
+            <a></a>
+            <a></a>
+            <a></a>
+          </div>
+          <h6>Want to learn more? Take a look at my resume <a className="text-white" href="https://drive.google.com/file/d/1PTg3hBRUX_cvq_92aMGR_tnR7ayht2gD/view?usp=sharing" target="_blank"><u>here</u></a>.</h6>
+          </div>
         </div>
       </section>
     </div>
