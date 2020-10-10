@@ -27,8 +27,7 @@
 
 .intro-title {
   color: white;
-  text-transform: none;;
-
+  text-transform: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -62,8 +61,8 @@
 .experience {
   background-color: #000000;
   color: #ffffff;
-  padding: 5%;
-  height: 100vh;
+  padding: 3%;
+  min-height: 100vh;
 }
 
 .experience h1{
@@ -74,7 +73,13 @@
 .projects {
   background-color: #ffffff;
   padding: 5%;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.project-img {
+  height: 400px;
+  width: 100%; 
+  display: block;
 }
 
 /* Contact */
@@ -82,7 +87,7 @@
   background-color: #000000;
   color: #ffffff;
   padding: 3% 10% 10%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contact h1{
