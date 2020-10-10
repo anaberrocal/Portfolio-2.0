@@ -19,7 +19,7 @@ export default function Navbar() {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarColor01">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">
               About <span className="sr-only">(current)</span>
@@ -40,7 +40,8 @@ export default function Navbar() {
               Contact
             </a>
           </li>
-          <li className="nav-item dropdown">
+          {/* Dropdown */}
+          {/* <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
               data-toggle="dropdown"
@@ -66,9 +67,10 @@ export default function Navbar() {
                 Separated link
               </a>
             </div>
-          </li>
+          </li> */}
         </ul>
-        <form className="form-inline my-2 my-lg-0">
+        {/* Search bar */}
+        {/* <form className="form-inline my-2 my-lg-0">
           <input
             className="form-control mr-sm-2"
             type="text"
@@ -77,7 +79,7 @@ export default function Navbar() {
           <button className="btn btn-secondary my-2 my-sm-0" type="submit">
             Search
           </button>
-        </form>
+        </form> */}
       </div>
     </nav>
   );
