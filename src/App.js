@@ -16,6 +16,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import computerDrawing from "./assets/computerDraw.png"
 import "./App.css";
 
 function App() {
@@ -46,8 +47,11 @@ function App() {
       <section id="about">
         <div className="navbar-space"></div>
         <div className="about">
-          <h1>About me</h1>
-          <div className="container p-3">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="container text-left p-5">
+                <h1>About me</h1>
             <p>
               I am a <b class="font-weight-bold">Frontend Developer</b> specializing in{" "}
               <b class="font-weight-bold">React and JavaScript</b>. I have professional work experience
@@ -62,7 +66,6 @@ function App() {
               </p>
               <p>I am looking to join a team where I can heavily utilize and
               challenge my React development skills.</p>
-            <br />
             <p>
               I was born and raised in Peru and moved to the U.S. in 2012 with
               my family. Shortly after moving here, I enrolled in school to
@@ -95,7 +98,7 @@ function App() {
               hospitality industry. I am eager to join a team where I can put
               both my technical and people skills to work.
             </p>
-            <blockquote class="blockquote text-center">
+            {/* <blockquote class="blockquote text-center">
               <p class="mb-0 mt-5 mr-5 ml-5">
                 "Every great developer you know got there by solving problems
                 they were unqualified to solve until they actually did it."
@@ -103,7 +106,16 @@ function App() {
               <footer class="blockquote-footer">
                 <cite title="Source Title">Patrick McKenzie</cite>
               </footer>
-            </blockquote>
+            </blockquote> */}
+            </div>
+            </div>
+          
+          <div className="col-md-6 mt-5">
+            <div className="container mt-5">
+            <img src={computerDrawing} className="mt-5 mx-auto" style={{height: "35vh"}}/>
+            </div>
+          </div>
+          </div>
           </div>
         </div>
       </section>

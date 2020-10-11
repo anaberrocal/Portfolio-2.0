@@ -50,12 +50,15 @@
 /* About */
 .about {
   background-color: #ffffff;
-  padding: 3% 10% 10%;
   min-height: 100vh;
 }
 
 .dev-icon {
   width: 150px;
+}
+
+.picture {
+  height: 35vmin;
 }
 
 /* Experience */
@@ -88,7 +91,7 @@
   background-color: #000000;
   color: #ffffff;
   padding: 3% 10% 10%;
-  min-height: 100vh;
+  height: 85vh;
 }
 
 .contact h1 {
