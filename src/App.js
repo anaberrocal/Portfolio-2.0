@@ -49,19 +49,19 @@ function App() {
           <h1>About me</h1>
           <div className="container p-3">
             <p>
-              I am a <b>Frontend Developer</b> specializing in{" "}
-              <b>React and JavaScript</b>. I have professional work experience
-              building <b>web applications, user-interfaces</b> and websites
+              I am a <b class="font-weight-bold">Frontend Developer</b> specializing in{" "}
+              <b class="font-weight-bold">React and JavaScript</b>. I have professional work experience
+              building <b class="font-weight-bold">web applications, user-interfaces</b> and websites
               from scratch to deployment utilizing
-              <b>
+              <b class="font-weight-bold">
                 {" "}
                 React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Bootstrap,
                 Responsive Design
               </b>{" "}
-              and other technologies. <p />
-              <p></p>I am looking to join a team where I can heavily utilize and
-              challenge my React development skills.
-            </p>
+              and other technologies.
+              </p>
+              <p>I am looking to join a team where I can heavily utilize and
+              challenge my React development skills.</p>
             <br />
             <p>
               I was born and raised in Peru and moved to the U.S. in 2012 with
