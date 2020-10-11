@@ -1,15 +1,16 @@
 import React from "react";
 
 export default function Navbar() {
+
   return (
     <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="#">
         Ana Berrocal
       </a>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler dropdown"
         type="button"
-        data-toggle="collapse"
+        data-toggle="dropdown"
         data-target="#navbarColor01"
         aria-controls="navbarColor01"
         aria-expanded="false"
