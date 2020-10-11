@@ -98,24 +98,24 @@ function App() {
               hospitality industry. I am eager to join a team where I can put
               both my technical and people skills to work.
             </p>
-            {/* <blockquote class="blockquote text-center">
-              <p class="mb-0 mt-5 mr-5 ml-5">
-                "Every great developer you know got there by solving problems
-                they were unqualified to solve until they actually did it."
-              </p>
-              <footer class="blockquote-footer">
-                <cite title="Source Title">Patrick McKenzie</cite>
-              </footer>
-            </blockquote> */}
             </div>
             </div>
           
-          <div className="col-md-6 mt-5">
-            <div className="container mt-5">
-            <img src={computerDrawing} className="mt-5 mx-auto" style={{height: "35vh"}}/>
+          <div className="col-md-6 pt-5">
+            <div className="container pt-5">
+            <img src={computerDrawing} className=" pt-5mx-auto" style={{height: "35vh"}}/>
             </div>
           </div>
           </div>
+          <blockquote class="blockquote text-center">
+            <div className="container pb-0 mb-0 pt-2">
+              <p class="mb-0 mt-5 mr-5 ml-5">
+              “What I love about both programming and music is that they enable you to build incredibly creative, complex, and beneficial things seemingly from thin air -- no additional materials required, just your brain and a keyboard in front of you.”
+              </p>
+              <footer class="blockquote-footer">
+                <cite title="Source Title">Peter Borum</cite>
+              </footer></div>
+            </blockquote>
           </div>
         </div>
       </section>
