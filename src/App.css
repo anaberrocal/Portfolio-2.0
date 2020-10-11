@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-image:url("./assets/ManhattahnB&W.png");
+  background-image: url("./assets/ManhattahnB&W.png");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -32,8 +32,9 @@
 
 @media only screen and (max-width: 768px) {
   .intro {
-  padding-top: 15%;
+    padding-top: 15%;
   }
+
   .profile-picture {
     height: 45vmin;
     margin: 5%;
@@ -42,7 +43,7 @@
 
 @media only screen and (max-width: 426px) {
   .intro {
-  padding-top: 25%;
+    padding-top: 25%;
   }
 }
 
@@ -65,13 +66,13 @@
   min-height: 100vh;
 }
 
-.experience h1{
+.experience h1 {
   color: #ffffff;
 }
 
 .project-img {
   height: auto;
-  width: 100%; 
+  width: 100%;
   display: block;
 }
 
@@ -90,9 +91,10 @@
   min-height: 100vh;
 }
 
-.contact h1{
+.contact h1 {
   color: #ffffff;
 }
-.contact h6{
+
+.contact h6 {
   color: #ffffff;
 }

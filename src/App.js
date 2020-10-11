@@ -6,6 +6,8 @@ import { SiJavascript } from "react-icons/si";
 import materialui from "./assets/materialui.png";
 import RestAPI from "./assets/RestfulAPI.png";
 import ResponsiveDesign from "./assets/responsive-design.png";
+import { FaBitbucket } from "react-icons/fa";
+import { SiAdobexd } from "react-icons/si";
 import GestureLife from "./assets/GestureLife.png";
 import Distanceware from "./assets/Distanceware.png";
 import Eleven22 from "./assets/Eleven22.png";
@@ -45,26 +47,63 @@ function App() {
         <div className="navbar-space"></div>
         <div className="about">
           <h1>About me</h1>
-          <div className="container-fluid p-3">
+          <div className="container p-3">
             <p>
-              I am a Frontend Developer specializing in React and JavaScript. I
-              have professional work experience building web applications and
-              user-interfaces from scratch to deployment utilizing React,
-              JavaScript and other technologies. I am looking to join a team
-              where I can utilize and grow my React development skills.
-              <br />
-              I am a Frontend Developer specializing in React and JavaScript. I
-              have professional work experience building web applications and
-              user-interfaces from scratch to deployment utilizing React,
-              JavaScript and other technologies. I am looking to join a team
-              where I can utilize and grow my React development skills.
-              <br />I am a Frontend Developer specializing in React and
-              JavaScript. I have professional work experience building web
-              applications and user-interfaces from scratch to deployment
-              utilizing React, JavaScript and other technologies. I am looking
-              to join a team where I can utilize and grow my React development
-              skills.
+              I am a <b>Frontend Developer</b> specializing in{" "}
+              <b>React and JavaScript</b>. I have professional work experience
+              building <b>web applications, user-interfaces</b> and websites
+              from scratch to deployment utilizing
+              <b>
+                {" "}
+                React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Bootstrap,
+                Responsive Design
+              </b>{" "}
+              and other technologies. <p />
+              <p></p>I am looking to join a team where I can heavily utilize and
+              challenge my React development skills.
             </p>
+            <br />
+            <p>
+              I was born and raised in Peru and moved to the U.S. in 2012 with
+              my family. Shortly after moving here, I enrolled in school to
+              learn Photography and worked in the hospitality and restaurant
+              industry during my time as a student.
+            </p>
+            <p>
+              I realized years later that I did not have the desire to become a
+              professional photographer. Around that same time, I moved to NYC
+              from Florida and was introduced to the amazing world of
+              programming. I first started coding in 2018 after taking an intro
+              to HTML and CSS class at General Assembly, and I fell in love
+              immediately.
+              <br />
+              As someone who had spent most of her life assuming that I was only
+              good at artistic endeavors, I never thought that I would have what
+              it takes to be in a STEM field. Nevertheless, I found Frontend
+              Development to be extremely fun and fullfilling.
+            </p>
+            <br />
+            <p>
+              Fast forward to two years later, I am so grateful that I get to do
+              what I love everyday and get beyond excited at the fact that
+              strangers from all over the world get to see and utilize the tools
+              I build.
+            </p>
+            <p>
+              I not only have Frontend Engineering knowledge but a outstanding
+              set of soft skills that I acquired during my tenure in the
+              hospitality industry. I am eager to join a team where I can put
+              both my technical and people skills to work.
+            </p>
+            <blockquote class="blockquote text-center">
+              <p class="mb-0 mt-5 mr-5 ml-5">
+                "Every great developer you know got there by solving problems
+                they were unqualified to solve until they actually did it."
+              </p>
+              <footer class="blockquote-footer">
+                <cite title="Source Title">Patrick McKenzie</cite>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </section>
@@ -193,12 +232,13 @@ function App() {
           <div className="container">
             <h1>The Tech Stack</h1>
             <p>
-              Lorem ipsum dolor sit amet, sed id adhuc molestie adipisci, ut eam
-              putent nusquam, te sea tale iuvaret dissentiet. Mel tamquam
-              discere at, no doming noster eum. Utamur eligendi nec ad, ius
-              brute petentium quaerendum te. Cum iudico rationibus reprehendunt
-              ei. No quo essent utroque assueverit, quando fabulas qualisque cu
-              duo, ne nusquam similique ius.
+              Being a programmer means being a life-long learner and that is one
+              of the things that attracted me to it in the first place. If I
+              join your team, I will bring not only the skills listed below but
+              some pretty amazing people and communication skills as well (I've
+              been called "the glue" that sticks a team together in the past).
+              Additionally, you can count on me swiftly and eargerly picking up
+              new technologies constantly.
             </p>
             <div className="container-fluid p-5">
               <DevIcon style={devIconStyle} icon="react" />
@@ -216,10 +256,11 @@ function App() {
               <DevIcon style={devIconStyle} icon="terminal" />
               <DevIcon style={devIconStyle} icon="github_badge" />
               <DevIcon style={devIconStyle} icon="visualstudio" />
-              <DevIcon style={devIconStyle} icon="bitbucket" />
+              <FaBitbucket size={120} className="text-primary" />
               <DevIcon style={devIconStyle} icon="trello" />
               <DevIcon style={devIconStyle} icon="apple" />
               <DevIcon style={devIconStyle} icon="windows" />
+              <SiAdobexd size={120} className="text-primary" />
               <DevIcon style={devIconStyle} icon="photoshop" />
             </div>
           </div>
@@ -232,9 +273,10 @@ function App() {
           <div className="container-fluid">
             <h1>Are you interested in working with me?</h1>
             <p className="p-3 m-5">
-              By now you have seen my most relevant skills and work experience.
-              Maybe you are wondering if I would be a good culture fit or if I
-              am a good team player (I am). <br />
+              By now you have learned a bit more about me and seen my most
+              relevant skills and work experience. Maybe you are wondering if I
+              would be a good culture fit at your company or if I am a good team
+              player (I am, by the way). <br />
               Let's connect and find out!
             </p>
             <div className="row p-3">
