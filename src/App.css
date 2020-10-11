@@ -91,7 +91,7 @@
   background-color: #000000;
   color: #ffffff;
   padding: 3% 10% 10%;
-  height: 85vh;
+  min-height: 85vh;
 }
 
 .contact h1 {
