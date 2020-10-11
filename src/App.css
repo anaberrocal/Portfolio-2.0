@@ -51,6 +51,7 @@
 .about {
   background-color: #ffffff;
   min-height: 100vh;
+  padding-top: 3%;
 }
 
 .dev-icon {
@@ -82,7 +83,7 @@
 /* Projects */
 .skills {
   background-color: #ffffff;
-  padding: 5%;
+  padding: 3%;
   min-height: 100vh;
 }
 

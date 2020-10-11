@@ -16,7 +16,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import computerDrawing from "./assets/computerDraw.png"
+import aboutImg from "./assets/computerDraw.png";
 import "./App.css";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <img src={Ana} className="profile-picture" alt="Profile picture" />
           <div>
             <a href="#about">
-              <button type="button" className="btn btn-primary btn-lg m-5">
+              <button type="button" className="btn btn-primary border border-secondary m-5">
                 Learn more
               </button>
             </a>
@@ -46,26 +46,28 @@ function App() {
       {/* About */}
       <section id="about">
         <div className="navbar-space"></div>
-        <div className="about">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="container text-left p-5">
-                <h1>About me</h1>
+        <div className="about"> 
+        <h1>About me</h1>
+          <div className="container text-left pt-3">
             <p>
-              I am a <b class="font-weight-bold">Frontend Developer</b> specializing in{" "}
-              <b class="font-weight-bold">React and JavaScript</b>. I have professional work experience
-              building <b class="font-weight-bold">web applications, user-interfaces</b> and websites
-              from scratch to deployment utilizing
+              I am a <b class="font-weight-bold">Frontend Developer</b>{" "}
+              specializing in{" "}
+              <b class="font-weight-bold">React and JavaScript</b>. I have
+              professional work experience building{" "}
+              <b class="font-weight-bold">web applications, user-interfaces</b>{" "}
+              and websites from scratch to deployment utilizing
               <b class="font-weight-bold">
                 {" "}
                 React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Bootstrap,
                 Responsive Design
               </b>{" "}
               and other technologies.
-              </p>
-              <p>I am looking to join a team where I can heavily utilize and
-              challenge my React development skills.</p>
+            </p>
+            <p>
+              I am looking to join a team where I can heavily utilize and
+              challenge my React development skills.
+            </p>
+            <br/>
             <p>
               I was born and raised in Peru and moved to the U.S. in 2012 with
               my family. Shortly after moving here, I enrolled in school to
@@ -73,9 +75,9 @@ function App() {
               industry during my time as a student.
             </p>
             <p>
-              I realized years later that I did not have the desire to become a
-              professional photographer. Around that same time, I moved to NYC
-              from Florida and was introduced to the amazing world of
+              I realized four years later that I did not have the desire to become a
+              professional photographer. Around that same time, I moved from
+              Florida to NYC and was introduced to the amazing world of
               programming. I first started coding in 2018 after taking an intro
               to HTML and CSS class at General Assembly, and I fell in love
               immediately.
@@ -85,36 +87,34 @@ function App() {
               it takes to be in a STEM field. Nevertheless, I found Frontend
               Development to be extremely fun and fullfilling.
             </p>
-            <br />
             <p>
               Fast forward to two years later, I am so grateful that I get to do
               what I love everyday and get beyond excited at the fact that
-              strangers from all over the world get to see and utilize the tools
+              people from all over the world get to see and utilize the tools
               I build.
             </p>
             <p>
               I not only have Frontend Engineering knowledge but a outstanding
               set of soft skills that I acquired during my tenure in the
-              hospitality industry. I am eager to join a team where I can put
+              hospitality industry and an extensive arts background that allow me to create intuitive and detailed designs that prioritize users. I am eager to join a team where I can put
               both my technical and people skills to work.
             </p>
-            </div>
-            </div>
-          
-          <div className="col-md-6 pt-5">
-            <div className="container pt-5">
-            <img src={computerDrawing} className=" pt-5mx-auto" style={{height: "35vh"}}/>
-            </div>
-          </div>
-          </div>
-          <blockquote class="blockquote text-center">
-            <div className="container pb-0 mb-0 pt-2">
-              <p class="mb-0 mt-5 mr-5 ml-5">
-              “What I love about both programming and music is that they enable you to build incredibly creative, complex, and beneficial things seemingly from thin air -- no additional materials required, just your brain and a keyboard in front of you.”
-              </p>
-              <footer class="blockquote-footer">
-                <cite title="Source Title">Peter Borum</cite>
-              </footer></div>
+            {/* <div className="text-center"> */}
+              <img src={aboutImg} className="mx-auto d-block w-25 h-100"/>
+            {/* </div> */}
+            <blockquote class="blockquote text-center">
+              <div className="container pb-0 mb-0 pt-0">
+                <p class="mb-0 mt-2 mr-5 ml-5">
+                  “What I love about both programming and music is that they
+                  enable you to build incredibly creative, complex, and
+                  beneficial things seemingly from thin air -- no additional
+                  materials required, just your brain and a keyboard in front of
+                  you.”
+                </p>
+                <footer class="blockquote-footer">
+                  <cite title="Source Title">Peter Borum</cite>
+                </footer>
+              </div>
             </blockquote>
           </div>
         </div>
@@ -285,7 +285,7 @@ function App() {
           <div className="container-fluid">
             <h1>Are you interested in working with me?</h1>
             <p className="p-3 m-5">
-              By now you have learned a bit more about me and seen my most
+              You have learned a bit more about me and seen my most
               relevant skills and work experience. Maybe you are wondering if I
               would be a good culture fit at your company or if I am a good team
               player (I am, by the way). <br />
