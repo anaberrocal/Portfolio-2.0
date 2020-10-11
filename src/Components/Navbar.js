@@ -20,9 +20,10 @@ export default function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
+          <li className="nav-item">
             <a className="nav-link" href="#about">
-              About <span className="sr-only">(current)</span>
+              About 
+              {/* <span className="sr-only">(current)</span> */}
             </a>
           </li>
           <li className="nav-item">
@@ -31,8 +32,8 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#projects">
-              Projects
+            <a className="nav-link" href="#skills">
+             Skills
             </a>
           </li>
           <li className="nav-item">
@@ -40,46 +41,7 @@ export default function Navbar() {
               Contact
             </a>
           </li>
-          {/* Dropdown */}
-          {/* <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="#">
-                Separated link
-              </a>
-            </div>
-          </li> */}
         </ul>
-        {/* Search bar */}
-        {/* <form className="form-inline my-2 my-lg-0">
-          <input
-            className="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-          />
-          <button className="btn btn-secondary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form> */}
       </div>
     </nav>
   );

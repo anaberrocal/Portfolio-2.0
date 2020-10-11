@@ -69,17 +69,17 @@
   color: #ffffff;
 }
 
-/* Projects */
-.projects {
-  background-color: #ffffff;
-  padding: 5%;
-  min-height: 100vh;
-}
-
 .project-img {
   height: auto;
   width: 100%; 
   display: block;
+}
+
+/* Projects */
+.skills {
+  background-color: #ffffff;
+  padding: 5%;
+  min-height: 100vh;
 }
 
 /* Contact */
