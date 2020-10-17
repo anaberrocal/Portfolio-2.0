@@ -231,7 +231,7 @@ function App() {
                       target="_blank"
                       class="card-link"
                     >
-                      Webite
+                      Website
                     </a>
                   </div>
                 </div>
