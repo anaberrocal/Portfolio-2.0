@@ -61,8 +61,8 @@ function App() {
               and websites from scratch to deployment utilizing
               <b class="font-weight-bold">
                 {" "}
-                React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Bootstrap,
-                Responsive Design
+                React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Material-UI,
+                Responsive Design, Bootstrap
               </b>{" "}
               and other technologies.
             </p>
@@ -70,7 +70,6 @@ function App() {
               I am looking to join a team where I can heavily utilize and
               challenge my React development skills.
             </p>
-            <br />
             <p className="font-weight-normal">
               I was born and raised in Peru and moved to the U.S. in 2012 with
               my family. Shortly after moving here, I enrolled in school to
