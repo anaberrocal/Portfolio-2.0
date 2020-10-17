@@ -86,7 +86,7 @@ function App() {
               As someone who had spent most of her life assuming that I was only
               good at artistic endeavors, I never thought that I would have what
               it takes to be in a STEM field. Nevertheless, I found Frontend
-              Development to be extremely fun and fullfilling.
+              Development to be extremely fun and fulfilling.
             </p>
             <p>
               Fast forward to two years later, I am so grateful that I get to do
