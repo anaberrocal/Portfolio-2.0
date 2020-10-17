@@ -75,8 +75,7 @@ function App() {
               industry during my time as a student.
             </p>
             <p>
-              I realized four years later that I did not have the desire to become a
-              professional photographer. Around that same time, I moved from
+              About 5 years later, I moved from
               Florida to NYC and was introduced to the amazing world of
               programming. I first started coding in 2018 after taking an intro
               to HTML and CSS class at General Assembly, and I fell in love
