@@ -52,7 +52,7 @@ function App() {
         <div className="about">
           <h1>About me</h1>
           <div className="container text-left pt-3">
-            <p>
+            <p className="font-weight-normal">
               I am a <b class="font-weight-bold">Frontend Developer</b>{" "}
               specializing in{" "}
               <b class="font-weight-bold">React and JavaScript</b>. I have
@@ -66,18 +66,18 @@ function App() {
               </b>{" "}
               and other technologies.
             </p>
-            <p>
+            <p className="font-weight-normal">
               I am looking to join a team where I can heavily utilize and
               challenge my React development skills.
             </p>
             <br />
-            <p>
+            <p className="font-weight-normal">
               I was born and raised in Peru and moved to the U.S. in 2012 with
               my family. Shortly after moving here, I enrolled in school to
               learn Photography and worked in the hospitality and restaurant
               industry during my time as a student.
             </p>
-            <p>
+            <p className="font-weight-normal">
               About 5 years later, I moved from Florida to NYC and was
               introduced to the amazing world of programming. I first started
               coding in 2018 after taking an intro to HTML and CSS class at
@@ -88,13 +88,13 @@ function App() {
               it takes to be in a STEM field. Nevertheless, I found Frontend
               Development to be extremely fun and fulfilling.
             </p>
-            <p>
+            <p className="font-weight-normal">
               Fast forward to two years later, I am so grateful that I get to do
               what I love everyday and get beyond excited at the fact that
               people from all over the world get to see and utilize the tools I
               build.
             </p>
-            <p>
+            <p className="font-weight-normal">
               I not only have Frontend Engineering knowledge but an outstanding
               set of soft skills that I acquired during my tenure in the
               hospitality industry and an extensive arts background that allow
@@ -127,7 +127,7 @@ function App() {
         <div className="navbar-space"></div>
         <div className="experience">
           <h1>Work experience</h1>
-          <p>Check out some of my latest work</p>
+          <p className="font-weight-normal">Check out some of my latest work</p>
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-4 mb-3">
@@ -246,7 +246,7 @@ function App() {
         <div className="skills">
           <div className="container">
             <h1>The Tech Stack</h1>
-            <p>
+            <p className="font-weight-normal">
               Being a programmer means being a life-long learner and that is one
               of the things that attracted me to it in the first place. If I
               join your team, I will bring not only the skills listed below but
@@ -287,7 +287,7 @@ function App() {
         <div className="contact">
           <div className="container-fluid">
             <h1>Are you interested in working with me?</h1>
-            <p className="p-3 m-5">
+            <p className="font-weight-normal p-3 m-5">
               You have learned a bit more about me and seen my most relevant
               skills and work experience. Maybe you are wondering if I would be
               a good culture fit at your company or if I am a good team player
