@@ -36,7 +36,10 @@ function App() {
           <img src={Ana} className="profile-picture" alt="Profile picture" />
           <div>
             <a href="#about">
-              <button type="button" className="btn btn-primary border border-secondary m-5">
+              <button
+                type="button"
+                className="btn btn-primary border border-secondary m-5"
+              >
                 Learn more
               </button>
             </a>
@@ -46,8 +49,8 @@ function App() {
       {/* About */}
       <section id="about">
         <div className="navbar-space"></div>
-        <div className="about"> 
-        <h1>About me</h1>
+        <div className="about">
+          <h1>About me</h1>
           <div className="container text-left pt-3">
             <p>
               I am a <b class="font-weight-bold">Frontend Developer</b>{" "}
@@ -67,7 +70,7 @@ function App() {
               I am looking to join a team where I can heavily utilize and
               challenge my React development skills.
             </p>
-            <br/>
+            <br />
             <p>
               I was born and raised in Peru and moved to the U.S. in 2012 with
               my family. Shortly after moving here, I enrolled in school to
@@ -75,11 +78,10 @@ function App() {
               industry during my time as a student.
             </p>
             <p>
-              About 5 years later, I moved from
-              Florida to NYC and was introduced to the amazing world of
-              programming. I first started coding in 2018 after taking an intro
-              to HTML and CSS class at General Assembly, and I fell in love
-              immediately.
+              About 5 years later, I moved from Florida to NYC and was
+              introduced to the amazing world of programming. I first started
+              coding in 2018 after taking an intro to HTML and CSS class at
+              General Assembly, and I fell in love immediately.
               <br />
               As someone who had spent most of her life assuming that I was only
               good at artistic endeavors, I never thought that I would have what
@@ -89,17 +91,19 @@ function App() {
             <p>
               Fast forward to two years later, I am so grateful that I get to do
               what I love everyday and get beyond excited at the fact that
-              people from all over the world get to see and utilize the tools
-              I build.
+              people from all over the world get to see and utilize the tools I
+              build.
             </p>
             <p>
-              I not only have Frontend Engineering knowledge but a outstanding
+              I not only have Frontend Engineering knowledge but an outstanding
               set of soft skills that I acquired during my tenure in the
-              hospitality industry and an extensive arts background that allow me to create intuitive and detailed designs that prioritize users. I am eager to join a team where I can put
-              both my technical and people skills to work.
+              hospitality industry and an extensive arts background that allow
+              me to create intuitive and detailed designs that prioritize user experience.
+              I am eager to join a team where I can put both my technical and
+              people skills to work.
             </p>
             {/* <div className="text-center"> */}
-              <img src={aboutImg} className="mx-auto d-block w-25 h-100"/>
+            <img src={aboutImg} className="mx-auto d-block w-25 h-100" />
             {/* </div> */}
             <blockquote class="blockquote text-center">
               <div className="container pb-0 mb-0 pt-0">
@@ -216,9 +220,9 @@ function App() {
                       the country. Across its six (soon to be 7) campuses, close
                       to 12,000 people attend Sunday services and thousands more
                       attend online. My role at CoE22 consisted of maintaining
-                      an existing 50+ page codebase as well as participating in
-                      the full lifecycle of design, development and deployment
-                      of new projects.
+                      and refactoring an existing 50+ page codebase as well as
+                      participating in the full lifecycle of design, development
+                      and deployment of new projects.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -284,10 +288,10 @@ function App() {
           <div className="container-fluid">
             <h1>Are you interested in working with me?</h1>
             <p className="p-3 m-5">
-              You have learned a bit more about me and seen my most
-              relevant skills and work experience. Maybe you are wondering if I
-              would be a good culture fit at your company or if I am a good team
-              player (I am, by the way). <br />
+              You have learned a bit more about me and seen my most relevant
+              skills and work experience. Maybe you are wondering if I would be
+              a good culture fit at your company or if I am a good team player
+              (I am, by the way). <br />
               Let's connect and find out!
             </p>
             <div className="row p-3">
