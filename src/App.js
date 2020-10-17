@@ -145,7 +145,7 @@ function App() {
                     </h6>
                   </div>
                   <div className="card-body">
-                    <p>
+                    <p className="font-weight-normal">
                       Gesture Life is a dashboard/internal workflow tool for
                       Gesture's 75+ employees to manage their "life" at Gesture.
                       They have the ability to view orders that need to be
@@ -181,7 +181,7 @@ function App() {
                     </h6>
                   </div>
                   <div className="card-body">
-                    <p>
+                    <p className="font-weight-normal">
                       Distanceware is a React web application that matches users
                       to online degree programs from accredited institutions
                       accross the U.S. During my time as a React Developer at
@@ -215,7 +215,7 @@ function App() {
                     </h6>
                   </div>
                   <div className="card-body">
-                    <p>
+                    <p className="font-weight-normal">
                       The Church of Eleven22 is one of the fastest growing in
                       the country. Across its six (soon to be 7) campuses, close
                       to 12,000 people attend Sunday services and thousands more
