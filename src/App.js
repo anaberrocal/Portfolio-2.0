@@ -70,7 +70,7 @@ function App() {
               I not only have Frontend Engineering knowledge but an outstanding
               set of soft skills and an extensive arts background that allow me
               to create functional and visually pleasing interfaces that
-              prioritize user experience.. I am eager to join a team where I can
+              prioritize user experience. I am eager to join a team where I can
               put both my technical and people skills to work.
             </p>
             <p className="font-weight-normal">
