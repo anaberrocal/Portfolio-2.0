@@ -82,14 +82,14 @@ function App() {
               at General Assembly, and I fell in love immediately.
             </p>
             <p className="font-weight-normal">
-              Fast forward to two years later, I am so grateful that I get to do
+              Fast forward to today, I am so grateful that I get to do
               what I love everyday and get beyond excited at the fact that
               people from all over the world get to see and utilize the tools I
               build.
             </p>
             <p className="font-weight-normal">
-              I am eager to join a team where I can put both my technical and
-              people skills to work.
+              I am looking forward to being part of a team where I can continue to grow by heavily utilizing and
+              challenging my React development skills.
             </p>
             {/* <div className="text-center"> */}
             <img src={aboutImg} className="mx-auto d-block w-25 h-100" />
