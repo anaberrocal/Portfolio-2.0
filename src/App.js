@@ -67,25 +67,19 @@ function App() {
               and other technologies.
             </p>
             <p className="font-weight-normal">
-              I am looking to join a team where I can heavily utilize and
-              challenge my React development skills.
+              I not only have Frontend Engineering knowledge but an outstanding
+              set of soft skills and an extensive arts background that allow me
+              to create functional and visually pleasing interfaces that
+              prioritize user experience.. I am eager to join a team where I can
+              put both my technical and people skills to work.
             </p>
             <p className="font-weight-normal">
               I was born and raised in Peru and moved to the U.S. in 2012 with
-              my family. Shortly after moving here, I enrolled in school to
-              learn Photography and worked in the hospitality and restaurant
-              industry during my time as a student.
+              my family.
             </p>
             <p className="font-weight-normal">
-              About 5 years later, I moved from Florida to NYC and was
-              introduced to the amazing world of programming. I first started
-              coding in 2018 after taking an intro to HTML and CSS class at
-              General Assembly, and I fell in love immediately.
-              <br />
-              As someone who had spent most of her life assuming that I was only
-              good at artistic endeavors, I never thought that I would have what
-              it takes to be in a STEM field. Nevertheless, I found Frontend
-              Development to be extremely fun and fulfilling.
+              I first started coding after taking an intro to HTML and CSS class
+              at General Assembly, and I fell in love immediately.
             </p>
             <p className="font-weight-normal">
               Fast forward to two years later, I am so grateful that I get to do
@@ -94,10 +88,6 @@ function App() {
               build.
             </p>
             <p className="font-weight-normal">
-              I not only have Frontend Engineering knowledge but an outstanding
-              set of soft skills that I acquired during my tenure in the
-              hospitality industry and an extensive arts background that allow
-              me to create intuitive and detailed designs that prioritize user experience.
               I am eager to join a team where I can put both my technical and
               people skills to work.
             </p>
