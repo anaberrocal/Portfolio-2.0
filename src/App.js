@@ -279,8 +279,7 @@ function App() {
             <p className="font-weight-normal p-3 m-5">
               You have learned a bit more about me and seen my most relevant
               skills and work experience. Maybe you are wondering if I would be
-              a good culture fit at your company or if I am a good team player
-              (I am, by the way). <br />
+              a good culture fit at your company or if I am a good team player. <br />
               Let's connect and find out!
             </p>
             <div className="row p-3">
