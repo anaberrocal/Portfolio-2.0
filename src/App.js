@@ -14,7 +14,7 @@ import Eleven22 from "./assets/Eleven22.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+// import { FaPhoneAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import aboutImg from "./assets/computerDraw.png";
 import "./App.css";
@@ -285,30 +285,30 @@ function App() {
             </p>
             <div className="row p-3">
               <a
-                className="col-md-3 p-3"
+                className="col-sm"
                 href="https://www.linkedin.com/in/anaberrocal/"
                 target="_blank"
               >
                 <FaLinkedin size={60} className="text-white" />
               </a>
               <a
-                className="col-md-3 p-3"
+                className="col-sm"
                 href="https://github.com/anaberrocal"
                 target="_blank"
               >
                 <FaGithub size={60} className="text-white " />
               </a>
-              <a
-                className="col-md-3 p-3"
+              {/* <a
+                className="col-sm"
                 href="mailto:anaberrocaldev@gmail.com"
               >
                 <MdEmail size={60} className="text-white" />
-              </a>
-              <a className="col-md-3 p-3" href="tel:9548512668">
+              </a> */}
+              {/* <a className="col-md-3 p-3" href="tel:9548512668">
                 <FaPhoneAlt size={60} className="text-white" />
-              </a>
+              </a> */}
             </div>
-            <h5 className="text-white p-3 m-5">
+            {/* <h5 className="text-white p-3 m-5">
               Want to learn more? Take a look at my resume{" "}
               <a
                 className="text-white"
@@ -318,7 +318,7 @@ function App() {
                 <u>here</u>
               </a>
               .
-            </h5>
+            </h5> */}
           </div>
         </div>
         <div class="card-footer text-muted bg-primary">
