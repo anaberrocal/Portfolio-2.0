@@ -6,8 +6,16 @@ import { SiJavascript } from "react-icons/si";
 import materialui from "./assets/materialui.png";
 import RestAPI from "./assets/RestfulAPI.png";
 import ResponsiveDesign from "./assets/responsive-design.png";
+import figma from "./assets/figma.png";
+import angular from "./assets/angular.png";
+import stenciljs from "./assets/stencil-js.png";
+import storybook from "./assets/storybook.png";
+import typescript from "./assets/typescript.png";
 import { FaBitbucket } from "react-icons/fa";
 import { SiAdobexd } from "react-icons/si";
+import sp from "./assets/sp.png";
+import f23 from "./assets/f23.png";
+import f23dev from "./assets/f23-dev.png";
 import GestureLife from "./assets/GestureLife.png";
 import Distanceware from "./assets/Distanceware.png";
 import Eleven22 from "./assets/Eleven22.png";
@@ -118,6 +126,100 @@ function App() {
           <h1>Work experience</h1>
           <p className="font-weight-normal">Check out some of my latest work</p>
           <div className="container-fluid">
+            <div className="row">
+            <div className="col-md-4 mb-3">
+                <div className="card text-dark h-100">
+                  <h3 className="card-header">StackPath</h3>
+                  <img
+                    className="project-img"
+                    src={sp}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Cloud Computing Start-up</h5>
+                    <h6 class="card-subtitle text-muted">
+                      My role: UI Developer
+                    </h6>
+                  </div>
+                  <div className="card-body">
+                    <p className="font-weight-normal">
+                    StackPath is a cloud computing and services provider that puts its locations in densely populated markets. At StackPath, I helped design and build our very own Design System, "Cosmos". The intention behind Cosmos was to unify and expedite the software development process among all different engineering teams by creating custom, reusable, accesible and fully-functional React and web components.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a
+                      href="https://www.stackpath.com/"
+                      target="_blank"
+                      class="card-link"
+                    >
+                      StackPath
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4 mb-3">
+                <div className="card text-dark h-100">
+                  <h3 className="card-header">Feature 23</h3>
+                  <img
+                    className="project-img"
+                    src={f23dev}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Software Engineering Firm</h5>
+                    <h6 class="card-subtitle text-muted">
+                      My role: Frontend Developer
+                    </h6>
+                  </div>
+                  <div className="card-body">
+                    <p className="font-weight-normal">
+                    Feature[23] is a full-service product development firm. During my time there, I worked alongside several different engineering teams, implementing changes and features that ranged from compelte redesigns to creating full-fledged applications from scratch in order to obtain and maintain new business from an existing customer (large national product distributor).
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a
+                      href="https://www.feature23.com/"
+                      target="_blank"
+                      class="card-link"
+                    >
+                      Feature23
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4 mb-3">
+                <div className="card text-dark h-100">
+                  <h3 className="card-header">Feature23 (Design Work)</h3>
+                  <img
+                    className="project-img"
+                    src={f23}
+                    alt="Card image"
+                  />
+                  <div className="card-body">
+                    <h5 class="card-title">Software Engineering Firm</h5>
+                    <h6 class="card-subtitle text-muted">
+                      My role: Jr. Product Designer
+                    </h6>
+                  </div>
+                  <div className="card-body">
+                    <p className="font-weight-normal">
+                    Additonally, during my time at Feature[23], I worked under the Chief Product Designer and redesigned a large existing application from scratch and implemented those updates in code. I also assisted all other engineering teams with design improves and updates to components as well participated in disciovery calls with potential new clients in order to pinpoint their software needs and gain their business.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a
+                      href="https://coe22.com/"
+                      target="_blank"
+                      class="card-link"
+                    >
+                      Website
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="row">
               <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
@@ -249,7 +351,11 @@ function App() {
               <SiJavascript size={120} className="text-primary" />
               <DevIcon style={devIconStyle} icon="css3" />
               <DevIcon style={devIconStyle} icon="html5" />
+              <img src={angular} style={devIconStyle} />
+              <img src={typescript} style={devIconStyle} />
               <DevIcon style={devIconStyle} icon="nodejs_small" />
+              <img src={stenciljs} style={devIconStyle} />
+              <img src={storybook} style={devIconStyle} />
               <img src={RestAPI} style={devIconStyle} />
               <img src={ResponsiveDesign} style={devIconStyle} />
               <img src={materialui} style={devIconStyle} />
@@ -265,6 +371,7 @@ function App() {
               <DevIcon style={devIconStyle} icon="apple" />
               <DevIcon style={devIconStyle} icon="windows" />
               <SiAdobexd size={120} className="text-primary" />
+              <img src={figma} style={devIconStyle} />
               <DevIcon style={devIconStyle} icon="photoshop" />
             </div>
           </div>
@@ -279,8 +386,7 @@ function App() {
             <p className="font-weight-normal p-3 m-5">
               You have learned a bit more about me and seen my most relevant
               skills and work experience. Maybe you are wondering if I would be
-              a good culture fit at your company or if I am a good team player
-              (I am, by the way). <br />
+              a good culture fit at your company or if I am a good team player. <br />
               Let's connect and find out!
             </p>
             <div className="row p-3">
@@ -312,7 +418,7 @@ function App() {
               Want to learn more? Take a look at my resume{" "}
               <a
                 className="text-white"
-                href="https://drive.google.com/file/d/1PTg3hBRUX_cvq_92aMGR_tnR7ayht2gD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1vSt6st3F2CQ-JMyjLh_FEpY7qe27KdD6/view?usp=sharing"
                 target="_blank"
               >
                 <u>here</u>
