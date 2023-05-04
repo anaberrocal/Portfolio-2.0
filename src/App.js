@@ -391,21 +391,21 @@ function App() {
             </p>
             <div className="row p-3">
               <a
-                className="col-md-3 p-3"
+                className="col-sm"
                 href="https://www.linkedin.com/in/anaberrocal/"
                 target="_blank"
               >
                 <FaLinkedin size={60} className="text-white" />
               </a>
               <a
-                className="col-md-3 p-3"
+                className="col-sm"
                 href="https://github.com/anaberrocal"
                 target="_blank"
               >
                 <FaGithub size={60} className="text-white " />
               </a>
               <a
-                className="col-md-3 p-3"
+                className="col-sm"
                 href="mailto:anaberrocaldev@gmail.com"
               >
                 <MdEmail size={60} className="text-white" />
