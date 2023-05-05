@@ -39,7 +39,7 @@ function App() {
       <header className="App-header">
         <div className="intro">
           <h1 className="intro-title">
-            Hello, my name is Ana Berrocal and I am a React Developer.
+            Hello, my name is Ana Berrocal and I am a Frontend Developer.
           </h1>
           <img src={Ana} className="profile-picture" alt="Profile picture" />
           <div>
@@ -61,25 +61,22 @@ function App() {
           <h1>About me</h1>
           <div className="container text-left pt-3">
             <p className="font-weight-normal">
-              I am a <b class="font-weight-bold">Frontend Developer</b>{" "}
-              specializing in{" "}
-              <b class="font-weight-bold">React and JavaScript</b>. I have
-              professional work experience building{" "}
+              I am a <b class="font-weight-bold">Frontend Developer</b>{" "}that has experience designing and developing{" "}
               <b class="font-weight-bold">web applications, user-interfaces</b>{" "}
               and websites from scratch to deployment utilizing
               <b class="font-weight-bold">
                 {" "}
-                React, JavaScript ES6+, HTML5, CSS3, RESTful APIs, Material-UI,
-                Responsive Design, Bootstrap
+                React, JavaScript ES6+, HTML5, CSS3, Angular, TypeScript, RESTful APIs, Material-UI,
+                Responsive Design, Bootstrap, StencilJS
               </b>{" "}
-              and other technologies.
+              and other technologies. I also have experience designing and developing <b class="font-weight-bold">design systems</b>.
             </p>
             <p className="font-weight-normal">
-              I not only have Frontend Engineering knowledge but an outstanding
-              set of soft skills and an extensive arts background that allow me
-              to create functional and visually pleasing interfaces that
-              prioritize user experience. I am eager to join a team where I can
-              put both my technical and people skills to work.
+              I not only have Frontend Engineering knowledge but I also have created user interfaces and experiences during my time as a product designer. I have a great
+              set of soft skills and an arts background that allow me
+              to create functional and visually pleasing interfaces that empathize with and 
+              prioritize the user experience. I am eager to join a team where I can
+              put both my technical, design and people skills to work.
             </p>
             <p className="font-weight-normal">
               I was born and raised in Peru and moved to the U.S. in 2012 with
@@ -96,8 +93,7 @@ function App() {
               build.
             </p>
             <p className="font-weight-normal">
-              I am looking forward to being part of a team where I can continue to grow by heavily utilizing and
-              challenging my React development skills.
+              I am looking forward to being part of a team where I can continue to grow my development and design skills.
             </p>
             {/* <div className="text-center"> */}
             <img src={aboutImg} className="mx-auto d-block w-25 h-100" />
