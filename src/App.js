@@ -414,7 +414,7 @@ function App() {
               Want to learn more? Take a look at my resume{" "}
               <a
                 className="text-white"
-                href="https://drive.google.com/file/d/1vSt6st3F2CQ-JMyjLh_FEpY7qe27KdD6/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yK_S8n7ugp28GkZ8i47vbED2_O0dDXhU/view?usp=sharing"
                 target="_blank"
               >
                 <u>here</u>
