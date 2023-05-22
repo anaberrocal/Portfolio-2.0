@@ -39,7 +39,7 @@ function App() {
       <header className="App-header">
         <div className="intro">
           <h1 className="intro-title">
-            Hello, my name is Ana Berrocal and I am a Frontend Developer.
+            Hello, my name is Ana Berrocal and I am a Frontend Developer & Designer.
           </h1>
           <img src={Ana} className="profile-picture" alt="Profile picture" />
           <div>
