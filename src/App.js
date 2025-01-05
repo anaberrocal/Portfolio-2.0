@@ -38,11 +38,11 @@ function App() {
       {/* Landing Page */}
       <header className="App-header">
         <div className="intro">
-          <h1 className="intro-title">
-            Hello, my name is Ana Berrocal and I am a Frontend Developer & Designer.
-          </h1>
-          <img src={Ana} className="profile-picture" alt="Profile picture" />
-          <div>
+           <div className="intro-left">
+            <span className="intro-title">
+              Hello. <br/>My name is Ana Berrocal and I am a UI/UX Designer &
+              Developer based in NYC.
+            </span>
             <a href="#about">
               <button
                 type="button"
@@ -52,6 +52,7 @@ function App() {
               </button>
             </a>
           </div>
+          {/* <img src={Ana} className="profile-picture" alt="Profile picture" /> */}
         </div>
       </header>
       {/* About */}
@@ -61,22 +62,27 @@ function App() {
           <h1>About me</h1>
           <div className="container text-left pt-3">
             <p className="font-weight-normal">
-              I am a <b class="font-weight-bold">Frontend Developer</b>{" "}that has experience designing and developing{" "}
+              I am a <b class="font-weight-bold">Frontend Developer</b> that has
+              experience designing and developing{" "}
               <b class="font-weight-bold">web applications, user-interfaces</b>{" "}
               and websites from scratch to deployment utilizing
               <b class="font-weight-bold">
                 {" "}
-                React, JavaScript ES6+, HTML5, CSS3, Angular, TypeScript, RESTful APIs, Material-UI,
-                Responsive Design, Bootstrap, StencilJS
+                React, JavaScript ES6+, HTML5, CSS3, Angular, TypeScript,
+                RESTful APIs, Material-UI, Responsive Design, Bootstrap,
+                StencilJS
               </b>{" "}
-              and other technologies. I also have experience designing and developing <b class="font-weight-bold">design systems</b>.
+              and other technologies. I also have experience designing and
+              developing <b class="font-weight-bold">design systems</b>.
             </p>
             <p className="font-weight-normal">
-              I not only have Frontend Engineering knowledge but I also have created user interfaces and experiences during my time as a product designer. I have a great
-              set of soft skills and an arts background that allow me
-              to create functional and visually pleasing interfaces that empathize with and 
-              prioritize the user experience. I am eager to join a team where I can
-              put both my technical, design and people skills to work.
+              I not only have Frontend Engineering knowledge but I also have
+              created user interfaces and experiences during my time as a
+              product designer. I have a great set of soft skills and an arts
+              background that allow me to create functional and visually
+              pleasing interfaces that empathize with and prioritize the user
+              experience. I am eager to join a team where I can put both my
+              technical, design and people skills to work.
             </p>
             <p className="font-weight-normal">
               I was born and raised in Peru and moved to the U.S. in 2012 with
@@ -87,28 +93,24 @@ function App() {
               at General Assembly, and I fell in love immediately.
             </p>
             <p className="font-weight-normal">
-              Fast forward to today, I am so grateful that I get to do
-              what I love everyday and get beyond excited at the fact that
-              people from all over the world get to see and utilize the tools I
-              build.
+              Fast forward to today, I am so grateful that I get to do what I
+              love everyday and get beyond excited at the fact that people from
+              all over the world get to see and utilize the tools I build.
             </p>
             <p className="font-weight-normal">
-              I am looking forward to being part of a team where I can continue to grow my development and design skills.
+              I am looking forward to being part of a team where I can continue
+              to grow my development and design skills.
             </p>
             {/* <div className="text-center"> */}
-            <img src={aboutImg} className="mx-auto d-block w-25 h-100" />
+            <img src={Ana} className="mx-auto d-block w-25 h-100" />
             {/* </div> */}
             <blockquote class="blockquote text-center">
               <div className="container pb-0 mb-0 pt-0">
                 <p class="mb-0 mt-2 mr-5 ml-5">
-                  “What I love about both programming and music is that they
-                  enable you to build incredibly creative, complex, and
-                  beneficial things seemingly from thin air -- no additional
-                  materials required, just your brain and a keyboard in front of
-                  you.”
+                  “The beauty of design is.”
                 </p>
                 <footer class="blockquote-footer">
-                  <cite title="Source Title">Peter Borum</cite>
+                  <cite title="Source Title">Ana Berrocal</cite>
                 </footer>
               </div>
             </blockquote>
@@ -123,14 +125,10 @@ function App() {
           <p className="font-weight-normal">Check out some of my latest work</p>
           <div className="container-fluid">
             <div className="row">
-            <div className="col-md-4 mb-3">
+              <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
                   <h3 className="card-header">StackPath</h3>
-                  <img
-                    className="project-img"
-                    src={sp}
-                    alt="Card image"
-                  />
+                  <img className="project-img" src={sp} alt="Card image" />
                   <div className="card-body">
                     <h5 class="card-title">Cloud Computing Start-up</h5>
                     <h6 class="card-subtitle text-muted">
@@ -139,7 +137,13 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                    StackPath is a cloud computing and services provider that puts its locations in densely populated markets. At StackPath, I helped design and build our very own Design System, "Cosmos". The intention behind Cosmos was to unify and expedite the software development process among all different engineering teams by creating custom, reusable, accesible and fully-functional React and web components.
+                      StackPath is a cloud computing and services provider that
+                      puts its locations in densely populated markets. At
+                      StackPath, I helped design and build our very own Design
+                      System, "Cosmos". The intention behind Cosmos was to unify
+                      and expedite the software development process among all
+                      different engineering teams by creating custom, reusable,
+                      accesible and fully-functional React and web components.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -157,11 +161,7 @@ function App() {
               <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
                   <h3 className="card-header">Feature 23</h3>
-                  <img
-                    className="project-img"
-                    src={f23dev}
-                    alt="Card image"
-                  />
+                  <img className="project-img" src={f23dev} alt="Card image" />
                   <div className="card-body">
                     <h5 class="card-title">Software Engineering Firm</h5>
                     <h6 class="card-subtitle text-muted">
@@ -170,7 +170,13 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                    Feature[23] is a full-service product development firm. During my time there, I worked alongside several different engineering teams, implementing changes and features that ranged from compelte redesigns to creating full-fledged applications from scratch in order to obtain and maintain new business from an existing customer (large national product distributor).
+                      Feature[23] is a full-service product development firm.
+                      During my time there, I worked alongside several different
+                      engineering teams, implementing changes and features that
+                      ranged from compelte redesigns to creating full-fledged
+                      applications from scratch in order to obtain and maintain
+                      new business from an existing customer (large national
+                      product distributor).
                     </p>
                   </div>
                   <div className="card-footer">
@@ -188,11 +194,7 @@ function App() {
               <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
                   <h3 className="card-header">Feature23 (Design Work)</h3>
-                  <img
-                    className="project-img"
-                    src={f23}
-                    alt="Card image"
-                  />
+                  <img className="project-img" src={f23} alt="Card image" />
                   <div className="card-body">
                     <h5 class="card-title">Software Engineering Firm</h5>
                     <h6 class="card-subtitle text-muted">
@@ -201,7 +203,14 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                    Additonally, during my time at Feature[23], I worked under the Chief Product Designer and redesigned a large existing application from scratch and implemented those updates in code. I also assisted all other engineering teams with design improves and updates to components as well participated in disciovery calls with potential new clients in order to pinpoint their software needs and gain their business.
+                      Additonally, during my time at Feature[23], I worked under
+                      the Chief Product Designer and redesigned a large existing
+                      application from scratch and implemented those updates in
+                      code. I also assisted all other engineering teams with
+                      design improves and updates to components as well
+                      participated in disciovery calls with potential new
+                      clients in order to pinpoint their software needs and gain
+                      their business.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -382,10 +391,11 @@ function App() {
             <p className="font-weight-normal p-3 m-5">
               You have learned a bit more about me and seen my most relevant
               skills and work experience. Maybe you are wondering if I would be
-              a good culture fit at your company or if I am a good team player. <br />
+              a good culture fit at your company or if I am a good team player.{" "}
+              <br />
               Let's connect and find out!
             </p>
-            <div className="row p-3">
+            <div className="row p-1">
               <a
                 className="col-sm"
                 href="https://www.linkedin.com/in/anaberrocal/"
@@ -400,14 +410,8 @@ function App() {
               >
                 <FaGithub size={60} className="text-white " />
               </a>
-              <a
-                className="col-sm"
-                href="mailto:anaberrocaldev@gmail.com"
-              >
+              <a className="col-sm" href="mailto:anaberrocaldev@gmail.com">
                 <MdEmail size={60} className="text-white" />
-              </a>
-              <a className="col-md-3 p-3" href="tel:9548512668">
-                <FaPhoneAlt size={60} className="text-white" />
               </a>
             </div>
             <h5 className="text-white p-3 m-5">
