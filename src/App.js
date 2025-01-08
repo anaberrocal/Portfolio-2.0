@@ -2,7 +2,7 @@ import React from "react";
 import DevIcon from "devicon-react-svg";
 import Navbar from "./Components/Navbar";
 import Ana from "./assets/Ana_B&W.png";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiSketch, SiSketchfab } from "react-icons/si";
 import materialui from "./assets/materialui.png";
 import RestAPI from "./assets/RestfulAPI.png";
 import ResponsiveDesign from "./assets/responsive-design.png";
@@ -14,6 +14,7 @@ import typescript from "./assets/typescript.png";
 import { FaBitbucket } from "react-icons/fa";
 import { SiAdobexd } from "react-icons/si";
 import sp from "./assets/sp.png";
+import united from "./assets/united.png";
 import f23 from "./assets/f23.png";
 import f23dev from "./assets/f23-dev.png";
 import GestureLife from "./assets/GestureLife.png";
@@ -25,11 +26,13 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import aboutImg from "./assets/computerDraw.png";
+import { VscAzureDevops } from "react-icons/vsc";
+import { VscVscode } from "react-icons/vsc";
 import "./App.css";
 
 function App() {
   const devIconStyle = {
-    width: "150px",
+    width: "24px",
   };
   return (
     <div className="App">
@@ -62,44 +65,16 @@ function App() {
           <h1>About me</h1>
           <div className="container text-left pt-3">
             <p className="font-weight-normal">
-              I am a <b class="font-weight-bold">Frontend Developer</b> that has
-              experience designing and developing{" "}
-              <b class="font-weight-bold">web applications, user-interfaces</b>{" "}
-              and websites from scratch to deployment utilizing
-              <b class="font-weight-bold">
-                {" "}
-                React, JavaScript ES6+, HTML5, CSS3, Angular, TypeScript,
-                RESTful APIs, Material-UI, Responsive Design, Bootstrap,
-                StencilJS
-              </b>{" "}
-              and other technologies. I also have experience designing and
-              developing <b class="font-weight-bold">design systems</b>.
+            I am a Product Designer with a passion for creating intuitive and visually compelling user interfaces and experiences. With expertise in design systems, UI/UX design, and front-end technologies like React, HTML5, CSS3, and TypeScript, I have successfully designed and developed websites, web applications, and interfaces from concept to deployment. My proficiency with tools such as Material-UI, Bootstrap, Angular Material, and Responsive Design enables me to craft solutions that are both functional and aesthetically pleasing across platforms.
             </p>
             <p className="font-weight-normal">
-              I not only have Frontend Engineering knowledge but I also have
-              created user interfaces and experiences during my time as a
-              product designer. I have a great set of soft skills and an arts
-              background that allow me to create functional and visually
-              pleasing interfaces that empathize with and prioritize the user
-              experience. I am eager to join a team where I can put both my
-              technical, design and people skills to work.
+            With a background in both design and frontend development, I am adept at bridging the gap between technical and creative requirements, ensuring that every project I work on delivers a seamless, user-centered experience. My strong foundation in soft skills, combined with an artistic background, empowers me to empathize with users and translate their needs into elegant, high-impact designs.
             </p>
             <p className="font-weight-normal">
-              I was born and raised in Peru and moved to the U.S. in 2012 with
-              my family.
+            Originally from Peru and having relocated to the United States in 2012, my journey into design began after taking an introductory HTML and CSS course at General Assembly. It was there that I discovered my passion for creating digital experiences that resonate with users. Today, I am thrilled to be doing work I love, where my designs are seen and used by people around the world.
             </p>
             <p className="font-weight-normal">
-              I first started coding after taking an intro to HTML and CSS class
-              at General Assembly, and I fell in love immediately.
-            </p>
-            <p className="font-weight-normal">
-              Fast forward to today, I am so grateful that I get to do what I
-              love everyday and get beyond excited at the fact that people from
-              all over the world get to see and utilize the tools I build.
-            </p>
-            <p className="font-weight-normal">
-              I am looking forward to being part of a team where I can continue
-              to grow my development and design skills.
+            I am eager to join a collaborative team where I can continue to grow my design skills, contribute creative insights, and help craft outstanding user experiences that prioritize both function and form.
             </p>
             {/* <div className="text-center"> */}
             <img src={Ana} className="mx-auto d-block w-25 h-100" />
@@ -107,7 +82,7 @@ function App() {
             <blockquote class="blockquote text-center">
               <div className="container pb-0 mb-0 pt-0">
                 <p class="mb-0 mt-2 mr-5 ml-5">
-                  “The beauty of design is.”
+                  “UX design shapes the experience, while frontend development brings it to life—together, they turn visions into intuitive, unforgettable interactions.”
                 </p>
                 <footer class="blockquote-footer">
                   <cite title="Source Title">Ana Berrocal</cite>
@@ -122,9 +97,36 @@ function App() {
         <div className="navbar-space"></div>
         <div className="experience">
           <h1>Work experience</h1>
-          <p className="font-weight-normal">Check out some of my latest work</p>
+          <p className="font-weight-normal">These are some of the projects and companies I have worked on as both a designer and developer.</p>
           <div className="container-fluid">
             <div className="row">
+              <div className="col-md-4 mb-3">
+                <div className="card text-dark h-100">
+                  <h3 className="card-header">United Airlines</h3>
+                  <img className="project-img" src={united} alt="Card image" />
+                  <div className="card-body">
+                    <h5 class="card-title">Airlines and Aviation</h5>
+                    <h6 class="card-subtitle text-muted">
+                    My role: UI/UX Developer/Designer
+                    </h6>
+                  </div>
+                  <div className="card-body">
+                    <p className="font-weight-normal">
+                    I collaborate with design and engineering teams to design and develop features for two high-visibility, employee-facing applications. Leveraging our in-house design system, I streamline design and development and ensure seamless handoffs, contributing to large-scale projects such as a scheduling app, messaging app, marketing pages, and an admin dashboard.
+                    </p>
+                  </div>
+                  <div className="card-footer">
+                    <a
+                      href="https://www.united.com/"
+                      target="_blank"
+                      class="card-link"
+                    >
+                      United
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
                   <h3 className="card-header">StackPath</h3>
@@ -132,12 +134,12 @@ function App() {
                   <div className="card-body">
                     <h5 class="card-title">Cloud Computing Start-up</h5>
                     <h6 class="card-subtitle text-muted">
-                      My role: UI Developer (UX Team)
+                    My role: UI/UX Developer/Designer
                     </h6>
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                      StackPath is a cloud computing and services provider that
+                    StackPath is a cloud computing and services provider that
                       puts its locations in densely populated markets. At
                       StackPath, I helped design and build our very own Design
                       System, "Cosmos". The intention behind Cosmos was to unify
@@ -160,23 +162,17 @@ function App() {
 
               <div className="col-md-4 mb-3">
                 <div className="card text-dark h-100">
-                  <h3 className="card-header">Feature 23</h3>
-                  <img className="project-img" src={f23dev} alt="Card image" />
+                  <h3 className="card-header">Feature23</h3>
+                  <img className="project-img" src={f23} alt="Card image" />
                   <div className="card-body">
                     <h5 class="card-title">Software Engineering Firm</h5>
                     <h6 class="card-subtitle text-muted">
-                      My role: Frontend Developer
+                      My role: Product Designer/Developer
                     </h6>
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                      Feature[23] is a full-service product development firm.
-                      During my time there, I worked alongside several different
-                      engineering teams, implementing changes and features that
-                      ranged from compelte redesigns to creating full-fledged
-                      applications from scratch in order to obtain and maintain
-                      new business from an existing customer (large national
-                      product distributor).
+                    At Feature[23], I worked with the Chief Product Designer to redesign and implement updates for a large application, collaborated with engineering teams on design improvements and new features, and participated in discovery calls to identify client needs and secure new business, including a national product distributor.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -186,40 +182,6 @@ function App() {
                       class="card-link"
                     >
                       Feature23
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-4 mb-3">
-                <div className="card text-dark h-100">
-                  <h3 className="card-header">Feature23 (Design Work)</h3>
-                  <img className="project-img" src={f23} alt="Card image" />
-                  <div className="card-body">
-                    <h5 class="card-title">Software Engineering Firm</h5>
-                    <h6 class="card-subtitle text-muted">
-                      My role: Jr. Product Designer
-                    </h6>
-                  </div>
-                  <div className="card-body">
-                    <p className="font-weight-normal">
-                      Additonally, during my time at Feature[23], I worked under
-                      the Chief Product Designer and redesigned a large existing
-                      application from scratch and implemented those updates in
-                      code. I also assisted all other engineering teams with
-                      design improves and updates to components as well
-                      participated in disciovery calls with potential new
-                      clients in order to pinpoint their software needs and gain
-                      their business.
-                    </p>
-                  </div>
-                  <div className="card-footer">
-                    <a
-                      href="https://coe22.com/"
-                      target="_blank"
-                      class="card-link"
-                    >
-                      Website
                     </a>
                   </div>
                 </div>
@@ -242,13 +204,7 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                      Gesture Life is a dashboard/internal workflow tool for
-                      Gesture's 75+ employees to manage their "life" at Gesture.
-                      They have the ability to view orders that need to be
-                      delivered, add products to the app, add coupons, connect
-                      runners and much more. During my time at Gesture I was
-                      part of the team of engineers who built this React web
-                      application from design to deployment.
+                    Gesture Life is an internal dashboard and workflow tool designed for Gesture's 75+ employees to manage tasks such as order tracking, product and coupon management, and runner coordination. As part of the engineering team, I contributed to building this React web application from design to deployment.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -278,11 +234,7 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                      Distanceware is a React web application that matches users
-                      to online degree programs from accredited institutions
-                      accross the U.S. During my time as a React Developer at
-                      Distanceware, I have heavily utilized my skills in React,
-                      JavaScript, HTML, CSS, Material-UI and visual design.
+                    Distanceware is a React-based web application connecting users with online degree programs from accredited institutions across the U.S. As a React Developer, I leveraged my expertise in React, JavaScript, HTML, CSS, Material-UI, and visual design to deliver impactful solutions.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -307,18 +259,12 @@ function App() {
                   <div className="card-body">
                     <h5 class="card-title">Web and mobile site</h5>
                     <h6 class="card-subtitle text-muted">
-                      My role: Frontend Developer
+                      My role: Frontend Developer/Designer
                     </h6>
                   </div>
                   <div className="card-body">
                     <p className="font-weight-normal">
-                      The Church of Eleven22 is one of the fastest growing in
-                      the country. Across its six (soon to be 7) campuses, close
-                      to 12,000 people attend Sunday services and thousands more
-                      attend online. My role at CoE22 consisted of maintaining
-                      and refactoring an existing 50+ page codebase as well as
-                      participating in the full lifecycle of design, development
-                      and deployment of new projects.
+                    The Church of Eleven22, one of the fastest-growing churches in the nation, serves nearly 12,000 attendees across seven campuses and thousands more online. At CoE22, my role involved maintaining and optimizing a 50+ page codebase while contributing to the full lifecycle of design, development, and deployment for new projects.
                     </p>
                   </div>
                   <div className="card-footer">
@@ -343,41 +289,32 @@ function App() {
           <div className="container">
             <h1>The Tech Stack</h1>
             <p className="font-weight-normal">
-              Being a programmer means being a life-long learner and that is one
-              of the things that attracted me to it in the first place. If I
-              join your team, I will bring not only the skills listed below but
-              some pretty amazing people and communication skills as well (I've
-              been called "the glue" that sticks a team together in the past).
-              Additionally, you can count on me swiftly and eargerly picking up
-              new technologies constantly.
+            Below is an overview of the technical skills and tools I’ve utilized, paired with a commitment to continuous learning and growth. These skills reflect my ability to solve problems, collaborate effectively, and adapt quickly to new technologies.
             </p>
-            <div className="container-fluid p-5">
-              <DevIcon style={devIconStyle} icon="react" />
-              <SiJavascript size={120} className="text-primary" />
-              <DevIcon style={devIconStyle} icon="css3" />
-              <DevIcon style={devIconStyle} icon="html5" />
-              <img src={angular} style={devIconStyle} />
-              <img src={typescript} style={devIconStyle} />
-              <DevIcon style={devIconStyle} icon="nodejs_small" />
-              <img src={stenciljs} style={devIconStyle} />
-              <img src={storybook} style={devIconStyle} />
-              <img src={RestAPI} style={devIconStyle} />
-              <img src={ResponsiveDesign} style={devIconStyle} />
-              <img src={materialui} style={devIconStyle} />
-              <DevIcon style={devIconStyle} icon="bootstrap" />
-              <DevIcon style={devIconStyle} icon="sass" />
-              <DevIcon style={devIconStyle} icon="npm" />
-              <DevIcon style={devIconStyle} icon="git" />
-              <DevIcon style={devIconStyle} icon="terminal" />
-              <DevIcon style={devIconStyle} icon="github_badge" />
-              <DevIcon style={devIconStyle} icon="visualstudio" />
-              <FaBitbucket size={120} className="text-primary" />
-              <DevIcon style={devIconStyle} icon="trello" />
-              <DevIcon style={devIconStyle} icon="apple" />
-              <DevIcon style={devIconStyle} icon="windows" />
-              <SiAdobexd size={120} className="text-primary" />
-              <img src={figma} style={devIconStyle} />
-              <DevIcon style={devIconStyle} icon="photoshop" />
+            <div className="container-fluid p-5 skills-container">
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={figma} style={devIconStyle} alt="Figma"/>Figma</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary">  <SiSketch size={24} className="text-primary" />Sketch</span>
+            <span  class="badge rounded-pill bg-secondary border border-primary text-primary"><SiAdobexd size={24} />Adobe XD</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><VscAzureDevops size={24} className="text-primary"/>Azure DevOps</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><VscVscode size={24} className="text-primary"/>VS Code</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="react" />React</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><SiJavascript size={24} className="text-primary" />JavaScript</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="html5" />HTML</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="css3" />CSS</span>
+            <span  class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={angular} style={devIconStyle} />Angular</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={typescript} style={devIconStyle} />TypeScript</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="nodejs_small" />NodeJS</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={ResponsiveDesign} style={devIconStyle} />Responsive Design</span>
+            <span  class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="bootstrap"/>Bootstrap</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="sass" />Sass</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="npm" />npm</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="git" />git</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="terminal" />bash terminal</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="github_badge" />GitHub</span>
+            <span  class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="visualstudio" />Visual Studio</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={typescript} style={devIconStyle} />TypeScript</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="apple" />Mac OS</span>
+            <span class="badge rounded-pill bg-secondary border border-primary text-primary"><DevIcon style={devIconStyle} icon="windows" />Windows OS</span>            
             </div>
           </div>
         </div>
@@ -389,33 +326,29 @@ function App() {
           <div className="container-fluid">
             <h1>Are you interested in working with me?</h1>
             <p className="font-weight-normal p-3 m-5">
-              You have learned a bit more about me and seen my most relevant
-              skills and work experience. Maybe you are wondering if I would be
-              a good culture fit at your company or if I am a good team player.{" "}
-              <br />
-              Let's connect and find out!
+            Thank you for taking the time to learn more about me and review my skills and experience. I would be delighted to connect and discuss how I can contribute to your organization.
             </p>
-            <div className="row p-1">
+            <div className="contact-icons">
               <a
-                className="col-sm"
+                
                 href="https://www.linkedin.com/in/anaberrocal/"
                 target="_blank"
               >
-                <FaLinkedin size={60} className="text-white" />
+                <FaLinkedin size={60} className="text-white" alt="LinkedIn"/>
               </a>
               <a
-                className="col-sm"
+                
                 href="https://github.com/anaberrocal"
                 target="_blank"
               >
                 <FaGithub size={60} className="text-white " />
               </a>
-              <a className="col-sm" href="mailto:anaberrocaldev@gmail.com">
+              <a  href="mailto:anaberrocaldev@gmail.com">
                 <MdEmail size={60} className="text-white" />
               </a>
             </div>
-            <h5 className="text-white p-3 m-5">
-              Want to learn more? Take a look at my resume{" "}
+            {/* <h5 className="text-white p-3 m-5">
+            If you'd like to learn more, please feel free to review my resume{" "}
               <a
                 className="text-white"
                 href="https://drive.google.com/file/d/1yK_S8n7ugp28GkZ8i47vbED2_O0dDXhU/view?usp=sharing"
@@ -424,7 +357,7 @@ function App() {
                 <u>here</u>
               </a>
               .
-            </h5>
+            </h5> */}
           </div>
         </div>
         <div class="card-footer text-muted bg-primary">

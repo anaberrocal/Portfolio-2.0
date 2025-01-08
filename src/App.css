@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  line-height: 1.7em;
+  /* line-height: 1.7em; */
 }
 
 .navbar-space {
@@ -25,7 +25,6 @@
   height: 80vh;
   padding: 5%;
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   gap: 64px;
@@ -35,15 +34,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    max-width: 30%;
+  max-width: 30%;
+  @media only screen and (max-width: 875px) {
+    max-width: unset;
+  }
 }
 
 .intro-title {
   color: white;
   font-size: 32px;
   line-height: normal;
-  /* text-transform: none; */
-  /* max-width: 30%; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -100,7 +100,23 @@
 .skills {
   background-color: #ffffff;
   padding: 3%;
-  min-height: 100vh;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  padding: 4px 8px;
 }
 
 /* Contact */
@@ -108,7 +124,6 @@
   background-color: #000000;
   color: #ffffff;
   padding: 3% 10% 10%;
-  min-height: 85vh;
 }
 
 .contact h1 {
@@ -117,4 +132,14 @@
 
 .contact h6 {
   color: #ffffff;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+p {
+  font-size: 16px;
 }
