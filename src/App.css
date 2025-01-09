@@ -45,6 +45,10 @@
   line-height: normal;
 }
 
+.learn-more {
+  text-wrap: nowrap;
+}
+
 @media only screen and (max-width: 768px) {
   .intro {
     padding-top: 15%;

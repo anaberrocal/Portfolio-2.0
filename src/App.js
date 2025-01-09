@@ -49,7 +49,7 @@ function App() {
             <a href="#about">
               <button
                 type="button"
-                className="btn btn-primary border border-secondary m-5"
+                className="btn btn-primary border border-secondary m-5 learn-more"
               >
                 Learn more
               </button>
