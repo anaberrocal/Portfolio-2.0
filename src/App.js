@@ -134,7 +134,7 @@ function App() {
                   <div className="card-body">
                     <h5 class="card-title">Cloud Computing Start-up</h5>
                     <h6 class="card-subtitle text-muted">
-                    My role: UI/UX Developer/Designer
+                    My role: UI/UX Developer
                     </h6>
                   </div>
                   <div className="card-body">
