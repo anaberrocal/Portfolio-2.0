@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-2.0/static/css/main.1806b12d.css",
+    "main.css": "/Portfolio-2.0/static/css/main.a16a3aa6.css",
     "main.js": "/Portfolio-2.0/static/js/main.1cbaa35d.js",
-    "static/media/ManhattahnB&W.png": "/Portfolio-2.0/static/media/ManhattahnB&W.a8bb46e2e1754c335cb3.png",
     "static/media/Eleven22.png": "/Portfolio-2.0/static/media/Eleven22.d744ae9c3126cbe636da.png",
     "static/media/f23.png": "/Portfolio-2.0/static/media/f23.9c11a6585188cdc89938.png",
     "static/media/Distanceware.png": "/Portfolio-2.0/static/media/Distanceware.cc4452720e94a2eb564d.png",
@@ -16,11 +15,11 @@
     "static/media/angular.png": "/Portfolio-2.0/static/media/angular.25aa2b07e3144a10e532.png",
     "static/media/figma.png": "/Portfolio-2.0/static/media/figma.80bebf575fb83ece6d16.png",
     "index.html": "/Portfolio-2.0/index.html",
-    "main.1806b12d.css.map": "/Portfolio-2.0/static/css/main.1806b12d.css.map",
+    "main.a16a3aa6.css.map": "/Portfolio-2.0/static/css/main.a16a3aa6.css.map",
     "main.1cbaa35d.js.map": "/Portfolio-2.0/static/js/main.1cbaa35d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1806b12d.css",
+    "static/css/main.a16a3aa6.css",
     "static/js/main.1cbaa35d.js"
   ]
 }
