@@ -291,7 +291,7 @@ function App() {
             <p className="font-weight-normal">
             Below is an overview of the technical skills and tools I’ve utilized, paired with a commitment to continuous learning and growth. These skills reflect my ability to solve problems, collaborate effectively, and adapt quickly to new technologies.
             </p>
-            <div className="container-fluid p-5 skills-container">
+            <div className="container-fluid p-3 skills-container">
             <span class="badge rounded-pill bg-secondary border border-primary text-primary"><img src={figma} style={devIconStyle} alt="Figma"/>Figma</span>
             <span class="badge rounded-pill bg-secondary border border-primary text-primary">  <SiSketch size={24} className="text-primary" />Sketch</span>
             <span  class="badge rounded-pill bg-secondary border border-primary text-primary"><SiAdobexd size={24} />Adobe XD</span>
