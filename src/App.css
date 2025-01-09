@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  /* line-height: 1.7em; */
 }
 
 .navbar-space {
@@ -15,7 +14,7 @@
 }
 
 .App-header {
-  background-image: url("./assets/ManhattahnB&W.png");
+  background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149140167.jpg?t=st=1736387914~exp=1736391514~hmac=45f232a91e464446314cc67a4499570d4d4330266eba8d060bc9551131dcee4a&w=1800");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -66,7 +65,6 @@
 /* About */
 .about {
   background-color: #ffffff;
-  min-height: 100vh;
   padding-top: 3%;
 }
 
