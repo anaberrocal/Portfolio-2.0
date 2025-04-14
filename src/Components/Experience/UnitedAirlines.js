@@ -14,7 +14,7 @@ function UnitedAirlines() {
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <h1 className="display-4 mb-4">United Airlines</h1>
-                <h2 className="h4 text-muted mb-4">UI/UX Designer & Developer</h2>
+                <h2 className="h4 text-muted mb-4">Product Designer & Developer</h2>
                 <p className="lead mb-4">
                 Enhanced pilot operations by designing and implementing scalable UI components for high-impact internal tools, streamlining scheduling, messaging, and administrative tasks.
                 </p>
@@ -46,23 +46,23 @@ function UnitedAirlines() {
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                  I work on two high-visibility, employee-facing
-applications, collaborating with design and
-engineering teams to deliver and implement
-
-reusable Angular components. Leveraging my in-
-house design experience and expertise in
-
-creating detailed mockups in Figma and Sketch, I
-use our in-house design system to streamline
-development and ensure smooth handoffs. I’ve
-contributed to large-scale projects, from design
-to code, including a scheduling app, messaging
-app, marketing pages, and an admin dashboard.
+                  I collaborate with design and engineering teams to design and develop features for two high-visibility, employee-facing applications. Leveraging our in-house design system, I streamline design and development and ensure seamless handoffs, contributing to large-scale projects such as a scheduling app, messaging app, marketing pages, and an admin dashboard.
                   </p>
-                  {/* <p>
-                    Working closely with the design and backend teams, we created an intuitive interface that simplifies the complex process of searching, comparing, and applying to online education programs. The application features advanced filtering capabilities, detailed program comparisons, and streamlined application processes.
-                  </p> */}
+                  <p>
+                  I work on two high-visibility, employee-facing
+                  applications, collaborating with design and
+                  engineering teams to deliver and implement
+
+                  reusable Angular components. Leveraging my in-
+                  house design experience and expertise in
+
+                  creating detailed mockups in Figma and Sketch, I
+                  use our in-house design system to streamline
+                  development and ensure smooth handoffs. I’ve
+                  contributed to large-scale projects, from design
+                  to code, including a scheduling app, messaging
+                  app, marketing pages, and an admin dashboard.
+                  </p>
                 </section>
 
                 <section className="mb-5">
@@ -130,17 +130,13 @@ app, marketing pages, and an admin dashboard.
                     <h5 className="h6 text-muted">Duration</h5>
                     <p className="mb-0">June 2023 - Ongoing</p>
                   </div>
-                  {/* <div className="mb-3">
-                    <h5 className="h6 text-muted">Team Size</h5>
-                    <p className="mb-0">12 members</p>
-                  </div> */}
                   <div className="mb-3">
                     <h5 className="h6 text-muted">Role</h5>
-                    <p className="mb-0">UI/UX Designer & Developer</p>
+                    <p className="mb-0">Product Designer & Developer</p>
                   </div>
                   <div>
                     <h5 className="h6 text-muted">Main skills</h5>
-                    <p className="mb-0">Figma, Design Systems, Angular</p>
+                    <p className="mb-0">Figma, Design Systems, SCSS</p>
                   </div>
                 </div>
               </div>

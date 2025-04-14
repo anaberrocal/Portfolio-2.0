@@ -14,9 +14,9 @@ function StackPath() {
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <h1 className="display-4 mb-4">StackPath</h1>
-                <h2 className="h4 text-muted mb-4">React Developer</h2>
+                <h2 className="h4 text-muted mb-4">UI/UX Designer and Developer</h2>
                 <p className="lead mb-4">
-                  A React-based web application connecting users with online degree programs from accredited institutions across the U.S.
+                  Cloud Computing start-up located in Dallas, TX.
                 </p>
                 <a
                   href="https://www.linkedin.com/company/stackpath/"
@@ -46,10 +46,10 @@ function StackPath() {
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                    As a React Developer at StackPath, I leveraged my expertise in React, JavaScript, HTML, CSS, Material-UI, and visual design to deliver impactful solutions. The platform serves as a bridge between prospective students and educational institutions, making the process of finding and enrolling in online degree programs seamless and efficient.
+                  StackPath is a cloud computing and services provider that puts its locations in densely populated markets. At StackPath, I helped design and build our very own Design System, "Cosmos". The intention behind Cosmos was to unify and expedite the software development process among all different engineering teams by creating custom, reusable, accesible and fully-functional React and web components.
                   </p>
                   <p>
-                    Working closely with the design and backend teams, we created an intuitive interface that simplifies the complex process of searching, comparing, and applying to online education programs. The application features advanced filtering capabilities, detailed program comparisons, and streamlined application processes.
+                  I helped design, build, and maintain a reusable component design system to standardize the user and developer experience, enhancing UX consistency across applications with Figma. I also created user-focused documentation with StoryBook and ensured seamless integration of components into development workflows.
                   </p>
                 </section>
 
@@ -76,20 +76,20 @@ function StackPath() {
                 </section>
 
                 <section className="mb-5">
-                  <h3 className="h2 mb-4">Technical Details</h3>
+                  <h3 className="h2 mb-4">Skills and Tools</h3>
                   <p>
-                    The application was built using modern web technologies and best practices, including:
+                  These are some of the tools and skills I utilize while working on this project:
                   </p>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="card bg-light mb-3">
                         <div className="card-body">
-                          <h4 className="h5 mb-3">Frontend Stack</h4>
+                          <h4 className="h5 mb-3">Design</h4>
                           <ul className="list-unstyled">
-                            <li>• React.js</li>
-                            <li>• Material-UI</li>
-                            <li>• Redux</li>
-                            <li>• TypeScript</li>
+                            <li>• Figma</li>
+                            <li>• Design Systems</li>
+                            <li>• Prototyping</li>
+                            <li>• Sketch</li>
                           </ul>
                         </div>
                       </div>
@@ -97,12 +97,12 @@ function StackPath() {
                     <div className="col-md-6">
                       <div className="card bg-light mb-3">
                         <div className="card-body">
-                          <h4 className="h5 mb-3">Development Tools</h4>
+                          <h4 className="h5 mb-3">Development</h4>
                           <ul className="list-unstyled">
-                            <li>• Git</li>
-                            <li>• Jest</li>
-                            <li>• Webpack</li>
-                            <li>• ESLint</li>
+                            <li>• Angular</li>
+                            <li>• TypeScript</li>
+                            <li>• HTML/CSS/SASS/SCSS</li>
+                            <li>• NodeJS</li>
                           </ul>
                         </div>
                       </div>
@@ -116,19 +116,15 @@ function StackPath() {
                   <h4 className="h3 mb-4">Quick Facts</h4>
                   <div className="mb-3">
                     <h5 className="h6 text-muted">Duration</h5>
-                    <p className="mb-0">2 years</p>
-                  </div>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Team Size</h5>
-                    <p className="mb-0">12 members</p>
+                    <p className="mb-0">November 2021 - February 2023</p>
                   </div>
                   <div className="mb-3">
                     <h5 className="h6 text-muted">Role</h5>
-                    <p className="mb-0">React Developer</p>
+                    <p className="mb-0">UI/UX Designer and Developer</p>
                   </div>
                   <div>
-                    <h5 className="h6 text-muted">Location</h5>
-                    <p className="mb-0">Remote</p>
+                    <h5 className="h6 text-muted">Main skills</h5>
+                    <p className="mb-0">Figma, Design Systems, StoryBook </p>
                   </div>
                 </div>
               </div>

@@ -14,7 +14,7 @@ function Feature23() {
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <h1 className="display-4 mb-4">Feature23</h1>
-                <h2 className="h4 text-muted mb-4">React Developer</h2>
+                <h2 className="h4 text-muted mb-4">Product Designer and Developer</h2>
                 <p className="lead mb-4">
                   A React-based web application connecting users with online degree programs from accredited institutions across the U.S.
                 </p>
@@ -46,10 +46,10 @@ function Feature23() {
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                    As a React Developer at Feature23, I leveraged my expertise in React, JavaScript, HTML, CSS, Material-UI, and visual design to deliver impactful solutions. The platform serves as a bridge between prospective students and educational institutions, making the process of finding and enrolling in online degree programs seamless and efficient.
+                  As a product designer, I created and enhanced applications for national enterprise clients utilizing Adobe XD in a fast-paced environment, incorporating user feedback and managing high-visibility client interactions. I contributed to feature development across multiple applications and built a full-stack prototype that secured a major project with a key client.
                   </p>
                   <p>
-                    Working closely with the design and backend teams, we created an intuitive interface that simplifies the complex process of searching, comparing, and applying to online education programs. The application features advanced filtering capabilities, detailed program comparisons, and streamlined application processes.
+                    Working closely with the design and backend teams, we created an intuitive interfaces for multiple clients accross different industries.
                   </p>
                 </section>
 
@@ -116,15 +116,11 @@ function Feature23() {
                   <h4 className="h3 mb-4">Quick Facts</h4>
                   <div className="mb-3">
                     <h5 className="h6 text-muted">Duration</h5>
-                    <p className="mb-0">2 years</p>
-                  </div>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Team Size</h5>
-                    <p className="mb-0">12 members</p>
+                    <p className="mb-0">July 2020 - November 2021</p>
                   </div>
                   <div className="mb-3">
                     <h5 className="h6 text-muted">Role</h5>
-                    <p className="mb-0">React Developer</p>
+                    <p className="mb-0">Product Designer and Developer</p>
                   </div>
                   <div>
                     <h5 className="h6 text-muted">Location</h5>

@@ -131,11 +131,6 @@ function App() {
                                 My role: UI/UX Developer/Designer
                               </h6>
                             </div>
-                            {/* <div className="card-body">
-                              <p className="font-weight-normal">
-                                I collaborate with design and engineering teams to design and develop features for two high-visibility, employee-facing applications. Leveraging our in-house design system, I streamline design and development and ensure seamless handoffs, contributing to large-scale projects such as a scheduling app, messaging app, marketing pages, and an admin dashboard.
-                              </p>
-                            </div> */}
                             <div className="card-footer">
                               <a
                                 href="./"
@@ -159,11 +154,6 @@ function App() {
                                 My role: UI/UX Developer
                               </h6>
                             </div>
-                            {/* <div className="card-body">
-                              <p className="font-weight-normal">
-                                StackPath is a cloud computing and services provider that puts its locations in densely populated markets. At StackPath, I helped design and build our very own Design System, "Cosmos". The intention behind Cosmos was to unify and expedite the software development process among all different engineering teams by creating custom, reusable, accesible and fully-functional React and web components.
-                              </p>
-                            </div> */}
                             <div className="card-footer">
                               <a
                                 href="./"
@@ -292,7 +282,6 @@ function App() {
               </section>
               {/* Skills */}
               <section id="skills">
-                <div className="navbar-space"></div>
                 <div className="skills">
                   <div className="container">
                     <h1>The Tech Stack</h1>
@@ -363,14 +352,11 @@ function App() {
               </section>
               {/* Contact */}
               <section id="contact">
-                <div className="navbar-space"></div>
-                <div className="contact">
+                <div className="contact mt-5">
                   <div className="container-fluid">
-                    <h1>Let's Connect</h1>
-                    {/* <p className="font-weight-normal p-3 m-5 pt-1">
-                    Thank you for taking the time to learn more about me and review my skills and experience. I would be delighted to connect and discuss how I can contribute to your organization.
-                    </p> */}
-                    <div className="contact-icons p-3 m-4">
+                    <a className="card-link font-bold" href="https://www.linkedin.com/in/anaberrocal/"
+                        target="_blank">Let's Connect</a>
+                    {/* <div className="contact-icons mt-4 mb-5">
                       <a
                         
                         href="https://www.linkedin.com/in/anaberrocal/"
@@ -388,7 +374,7 @@ function App() {
                       <a  href="mailto:anaberrocaldev@gmail.com">
                         <MdEmail size={60} className="text-black" />
                       </a>
-                    </div>
+                    </div> */}
                     {/* <h5 className="text-white p-3 m-5">
                     If you'd like to learn more, please feel free to review my resume{" "}
                       <a

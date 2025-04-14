@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               About
             </button>
-          </li>s
+          </li>
         </ul>
       </div>
     </nav>
