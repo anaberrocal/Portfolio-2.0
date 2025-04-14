@@ -7,7 +7,6 @@ function GestureLife() {
   return (
     <div className="App">
       <Navbar />
-      <div className="navbar-space"></div>
       <div className="experience-detail">
         {/* Hero Section */}
         <div className="experience-hero">

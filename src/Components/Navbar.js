@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="fixed-top navbar navbar-expand-lg bg-light">
       <Link className="navbar-brand" to="/" onClick={scrollToTop}>
         Ana Berrocal
       </Link>
@@ -48,15 +48,6 @@ export default function Navbar() {
           <li className="nav-item">
             <button 
               className="nav-link btn btn-link" 
-              onClick={() => handleNavClick('about')}
-              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-            >
-              About
-            </button>
-          </li>
-          <li className="nav-item">
-            <button 
-              className="nav-link btn btn-link" 
               onClick={() => handleNavClick('experience')}
               style={{ background: 'none', border: 'none', cursor: 'pointer' }}
             >
@@ -66,21 +57,12 @@ export default function Navbar() {
           <li className="nav-item">
             <button 
               className="nav-link btn btn-link" 
-              onClick={() => handleNavClick('skills')}
+              onClick={() => handleNavClick('about')}
               style={{ background: 'none', border: 'none', cursor: 'pointer' }}
             >
-              Skills
+              About
             </button>
-          </li>
-          <li className="nav-item">
-            <button 
-              className="nav-link btn btn-link" 
-              onClick={() => handleNavClick('contact')}
-              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-            >
-              Contact
-            </button>
-          </li>
+          </li>s
         </ul>
       </div>
     </nav>
