@@ -35,6 +35,7 @@ import StackPath from "./Components/Experience/StackPath";
 import Feature23 from "./Components/Experience/Feature23";
 import GestureLife from "./Components/Experience/GestureLife";
 import Distanceware from "./Components/Experience/Distanceware";
+import { BiSolidRightArrow } from "react-icons/bi";
 
 function App() {
   const devIconStyle = {
@@ -75,49 +76,29 @@ function App() {
               </div>
             } 
           />
-          <Route 
-            path="/experience/gesture-life" 
-            element={
-              <div onLoad={() => window.scrollTo(0, 0)}>
-                <GestureLife />
-              </div>
-            } 
-          />
-          <Route 
-            path="/experience/distanceware" 
-            element={
-              <div onLoad={() => window.scrollTo(0, 0)}>
-                <Distanceware />
-              </div>
-            } 
-          />
           <Route path="/" element={
             <>
               {/* Landing Page */}
               <header className="App-header">
                 <div className="intro">
-                   <div className="intro-left">
                     <span className="intro-title">
                       Ana Berrocal is a NYC based <span className="design">Product Designer</span> and <span className="dev">Developer</span> currently working at <a>United Airlines</a>.
                     </span>
                     <a href="#experience">
                       <button
                         type="button"
-                        className="btn btn-primary border border-secondary mt-5 learn-more"
+                        className="btn btn-primary mt-5 learn-more"
                       >
-                        View my work
+                        View my recent work <BiSolidRightArrow size={24} className="text-primary" />
                       </button>
                     </a>
-                  </div>
-                  {/* <img src={Ana} className="profile-picture" alt="Profile picture" /> */}
                 </div>
               </header>
               {/* Experience */}
               <section id="experience">
                 <div className="navbar-space navbar-space-black"></div>
                 <div className="experience">
-                  <h1>Work experience</h1>
-                  {/* <p className="font-weight-normal">These are some of the projects and companies I have worked on as both a designer and developer.</p> */}
+                  <h1 className="mb-5">Work experience</h1>
                   <div className="container-fluid mt-5">
                     <div className="row">
                       <div className="col-md-4 mb-3">
@@ -194,100 +175,14 @@ function App() {
                         </Link>
                       </div>
                     </div>
-                    <div className="row mt-4">
-                      <div className="col-md-4 mb-3">
-                        <Link to="/experience/gesture-life" className="text-decoration-none">
-                          <div className="card text-dark h-100">
-                            <h3 className="card-header">Gesture Life</h3>
-                            <img className="project-img" src={GestureLifeIcon} alt="Card image" />
-                            <div className="card-body">
-                              <h5 className="card-title">Web Application</h5>
-                              <h6 className="card-subtitle text-muted">
-                                My role: React Developer
-                              </h6>
-                            </div>
-                            {/* <div className="card-body">
-                              <p className="font-weight-normal">
-                                Gesture Life is an internal dashboard and workflow tool designed for Gesture's 75+ employees to manage tasks such as order tracking, product and coupon management, and runner coordination. As part of the engineering team, I contributed to building this React web application from design to deployment.
-                              </p>
-                            </div> */}
-                            <div className="card-footer">
-                              <a
-                                href="./"
-                                target="_blank"
-                                className="card-link me-3">
-                                Learn more
-                              </a>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-md-4 mb-3">
-                        <Link to="/experience/distanceware" className="text-decoration-none">
-                          <div className="card text-dark h-100">
-                            <h3 className="card-header">Distanceware</h3>
-                            <img className="project-img" src={DistancewareIcon} alt="Card image" />
-                            <div className="card-body">
-                              <h5 className="card-title">Responsive Web Application</h5>
-                              <h6 className="card-subtitle text-muted">
-                                My role: React Developer
-                              </h6>
-                            </div>
-                            {/* <div className="card-body">
-                              <p className="font-weight-normal">
-                                Distanceware is a React-based web application connecting users with online degree programs from accredited institutions across the U.S. As a React Developer, I leveraged my expertise in React, JavaScript, HTML, CSS, Material-UI, and visual design to deliver impactful solutions.
-                              </p>
-                            </div> */}
-                            <div className="card-footer">
-                              <a
-                                href="./"
-                                target="_blank"
-                                className="card-link me-3">
-                                Learn more
-                              </a>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                      <div className="col-md-4 mb-3">
-                        <Link to="/experience/eleven22" className="text-decoration-none">
-                          <div className="card text-dark h-100">
-                            <h3 className="card-header">Eleven22</h3>
-                            <img className="project-img" src={Eleven22} alt="Card image" />
-                            <div className="card-body">
-                              <h5 className="card-title">Web and mobile site</h5>
-                              <h6 className="card-subtitle text-muted">
-                                My role: Frontend Developer/Designer
-                              </h6>
-                            </div>
-                            {/* <div className="card-body">
-                              <p className="font-weight-normal">
-                                The Church of Eleven22, one of the fastest-growing churches in the nation, serves nearly 12,000 attendees across seven campuses and thousands more online. At CoE22, my role involved maintaining and optimizing a 50+ page codebase while contributing to the full lifecycle of design, development, and deployment for new projects.
-                              </p>
-                            </div> */}
-                            <div className="card-footer">
-                              <a
-                                href="./"
-                                target="_blank"
-                                className="card-link me-3">
-                                Learn more
-                              </a>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </section>
               {/* Skills */}
-              <section id="skills">
+              {/* <section id="skills">
                 <div className="skills">
                   <div className="container">
                     <h1>The Tech Stack</h1>
-                    <p className="font-weight-normal">
-                    Below is an overview of the technical skills and tools I've utilized, paired with a commitment to continuous learning and growth. These skills reflect my ability to solve problems, collaborate effectively, and adapt quickly to new technologies.
-                    </p>
                     <div className="container-fluid p-3 skills-container">
                     <span class="badge rounded-pill bg-secondary border border-secondary"><img src={figma} style={devIconStyle} alt="Figma"/>Figma</span>
                     <span class="badge rounded-pill bg-secondary border border-secondary">  <SiSketch size={24} className="text-primary" />Sketch</span>
@@ -315,7 +210,7 @@ function App() {
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> */}
               {/* About */}
               <section id="about">
                 <div className="navbar-space"></div>
@@ -334,8 +229,7 @@ function App() {
                     <p className="font-weight-normal">
                     I am eager to join a collaborative team where I can continue to grow my design skills, contribute creative insights, and help craft outstanding user experiences that prioritize both function and form.
                     </p>
-                    {/* <div className="text-center"> */}
-                    <img src={Ana} className="mx-auto d-block w-25 h-100" />
+                    <img src={Ana} alt="Ana Berrocal" className="mx-auto d-block w-25 h-100" />
                     {/* </div> */}
                     <blockquote class="blockquote text-center">
                       <div className="container pb-0 mb-0 pt-0">
@@ -351,49 +245,15 @@ function App() {
                 </div>
               </section>
               {/* Contact */}
-              <section id="contact">
-                <div className="contact mt-5">
-                  <div className="container-fluid">
-                    <a className="card-link font-bold" href="https://www.linkedin.com/in/anaberrocal/"
-                        target="_blank">Let's Connect</a>
-                    {/* <div className="contact-icons mt-4 mb-5">
-                      <a
-                        
-                        href="https://www.linkedin.com/in/anaberrocal/"
-                        target="_blank"
-                      >
-                        <FaLinkedin size={60} className="text-black" alt="LinkedIn"/>
-                      </a>
-                      <a
-                        
-                        href="https://github.com/anaberrocal"
-                        target="_blank"
-                      >
-                        <FaGithub size={60} className="text-black " />
-                      </a>
-                      <a  href="mailto:anaberrocaldev@gmail.com">
-                        <MdEmail size={60} className="text-black" />
-                      </a>
-                    </div> */}
-                    {/* <h5 className="text-white p-3 m-5">
-                    If you'd like to learn more, please feel free to review my resume{" "}
-                      <a
-                        className="text-white"
-                        href="https://drive.google.com/file/d/1yK_S8n7ugp28GkZ8i47vbED2_O0dDXhU/view?usp=sharing"
-                        target="_blank"
-                      >
-                        <u>here</u>
-                      </a>
-                      .
-                    </h5> */}
-                  </div>
+                <div className="connect-link_container">
+                  <a className="connect-link" href="https://www.linkedin.com/in/anaberrocal/"
+                    target="_blank" rel="noreferrer">Let's Connect</a>
                 </div>
                 <div class="border border-top">
                   <h6 className="mt-2">
                     Made with <FaReact size={30} /> by Ana Berrocal.
                   </h6>
                 </div>
-              </section>
             </>
           } />
         </Routes>

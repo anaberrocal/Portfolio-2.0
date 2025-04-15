@@ -6,45 +6,19 @@
 .navbar-space {
   height: 80px;
 }
-.navbar-space.navbar-space-black{
-  /* background-color: #1A1A1A; */
-}
 
 .navbar-nav.ml-auto {
   align-items: center;
 }
 
-/*Landing page */
-/* .profile-picture {
-  height: 35vmin;
-  border: 2px solid white;
-  border-radius: 100%;
-} */
-
-/* .App-header {
-  background-image: url("./assets/6222818.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-} */
-
 .intro {
-  /* height: 80vh; */
+  height: 80vh;
   padding: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 64px;
-}
-
-.intro-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* max-width: 30%; */
-  /* @media only screen and (max-width: 875px) {
-    max-width: unset;
-  } */
+  justify-content: space-around;
+  gap: 64px;
 }
 
 .intro-title {
@@ -67,7 +41,13 @@
 .learn-more {
   text-wrap: nowrap;
   border-radius: 100px;
+  border: 2px solid black;
 }
+ .learn-more:hover {
+  background-color: white;
+  color:#000;
+  border: 2px solid black;
+ }
 
 @media only screen and (max-width: 768px) {
   .intro {
@@ -102,7 +82,6 @@
 
 /* Experience */
 .experience {
-  /* background-color: #1A1A1A; */
   color: #000;
   padding: 3%;
   min-height: 100vh;
@@ -147,7 +126,6 @@
 .contact {
   background-color: #fff;
   color: #000000;
-  /* padding: 3% 10% 10%; */
 }
 
 .contact h1 {
@@ -199,4 +177,16 @@ color: #fff;
 
 .card-footer .me-3 {
   margin-right: 1rem;
+}
+
+.connect-link_container {
+  margin: 24px 24px;
+}
+
+.connect-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar-toggler-icon {
+  color: black;
 }

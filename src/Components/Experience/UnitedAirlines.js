@@ -2,8 +2,33 @@ import React from 'react';
 import UnitedAirlinesIcon from '../../assets/united.png';
 import Navbar from '../Navbar';
 import './Experience.css';
+import '../../App.css';
+// import DevIcon from "devicon-react-svg";
+// import { SiJavascript, SiSketch, SiSketchfab } from "react-icons/si";
+// import materialui from "./assets/materialui.png";
+// import RestAPI from "./assets/RestfulAPI.png";
+// import ResponsiveDesign from "./assets/responsive-design.png";
+import figma from "../../assets/figma.png";
+// import angular from "./assets/angular.png";
+// import stenciljs from "./assets/stencil-js.png";
+// import storybook from "./assets/storybook.png";
+// import typescript from "./assets/typescript.png";
+// import { FaBitbucket } from "react-icons/fa";
+// import { SiAdobexd } from "react-icons/si";
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
+// import { FaPhoneAlt } from "react-icons/fa";
+// import { FaRåact } from "react-icons/fa";
+// import { VscAzureDevops } from "react-icons/vsc";
+// import { VscVscode } from "react-icons/vsc";
 
 function UnitedAirlines() {
+
+  const devIconStyle = {
+    width: "24px",
+  };
+
   return (
     <div className="App">
       <Navbar />
@@ -137,6 +162,8 @@ function UnitedAirlines() {
                   <div>
                     <h5 className="h6 text-muted">Main skills</h5>
                     <p className="mb-0">Figma, Design Systems, SCSS</p>
+                    <div>                    <span class="badge rounded-pill bg-secondary border border-secondary"><img src={figma} style={devIconStyle} alt="Figma"/>Figma</span>
+</div>
                   </div>
                 </div>
               </div>

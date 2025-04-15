@@ -1,5 +1,4 @@
 .experience-detail {
-  /* padding: 0 0 6rem; */
   background-color: #f8f9fa;
   min-height: 100vh;
   position: relative;
@@ -203,3 +202,13 @@
     transform: translateY(0);
   }
 } 
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  padding: 4px 8px;
+  font-weight: 400;
+  color: #333;
+}
