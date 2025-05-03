@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed-top navbar navbar-expand-lg bg-light">
+    <nav className="fixed-top navbar navbar-light navbar-expand-lg bg-light">
       <Link className="navbar-brand" to="/" onClick={scrollToTop}>
         Ana Berrocal
       </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon" id="navbarColor01"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse" id="navbarColor01">

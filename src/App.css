@@ -12,7 +12,7 @@
 }
 
 .intro {
-  height: 80vh;
+  height: auto;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,9 @@
   line-height: normal;
   text-align: left;
   font-weight: 300;
+  @media only screen and (max-width: 414px) {
+    font-size: 50px;
+  }
 }
 .design {
   font-family: "Noto Serif Display", serif;
@@ -42,6 +45,9 @@
   text-wrap: nowrap;
   border-radius: 100px;
   border: 2px solid black;
+  @media only screen and (max-width: 799px) { 
+    margin-top: 0 !important;
+  }
 }
  .learn-more:hover {
   background-color: white;
@@ -50,9 +56,9 @@
  }
 
 @media only screen and (max-width: 768px) {
-  .intro {
+  /* .intro {
     padding-top: 15%;
-  }
+  } */
 
   .profile-picture {
     height: 45vmin;
@@ -60,11 +66,11 @@
   }
 }
  
-@media only screen and (max-width: 426px) {
+/* @media only screen and (max-width: 426px) {
   .intro {
     padding-top: 25%;
   }
-}
+} */
 
 /* About */
 .about {
@@ -93,8 +99,11 @@
 
 .project-img {
   height: auto;
-  width: 100%;
+  width: 30%;
   display: block;
+  @media only screen and (max-width: 540px) {
+    width: 60%;
+  }
 }
 
 /* Projects */
@@ -150,6 +159,16 @@ p {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  @media only screen and (max-width: 540px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .card:hover {
