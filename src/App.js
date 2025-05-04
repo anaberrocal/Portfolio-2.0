@@ -197,20 +197,20 @@ function App() {
               <section id="about">
                 <div className="navbar-space"></div>
                 <div className="about">
-                  <h1>About Ana</h1>
+                  <h1>About</h1>
                   <div className="container text-left pt-3">
                     <p className="font-weight-normal">
-                    Ana is a Product Designer with a strong foundation in Frontend Development. I specialize in crafting thoughtful, scalable design systems and user-centered digital experiences. With hands-on experience designing and developing enterprise-grade applications at companies like United Airlines and StackPath, I bring a rare blend of creative vision and technical fluency to every project. I excel at turning complex workflows into elegant, intuitive interfaces—building reusable UI components in Angular, React, and TypeScript, while collaborating cross-functionally in agile environments.
+                    Ana is a Product Designer with a strong foundation in Frontend Development. She specializes in crafting thoughtful, scalable design systems and user-centered digital experiences. With hands-on experience designing and developing enterprise-grade applications at companies like United Airlines and StackPath, she brings a rare blend of creative vision and technical fluency to every project. She excels at turning complex workflows into elegant, intuitive interfaces, building reusable UI components in Angular, React, and TypeScript, while collaborating cross-functionally in agile environments.
                     </p>
                     <p className="font-weight-normal">
-                    With an artistic background and formal training in computer science, I lead with empathy, curiosity, and a deep respect for the user. I’ve successfully contributed to high-impact tools used daily by internal teams, and I thrive in roles where design is both strategic and execution-focused. Whether wireframing, prototyping, coding, or mentoring peers, I take pride in bridging the gap between design and development to ship experiences that are both beautiful and performant.
+                    With an artistic background and formal training in computer science, Ana leads with empathy, curiosity, and a deep respect for the user. She has successfully contributed to high-impact tools used daily by internal teams, and thrives in roles where design is both strategic and execution-focused. Whether wireframing, prototyping, coding, or mentoring peers, Ana takes pride in bridging the gap between design and development to ship experiences that are both beautiful and performant.
                     </p>
                     <img src={Ana} alt="Ana Berrocal" className="mx-auto d-block w-25 h-100" />
                     {/* </div> */}
                     {/* <blockquote class="blockquote text-center">
                       <div className="container pb-0 mb-0 pt-0">
                         <p class="mb-0 mt-2 mr-5 ml-5">
-                          "UX design shapes the experience, while frontend development brings it to life—together, they turn visions into intuitive, unforgettable interactions."
+                          "UX design shapes the experience, while frontend development brings it to life, together, they turn visions into intuitive, unforgettable interactions."
                         </p>
                         <footer class="blockquote-footer">
                           <cite title="Source Title">Ana Berrocal</cite>

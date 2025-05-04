@@ -13,10 +13,20 @@ function StackPath() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
-                <h1 className="display-4 mb-4">StackPath</h1>
-                <h2 className="h4 text-muted mb-4">UI/UX Designer and Developer</h2>
-                <p className="lead mb-4">
-                  Cloud Computing start-up located in Dallas, TX.
+                <h1 className="display-5 mb-4">StackPath</h1>
+                <div className="mb-4">
+                    <h5 className="h6 text-muted">Role</h5>
+                    <p className="mb-0">UI/UX Designer & Developer</p>
+                  </div>
+                  <div className="mb-4">
+                  <h5 className="h6 text-muted">Duration</h5>
+                    <p className="mb-0">November 2021 - February 2023</p>
+                  </div>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Tools</h5>
+                    <p className="mb-0">Figma, Design Systems, StoryBook</p>
+                  </div>
+                  <p className="font-semi-bold mb-4">Standardized design across cloud interfaces through a reusable component system and collaborated closely with developers in a distributed product org.
                 </p>
                 <a
                   href="https://www.linkedin.com/company/stackpath/"
@@ -41,15 +51,15 @@ function StackPath() {
         {/* Project Details */}
         <div className="experience-content">
           <div className="container">
-            <div className="row">
+            <div className="row main-cont">
               <div className="col-lg-8">
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                  StackPath is a cloud computing and services provider that puts its locations in densely populated markets. At StackPath, I helped design and build our very own Design System, "Cosmos". The intention behind Cosmos was to unify and expedite the software development process among all different engineering teams by creating custom, reusable, accesible and fully-functional React and web components.
+                  At StackPath, I played a key role in designing and maintaining a reusable component system that standardized UI across multiple web applications. I worked within a multidisciplinary team to identify inconsistencies, define design tokens, and build a unified visual language that scaled across platforms. Using Figma and Storybook, I created detailed documentation to support seamless implementation by front-end developers. This process required close collaboration and a deep understanding of both design principles and front-end frameworks, especially in aligning interaction patterns with development constraints.
                   </p>
                   <p>
-                  I helped design, build, and maintain a reusable component design system to standardize the user and developer experience, enhancing UX consistency across applications with Figma. I also created user-focused documentation with StoryBook and ensured seamless integration of components into development workflows.
+                  My work contributed to a faster design-to-dev handoff process, fewer redundancies in the codebase, and a more cohesive user experience for customers. This experience deepened my skills in design systems thinking, cross-functional collaboration, and advocating for design consistency in a fast-paced, engineering-heavy environment.
                   </p>
                 </section>
 
@@ -57,54 +67,57 @@ function StackPath() {
                   <h3 className="h2 mb-4">Key Responsibilities</h3>
                   <ul className="list-unstyled">
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Developed responsive and accessible React components using Material-UI
+                    ✔️ Contributed to the design and evolution of a reusable component library across multiple product teams.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Implemented advanced search and filtering functionality
+                    ✔️  Developed UI documentation and interaction guidelines using Storybook to support consistent implementation.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Created interactive comparison tools for education programs
+                    ✔️ Partnered with front-end engineers to align design with technical constraints, improving efficiency in cross-functional delivery.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Optimized application performance and load times
+                    ✔️ Conducted UI audits to identify visual and UX inconsistencies, driving system-wide improvements in user interface quality.
                     </li>
+                    <li className="mb-3">
+                    ✔️ Helped refine UX workflows and component logic to ensure design system scalability across enterprise applications.
+                      </li>
                   </ul>
                 </section>
 
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Skills and Tools</h3>
-                  <p>
-                  These are some of the tools and skills I utilize while working on this project:
-                  </p>
                   <div className="row">
-                    <div className="col-md-6">
-                      <div className="card bg-light mb-3">
-                        <div className="card-body">
+                  <div className="col-sm">
+                        <div>
                           <h4 className="h5 mb-3">Design</h4>
                           <ul className="list-unstyled">
                             <li>• Figma</li>
                             <li>• Design Systems</li>
-                            <li>• Prototyping</li>
-                            <li>• Sketch</li>
+                            <li>• UI Testing</li>
+                            <li>• UI Auditing</li>
                           </ul>
-                        </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="card bg-light mb-3">
-                        <div className="card-body">
+                    <div className="col-sm">
+                        <div>
                           <h4 className="h5 mb-3">Development</h4>
                           <ul className="list-unstyled">
-                            <li>• Angular</li>
-                            <li>• TypeScript</li>
-                            <li>• HTML/CSS/SASS/SCSS</li>
-                            <li>• NodeJS</li>
+                            <li>• React</li>
+                            <li>• Storybook</li>
+                            <li>• HTML/CSS</li>
+                            <li>• Components library</li>
                           </ul>
-                        </div>
+                      </div>
+                    </div>
+                    <div className="col-sm">
+                        <div>
+                          <h4 className="h5 mb-3">Methods</h4>
+                          <ul className="list-unstyled">
+                            <li>• Documentation</li>
+                            <li>• Design QA</li>
+                            <li>• Crossfunctional workflow</li>
+                            <li>• Component testing</li>
+                          </ul>
                       </div>
                     </div>
                   </div>
@@ -113,18 +126,14 @@ function StackPath() {
 
               <div className="col-lg-4">
                 <div className="quick-facts">
-                  <h4 className="h3 mb-4">Quick Facts</h4>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Duration</h5>
-                    <p className="mb-0">November 2021 - February 2023</p>
+                  <h4 className="h3 mb-4">Problem + Outcome</h4>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Problem</h5>
+                    <p className="mb-0">Lack of standardized UI components across applications led to visual inconsistencies and slower development cycles.</p>
                   </div>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Role</h5>
-                    <p className="mb-0">UI/UX Designer and Developer</p>
-                  </div>
-                  <div>
-                    <h5 className="h6 text-muted">Main skills</h5>
-                    <p className="mb-0">Figma, Design Systems, StoryBook </p>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Outcome</h5>
+                    <p className="mb-0">Contributed to a reusable design system and detailed Storybook documentation that improved visual cohesion and design-to-dev speed.</p>
                   </div>
                 </div>
               </div>

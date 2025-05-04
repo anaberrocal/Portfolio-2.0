@@ -38,10 +38,21 @@ function UnitedAirlines() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
-                <h1 className="display-4 mb-4">United Airlines</h1>
-                <h2 className="h4 text-muted mb-4">Product Designer & Developer</h2>
-                <p className="lead mb-4">
-                Enhanced pilot operations by designing and implementing scalable UI components for high-impact internal tools, streamlining scheduling, messaging, and administrative tasks.
+                <h1 className="display-5 mb-4">United Airlines</h1>
+                <div className="mb-4">
+                    <h5 className="h6 text-muted">Role</h5>
+                    <p className="mb-0">Product Designer & Developer</p>
+                  </div>
+                <div className="mb-4">
+                    <h5 className="h6 text-muted">Duration</h5>
+                    <p className="mb-0">June 2023 - Ongoing</p>
+                  </div>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Tools</h5>
+                    <p className="mb-0">Figma, Design Systems, StoryBook</p>
+                  </div>
+                <p className="font-semi-bold mb-4">
+                Redesigning internal crew tools to improve efficiency, consistency, and user experience at scale within a large, cross-functional enterprise team.
                 </p>
                 <a
                   href="https://www.united.com/"
@@ -66,27 +77,15 @@ function UnitedAirlines() {
         {/* Project Details */}
         <div className="experience-content">
           <div className="container">
-            <div className="row">
+            <div className="row main-cont">
               <div className="col-lg-8">
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                  I collaborate with design and engineering teams to design and develop features for two high-visibility, employee-facing applications. Leveraging our in-house design system, I streamline design and development and ensure seamless handoffs, contributing to large-scale projects such as a scheduling app, messaging app, marketing pages, and an admin dashboard.
+                  At United Airlines, I design intuitive, component-based interfaces for high-visibility, employee-facing applications. My focus is on transforming complex internal workflows into clear, efficient user experiences that support day-to-day operations at scale. I collaborate closely with engineers and product stakeholders to ensure seamless alignment between design intent and technical implementation, using Figma and our in-house design system to drive visual consistency, accessibility, and scalability across platforms. Projects I've contributed to include a crew scheduling app, internal messaging system, and administrative dashboards.
                   </p>
                   <p>
-                  I work on two high-visibility, employee-facing
-                  applications, collaborating with design and
-                  engineering teams to deliver and implement
-
-                  reusable Angular components. Leveraging my in-
-                  house design experience and expertise in
-
-                  creating detailed mockups in Figma and Sketch, I
-                  use our in-house design system to streamline
-                  development and ensure smooth handoffs. I’ve
-                  contributed to large-scale projects, from design
-                  to code, including a scheduling app, messaging
-                  app, marketing pages, and an admin dashboard.
+                  I also co-led design initiatives, helping maintain momentum, uphold design standards, and provide continuity across ongoing deliverables. My role bridges thoughtful UX with practical front-end understanding, ensuring every design decision supports both the user and the engineering process.
                   </p>
                 </section>
 
@@ -94,55 +93,58 @@ function UnitedAirlines() {
                   <h3 className="h2 mb-4">Key Responsibilities</h3>
                   <ul className="list-unstyled">
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Developed responsive and accessible React components using Material-UI
+                    ✔️  Designed scalable, component-based UIs using Figma and an internal design system for employee-facing tools.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Implemented advanced search and filtering functionality
+                    ✔️  Collaborated with engineers to ensure seamless design-to-development handoff and UI consistency across Angular-based applications.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Created interactive comparison tools for education programs
+                    ✔️ Contributed to large-scale projects including scheduling and messaging systems, admin dashboards, and marketing portals.
                     </li>
                     <li className="mb-3">
-                      <i className="fas fa-check text-primary me-2"></i>
-                      Optimized application performance and load times
+                    ✔️ Co-led design planning and project coordination to maintain workflow and design standards.
+                    </li>
+                    <li className="mb-3">
+                    ✔️ Created high-fidelity prototypes and supported front-end QA to validate interactions and usability before launch.
                     </li>
                   </ul>
                 </section>
 
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Skills and Tools</h3>
-                  <p>
-                  These are some of the tools and skills I utilize while working on this project:
-                  </p>
                   <div className="row">
-                    <div className="col-md-6">
-                      <div className="card bg-light mb-3">
-                        <div className="card-body">
+                    <div className="col-sm">
+                        <div>
                           <h4 className="h5 mb-3">Design</h4>
                           <ul className="list-unstyled">
                             <li>• Figma</li>
                             <li>• Design Systems</li>
                             <li>• Prototyping</li>
-                            <li>• Sketch</li>
+                            <li>• UI Architechture</li>
                           </ul>
                         </div>
-                      </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="card bg-light mb-3">
-                        <div className="card-body">
+                    <div className="col-sm">
+                        <div>
                           <h4 className="h5 mb-3">Development</h4>
                           <ul className="list-unstyled">
                             <li>• Angular</li>
+                            <li>• HTML/CSS/SCSS</li>
                             <li>• TypeScript</li>
-                            <li>• HTML/CSS/SASS/SCSS</li>
-                            <li>• NodeJS</li>
+                            <li>• GitHub</li>
                           </ul>
                         </div>
-                      </div>
+                    </div>
+                    <div className="col-sm">
+                        <div>
+                          <h4 className="h5 mb-3">Methods</h4>
+                          <ul className="list-unstyled">
+                            <li>• Developer Handoff</li>
+                            <li>• Agile Workflow</li>
+                            <li>• System Thinking</li>
+                            <li>• Cross-team Collaboration</li>
+                          </ul>
+                        </div>
                     </div>
                   </div>
                 </section>
@@ -150,20 +152,14 @@ function UnitedAirlines() {
 
               <div className="col-lg-4">
                 <div className="quick-facts">
-                  <h4 className="h3 mb-4">Quick Facts</h4>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Duration</h5>
-                    <p className="mb-0">June 2023 - Ongoing</p>
+                  <h4 className="h3 mb-4">Problem + Outcome</h4>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Problem</h5>
+                    <p className="mb-0">Crew workflows were split across three outdated legacy apps, each with inconsistent UX, dated visuals and limited integration, leading to inefficiencies and a disjointed user experience.</p>
                   </div>
-                  <div className="mb-3">
-                    <h5 className="h6 text-muted">Role</h5>
-                    <p className="mb-0">Product Designer & Developer</p>
-                  </div>
-                  <div>
-                    <h5 className="h6 text-muted">Main skills</h5>
-                    <p className="mb-0">Figma, Design Systems, SCSS</p>
-                    <div>                    <span class="badge rounded-pill bg-secondary border border-secondary"><img src={figma} style={devIconStyle} alt="Figma"/>Figma</span>
-</div>
+                  <div className="mb-4">
+                    <h5 className="h6 text-muted">Outcome</h5>
+                    <p className="mb-0">We unified them into one modern web app and a matching mobile version, streamlining workflows and delivering a consistent, scalable user experience.</p>
                   </div>
                 </div>
               </div>

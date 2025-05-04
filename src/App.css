@@ -90,7 +90,7 @@
 .experience {
   color: #000;
   padding: 3%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .experience h1 {
@@ -208,4 +208,14 @@ color: #fff;
 }
 .navbar-toggler-icon {
   color: black;
+}
+
+/* Experience */
+.row.main-cont {
+  @media screen and (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
+}
+.font-semi-bold {
+  font-weight: 500;
 }
