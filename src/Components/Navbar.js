@@ -1,12 +1,31 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (sectionId) => {
+    navigate('/', { replace: true });
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
-    <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand" href="#">
+    <nav className="fixed-top navbar navbar-light navbar-expand-lg bg-light">
+      <Link className="navbar-brand" to="/" onClick={scrollToTop}>
         Ana Berrocal
-      </a>
+      </Link>
       <button
         className="navbar-toggler dropdown"
         type="button"
@@ -22,25 +41,27 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#about">
-              About 
-              <span className="sr-only">(current)</span>
-            </a>
+            <Link className="nav-link" to="/" onClick={scrollToTop}>
+              Home
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#experience">
+            <button 
+              className="nav-link btn btn-link" 
+              onClick={() => handleNavClick('experience')}
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
               Experience
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#skills">
-             Skills
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              Contact
-            </a>
+            <button 
+              className="nav-link btn btn-link" 
+              onClick={() => handleNavClick('about')}
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
+              About
+            </button>
           </li>
         </ul>
       </div>
