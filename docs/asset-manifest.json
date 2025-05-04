@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/Portfolio-2.0/static/css/main.7874340d.css",
-    "main.js": "/Portfolio-2.0/static/js/main.12634aea.js",
-    "static/media/Eleven22.png": "/Portfolio-2.0/static/media/Eleven22.d744ae9c3126cbe636da.png",
-    "static/media/6222818.jpg": "/Portfolio-2.0/static/media/6222818.f899121625e2794130eb.jpg",
-    "static/media/f23.png": "/Portfolio-2.0/static/media/f23.9c11a6585188cdc89938.png",
-    "static/media/Distanceware.png": "/Portfolio-2.0/static/media/Distanceware.cc4452720e94a2eb564d.png",
-    "static/media/computerDraw.png": "/Portfolio-2.0/static/media/computerDraw.9020a1cb02e91193461d.png",
-    "static/media/sp.png": "/Portfolio-2.0/static/media/sp.0c71fdcd93cdb03b68f0.png",
-    "static/media/f23-dev.png": "/Portfolio-2.0/static/media/f23-dev.322471f13f2356d8ed60.png",
-    "static/media/GestureLife.png": "/Portfolio-2.0/static/media/GestureLife.28c2a3b5751a43d997db.png",
-    "static/media/united.png": "/Portfolio-2.0/static/media/united.340a7f5cef948dd46fc6.png",
-    "static/media/Ana_B&W.png": "/Portfolio-2.0/static/media/Ana_B&W.70271dd49a008081e0b3.png",
-    "static/media/RestfulAPI.png": "/Portfolio-2.0/static/media/RestfulAPI.31406bb13b93d14857c9.png",
-    "static/media/angular.png": "/Portfolio-2.0/static/media/angular.25aa2b07e3144a10e532.png",
-    "static/media/figma.png": "/Portfolio-2.0/static/media/figma.80bebf575fb83ece6d16.png",
-    "index.html": "/Portfolio-2.0/index.html",
-    "main.7874340d.css.map": "/Portfolio-2.0/static/css/main.7874340d.css.map",
-    "main.12634aea.js.map": "/Portfolio-2.0/static/js/main.12634aea.js.map"
+    "main.css": "/static/css/main.d5737930.css",
+    "main.js": "/static/js/main.3a80f10a.js",
+    "static/media/Eleven22.png": "/static/media/Eleven22.d744ae9c3126cbe636da.png",
+    "static/media/f23.png": "/static/media/f23.9c11a6585188cdc89938.png",
+    "static/media/Distanceware.png": "/static/media/Distanceware.cc4452720e94a2eb564d.png",
+    "static/media/computerDraw.png": "/static/media/computerDraw.9020a1cb02e91193461d.png",
+    "static/media/sp.png": "/static/media/sp.0c71fdcd93cdb03b68f0.png",
+    "static/media/f23-dev.png": "/static/media/f23-dev.322471f13f2356d8ed60.png",
+    "static/media/GestureLife.png": "/static/media/GestureLife.28c2a3b5751a43d997db.png",
+    "static/media/united.png": "/static/media/united.340a7f5cef948dd46fc6.png",
+    "static/media/Ana_B&W.png": "/static/media/Ana_B&W.70271dd49a008081e0b3.png",
+    "static/media/RestfulAPI.png": "/static/media/RestfulAPI.31406bb13b93d14857c9.png",
+    "static/media/angular.png": "/static/media/angular.25aa2b07e3144a10e532.png",
+    "static/media/figma.png": "/static/media/figma.80bebf575fb83ece6d16.png",
+    "index.html": "/index.html",
+    "main.d5737930.css.map": "/static/css/main.d5737930.css.map",
+    "main.3a80f10a.js.map": "/static/js/main.3a80f10a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7874340d.css",
-    "static/js/main.12634aea.js"
+    "static/css/main.d5737930.css",
+    "static/js/main.3a80f10a.js"
   ]
 }
