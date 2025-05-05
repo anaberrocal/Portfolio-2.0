@@ -49,7 +49,7 @@ function UnitedAirlines() {
                   </div>
                   <div className="mb-4">
                     <h5 className="h6 text-muted">Tools</h5>
-                    <p className="mb-0">Figma, Design Systems, StoryBook</p>
+                    <p className="mb-0">Figma, Design Systems, Angular</p>
                   </div>
                 <p className="font-semi-bold mb-4">
                 Redesigning internal crew tools to improve efficiency, consistency, and user experience at scale within a large, cross-functional enterprise team.
