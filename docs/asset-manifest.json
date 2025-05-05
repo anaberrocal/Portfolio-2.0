@@ -1,8 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d5737930.css",
-    "main.js": "/static/js/main.8b776fa0.js",
+    "main.js": "/static/js/main.e0610aa4.js",
+    "static/media/marketing-page.png": "/static/media/marketing-page.cf3c641a683b8b2aae3b.png",
+    "static/media/modal-old.png": "/static/media/modal-old.84eaa28fef427ea3b8e4.png",
+    "static/media/pool-display-new.png": "/static/media/pool-display-new.37fca795e5c172bfe197.png",
     "static/media/Eleven22.png": "/static/media/Eleven22.d744ae9c3126cbe636da.png",
+    "static/media/pool-display-old.png": "/static/media/pool-display-old.e0c6c948d1446f42fdc2.png",
+    "static/media/rad-new.png": "/static/media/rad-new.4be74ceb20705c9bc7e2.png",
+    "static/media/rad-old.png": "/static/media/rad-old.d2cd971ec31e74253b77.png",
+    "static/media/modal-new.png": "/static/media/modal-new.abe11d6f6417a764b0e2.png",
     "static/media/f23.png": "/static/media/f23.9c11a6585188cdc89938.png",
     "static/media/Distanceware.png": "/static/media/Distanceware.cc4452720e94a2eb564d.png",
     "static/media/computerDraw.png": "/static/media/computerDraw.9020a1cb02e91193461d.png",
@@ -16,10 +23,10 @@
     "static/media/figma.png": "/static/media/figma.80bebf575fb83ece6d16.png",
     "index.html": "/index.html",
     "main.d5737930.css.map": "/static/css/main.d5737930.css.map",
-    "main.8b776fa0.js.map": "/static/js/main.8b776fa0.js.map"
+    "main.e0610aa4.js.map": "/static/js/main.e0610aa4.js.map"
   },
   "entrypoints": [
     "static/css/main.d5737930.css",
-    "static/js/main.8b776fa0.js"
+    "static/js/main.e0610aa4.js"
   ]
 }

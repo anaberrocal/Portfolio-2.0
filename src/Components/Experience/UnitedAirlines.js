@@ -1,5 +1,12 @@
 import React from 'react';
 import UnitedAirlinesIcon from '../../assets/united.png';
+import MarketingPage from '../../assets/marketing-page.png';
+import ModalNew from '../../assets/modal-new.png';
+import ModalOld from '../../assets/modal-old.png';
+import PoolDisplayOld from '../../assets/pool-display-old.png';
+import PoolDisplayNew from '../../assets/pool-display-new.png';
+import RadOld from '../../assets/rad-old.png';
+import RadNew from '../../assets/rad-new.png';
 import Navbar from '../Navbar';
 import './Experience.css';
 import '../../App.css';
@@ -52,7 +59,7 @@ function UnitedAirlines() {
                     <p className="mb-0">Figma, Design Systems, Angular</p>
                   </div>
                 <p className="font-semi-bold mb-4">
-                Redesigning internal crew tools to improve efficiency, consistency, and user experience at scale within a large, cross-functional enterprise team.
+                Redesigning internal crew tools to improve efficiency, consistency and user experience at scale within a large, cross-functional enterprise team.
                 </p>
                 <a
                   href="https://www.united.com/"
@@ -82,10 +89,12 @@ function UnitedAirlines() {
                 <section className="mb-5">
                   <h3 className="h2 mb-4">Project Overview</h3>
                   <p>
-                  At United Airlines, I design intuitive, component-based interfaces for high-visibility, employee-facing applications. My focus is on transforming complex internal workflows into clear, efficient user experiences that support day-to-day operations at scale. I collaborate closely with engineers and product stakeholders to ensure seamless alignment between design intent and technical implementation, using Figma and our in-house design system to drive visual consistency, accessibility, and scalability across platforms. Projects I've contributed to include a crew scheduling app, internal messaging system, and administrative dashboards.
+                  At United Airlines, I design intuitive, component-based interfaces for high-visibility, employee-facing applications. My focus is on transforming complex internal workflows into clear, efficient experiences that support daily operations at scale. I collaborate closely with engineers and product stakeholders to ensure alignment between design intent and technical implementation, leveraging Figma and our in-house design system to drive consistency, accessibility and scalability across platforms.
+                  </p>
+                  <p>Projects I’ve contributed to include an internal tool for pilots to view, bid on and manage schedule swaps; two messaging systems; and multiple administrative dashboards.
                   </p>
                   <p>
-                  I also co-led design initiatives, helping maintain momentum, uphold design standards, and provide continuity across ongoing deliverables. My role bridges thoughtful UX with practical front-end understanding, ensuring every design decision supports both the user and the engineering process.
+                  In addition to hands-on product work, I co-lead design initiatives, translating complex requirements into clear milestones and actionable feedback. I conduct design reviews and audits to uphold quality, ensure cohesion and identify areas for improvement. My role bridges thoughtful UX with practical front-end understanding, helping maintain momentum and continuity across teams while supporting both user needs and engineering feasibility.
                   </p>
                 </section>
 
@@ -99,7 +108,7 @@ function UnitedAirlines() {
                     ✔️  Collaborated with engineers to ensure seamless design-to-development handoff and UI consistency across Angular-based applications.
                     </li>
                     <li className="mb-3">
-                    ✔️ Contributed to large-scale projects including scheduling and messaging systems, admin dashboards, and marketing portals.
+                    ✔️ Contributed to large-scale projects including scheduling and messaging systems, admin dashboards and marketing portals.
                     </li>
                     <li className="mb-3">
                     ✔️ Co-led design planning and project coordination to maintain workflow and design standards.
@@ -147,6 +156,85 @@ function UnitedAirlines() {
                         </div>
                     </div>
                   </div>
+                </section>
+
+                <section className="mb-5">
+                <h3 className="h2 mb-5">Before & After: Key Redesigns</h3>
+                  <div className="mb-5">
+                    <h4 className="mb-4">1. Pool Display for Pilot Trade Board</h4>
+                    <div className="row-sm">
+                    <h4 className="h5 mb-2">Context</h4>
+                    <p className="mb-4">The legacy Pool Display made it difficult for pilots to interpret availability and reserve data quickly, slowing down scheduling decisions and increasing reliance on manual oversight.</p>
+                    <h4 className="h5 mb-2">Before</h4>
+                    <img className="mb-1" src={PoolDisplayOld}/>
+                    <p className="text-muted mb-5">Monochrome layout, unclear hierarchy, and hard-to-scan numbers.</p>
+                    <h4 className="h5 mb-2 mt-2">After</h4>
+                    <img className="mb-1" src={PoolDisplayNew}/>
+                    <p className="text-muted mb-5">Refreshed layout with color-coded status indicators, streamlined filters, and improved legibility across all devices.</p>
+                    <h4 className="h5 mb-2">Key Improvements</h4>
+                    <ul className="list-unstyled">
+                      <li>✔️ Introduced color and tyulographic hierarchy to highlight important data</li>
+                      <li>✔️ Shifted from tabular format to calendar-style layout for spatial clarity </li>
+                      <li>✔️ Added tooltips, filters, and real-time feedback for interactive use</li>
+                    </ul>
+                    </div>
+                  </div>
+
+                  <div className="mb-5 mt-5">
+                    <h4 className="mb-4">2. Customize Trip Display</h4>
+                    <div className="row-sm">
+                    <h4 className="h5 mb-2">Context</h4>
+                    <p className="mb-4">The legacy customization modal allowed pilots to select and reorder table columns for trip display, but the experience was cluttered, unintuitive, and difficult to scan. Visual inconsistencies and tight spacing made the interaction frustrating, especially on tablets or smaller screens.</p>
+                    <h4 className="h5 mb-2">Before</h4>
+                    <img className="mb-1" src={ModalOld}/>
+                    <p className="text-muted mb-5">Overwhelming list of checkboxes with inconsistent spacing, unclear groupings, and no responsive layout support.</p>
+                    <h4 className="h5 mb-2 mt-2">After</h4>
+                    <img className="mb-1" src={ModalNew}/>
+                    <p className="text-muted mb-5">Redesigned modal with grouped layout, drag-and-drop reordering, responsive tab views (desktop, tablet, mobile), and simplified controls for better clarity.</p>
+                    <h4 className="h5 mb-2">Key Improvements</h4>
+                    <ul className="list-unstyled">
+                      <li>✔️ Organized column selection into visual drag-and-drop tiles</li>
+                      <li>✔️ Introduced device-specific previews with tabbed views (desktop, tablet, mobile)</li>
+                      <li>✔️ Improved usability through clean grouping, spacing, and inline tooltips</li>
+                      <li>✔️ Added persistent save/cancel controls and reset-to-default option</li>
+                    </ul>
+                    </div>
+                  </div>
+
+                  <div className="mb-5 mt-5">
+                    <h4 className="mb-4">3. Reserve Availability Display (RAD) for Pilot Trade Board</h4>
+                    <div className="row-sm">
+                    <h4 className="h5 mb-2">Context</h4>
+                    <p className="mb-4">The original Reserve Availability Display was data-heavy and presented in dense tables with minimal styling or hierarchy. Pilots and schedulers had difficulty scanning for key availability indicators, leading to slower decisions and reliance on external spreadsheets.</p>
+                    <h4 className="h5 mb-2">Before</h4>
+                    <img className="mb-1" src={RadOld}/>
+                    <p className="text-muted mb-5">Dense tabular data with no visual grouping, minimal filters, and no dynamic interaction feedback.</p>
+                    <h4 className="h5 mb-2 mt-2">After</h4>
+                    <img className="mb-1" src={RadNew}/>
+                    <p className="text-muted mb-5">Modern card-based layout with collapsible sections, clearer groupings (LSR, SC, FSB), intuitive filters, and enhanced readability.</p>
+                    <h4 className="h5 mb-2">Key Improvements</h4>
+                    <ul className="list-unstyled">
+                      <li>✔️ Added filter tools for base, aircraft, status, and date range</li>
+                      <li>✔️ Introduced section-based grouping by reserve type (LSR, SC, FSB) </li>
+                      <li>✔️ Streamlined table headers and improved whitespace for scanability</li>
+                      <li>✔️ Added interactivity (expand/collapse, info tooltips) for better accessibility and clarity</li>
+                    </ul>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="mb-5">
+                <h3 className="h2 mb-5">Internal Launch Marketing Page - CCS+ App</h3>
+                <h4 className="h5 mb-2">Context</h4>
+                <p className="mb-4">As part of the internal rollout for CCS+, United Airlines’ new pilot-facing mobile platform, I designed this responsive marketing page to build awareness and encourage adoption. The design needed to clearly communicate the app’s key features while aligning with United’s branding and mobile-first standards.</p>
+                <img className="mb-5" src={MarketingPage}/>
+                <h4 className="h5 mb-2">Key Contributions</h4>
+                    <ul className="list-unstyled">
+                      <li>✔️ Created a full responsive layout from scratch</li>
+                      <li>✔️ Wrote and refined copy content for clarity and conciseness</li>
+                      <li>✔️ Designed all visual elements, including layout, iconography, and app mockups</li>
+                      <li>✔️ Ensured brand alignment across internal and external references</li>
+                    </ul>
                 </section>
               </div>
 
