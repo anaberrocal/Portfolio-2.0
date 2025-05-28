@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import DevIcon from "devicon-react-svg";
 import Navbar from "./Components/Navbar";
-import Ana from "./assets/Ana_B&W.png";
+import Ana from "./assets/Ana_B&W.jpg";
 import { SiJavascript, SiSketch, SiSketchfab } from "react-icons/si";
 import materialui from "./assets/materialui.png";
 import RestAPI from "./assets/RestfulAPI.png";
@@ -196,16 +196,21 @@ function App() {
               {/* About */}
               <section id="about">
                 <div className="navbar-space"></div>
-                <div className="about">
+                <div className="about mb-5">
                   <h1>About</h1>
-                  <div className="container text-left pt-3">
+                  <div className="container text-left pt-3 about-flex">
+                  <div>
                     <p className="font-weight-normal">
-                    Ana is a Product Designer with a strong foundation in Frontend Development. She specializes in crafting thoughtful, scalable design systems and user-centered digital experiences. With hands-on experience designing and developing enterprise-grade applications at companies like United Airlines and StackPath, she brings a rare blend of creative vision and technical fluency to every project. She excels at turning complex workflows into elegant, intuitive interfaces, building reusable UI components in Angular, React, and TypeScript, while collaborating cross-functionally in agile environments.
+                      Ana is a Product Designer with a strong foundation in frontend development and a sharp visual sensibility shaped by her background in photography. She specializes in crafting thoughtful, scalable design systems and user-centered digital experiences with a focus on clarity, hierarchy, and consistency.
                     </p>
                     <p className="font-weight-normal">
-                    With an artistic background and formal training in computer science, Ana leads with empathy, curiosity, and a deep respect for the user. She has successfully contributed to high-impact tools used daily by internal teams, and thrives in roles where design is both strategic and execution-focused. Whether wireframing, prototyping, coding, or mentoring peers, Ana takes pride in bridging the gap between design and development to ship experiences that are both beautiful and performant.
+                      With hands-on experience designing and developing enterprise applications at companies like United Airlines and StackPath, she brings a rare blend of visual design precision and technical fluency to every project. She excels at turning complex workflows into intuitive interfaces and developing reusable UI components in Angular, React, and TypeScript while collaborating closely with engineers and product teams in agile environments.
                     </p>
-                    <img src={Ana} alt="Ana Berrocal" className="mx-auto d-block w-25 h-100" />
+                    <p className="font-weight-normal">
+                      Ana leads with empathy, curiosity, and a deep respect for the user. She thrives in roles where design is both strategic and execution-focused, and has contributed to high-impact tools used daily by internal teams. Whether wireframing, prototyping, coding, or mentoring peers, Ana takes pride in bridging the gap between design and development to ship experiences that are both visually refined and technically sound.
+                    </p>
+                  </div>
+                    <img src={Ana} alt="Ana Berrocal" className="mx-auto d-block w-25 h-100 profile-picture" />
                     {/* </div> */}
                     {/* <blockquote class="blockquote text-center">
                       <div className="container pb-0 mb-0 pt-0">
@@ -221,7 +226,7 @@ function App() {
                 </div>
               </section>
               {/* Contact */}
-                <div className="connect-link_container">
+                <div className="connect-link_container mb-5 pb-5">
                   <a className="connect-link" href="https://www.linkedin.com/in/anaberrocal/"
                     target="_blank" rel="noreferrer">Let's Connect</a>
                 </div>

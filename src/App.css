@@ -55,16 +55,11 @@
   border: 2px solid black;
  }
 
-@media only screen and (max-width: 768px) {
-  /* .intro {
-    padding-top: 15%;
-  } */
-
   .profile-picture {
-    height: 45vmin;
-    margin: 5%;
+    @media only screen and (max-width: 540px) {
+      width: 50% !important;
+    }
   }
-}
  
 /* @media only screen and (max-width: 426px) {
   .intro {
@@ -76,6 +71,14 @@
 .about {
   background-color: #ffffff;
   padding-top: 3%;
+}
+
+.about-flex {
+  display: flex;
+  gap: 40px;
+  @media only screen and (max-width: 1025px) {
+    flex-direction: column;
+  }
 }
 
 .dev-icon {
