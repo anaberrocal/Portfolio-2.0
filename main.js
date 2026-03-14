@@ -70,3 +70,9 @@ document.querySelectorAll('.hero-top .mono, .hero-desc, .hstat, .hero-cta').forE
   el.style.transition = `opacity 0.7s cubic-bezier(0.16,1,0.3,1) ${0.5 + i * 0.08}s, transform 0.7s cubic-bezier(0.16,1,0.3,1) ${0.5 + i * 0.08}s`;
   setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, 50);
 });
+
+if ('ontouchstart' in window) {
+  cursor.style.display = 'none';
+  dot.style.display = 'none';
+  document.body.style.cursor = 'auto';
+}
