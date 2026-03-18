@@ -1,171 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CCS+ Trade Center - Ana Berrocal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Instrument+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Instrument+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
     .cs-hero {
-      min-height: 72vh; display: flex; flex-direction: column; justify-content: flex-end;
-      padding: 0 var(--pad) 5rem; border-bottom: 1px solid var(--border);
+      min-height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 var(--pad) 5rem;
+      border-bottom: 1px solid var(--border);
     }
-    .cs-hero-inner { max-width: var(--max); margin: 0 auto; width: 100%; padding-top: 5rem; }
+
+    .cs-hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      width: 100%;
+      padding-top: 5rem;
+    }
 
     .cs-back {
-      display: inline-flex; align-items: center; gap: 0.75rem;
-      font-family: var(--ff-mono); font-size: 0.64rem;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--mid); margin-bottom: 4rem; transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--ff-mono);
+      font-size: 0.64rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 4rem;
+      transition: color 0.2s;
     }
-    .cs-back:hover { color: var(--accent); }
-    .cs-back-arr { transition: transform 0.2s; display: inline-block; }
-    .cs-back:hover .cs-back-arr { transform: translateX(-4px); }
 
-    .cs-eyebrow { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .cs-back:hover {
+      color: var(--accent);
+    }
+
+    .cs-back-arr {
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .cs-back:hover .cs-back-arr {
+      transform: translateX(-4px);
+    }
+
+    .cs-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
 
     .cs-title {
       font-family: var(--ff-head);
       font-size: clamp(3.5rem, 8vw, 8rem);
-      font-weight: 900; color: var(--ink);
-      line-height: 0.88; letter-spacing: -0.035em; margin-bottom: 3rem;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 0.88;
+      letter-spacing: -0.035em;
+      margin-bottom: 3rem;
     }
-    .cs-title em { color: transparent; -webkit-text-stroke: 2px var(--accent); font-weight: 400; }
+
+    .cs-title em {
+      color: transparent;
+      -webkit-text-stroke: 2px var(--accent);
+      font-weight: 400;
+    }
 
     .cs-meta-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
-      border-top: 1px solid var(--border); padding-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
     }
-    .cs-meta-label { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); margin-bottom: 0.5rem; display: block; }
-    .cs-meta-val { font-size: 0.92rem; color: var(--ink); line-height: 1.5; font-weight: 300; }
 
-    .cs-body { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+    .cs-meta-label {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
 
-    .cs-sec { padding: 6rem 0; border-bottom: 1px solid var(--border); }
-    .cs-sec:last-child { border-bottom: none; }
+    .cs-meta-val {
+      font-size: 0.92rem;
+      color: var(--ink);
+      line-height: 1.5;
+      font-weight: 300;
+    }
 
-    .cs-sec-label { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 3rem; }
-    .cs-sec-num { color: var(--accent); font-size: 0.62rem; }
-    .cs-sec-line { width: 40px; height: 1px; background: var(--border); }
-    .cs-sec-name { font-family: var(--ff-mono); font-size: 0.66rem; letter-spacing: 0.18em; color: var(--dim); }
+    .cs-body {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    .cs-sec {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cs-sec:last-child {
+      border-bottom: none;
+    }
+
+    .cs-sec-label {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .cs-sec-num {
+      color: var(--accent);
+      font-size: 0.62rem;
+    }
+
+    .cs-sec-line {
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cs-sec-name {
+      font-family: var(--ff-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.18em;
+      color: var(--dim);
+    }
 
     .cs-h2 {
       font-family: var(--ff-head);
       font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 700; color: var(--ink); line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
     }
-    .cs-h2 em { color: transparent; -webkit-text-stroke: 1px var(--accent); font-weight: 400; }
 
-    .cs-p { font-size: 1rem; color: var(--mid); line-height: 1.9; font-weight: 300; max-width: 680px; margin-bottom: 1.4rem; }
-    .cs-p strong { color: var(--ink); font-weight: 500; }
-    .cs-p:last-child { margin-bottom: 0; }
+    .cs-h2 em {
+      color: transparent;
+      -webkit-text-stroke: 1px var(--accent);
+      font-weight: 400;
+    }
 
-    .two-col-wide { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; margin-top: 2rem; }
+    .cs-p {
+      font-size: 1rem;
+      color: var(--mid);
+      line-height: 1.9;
+      font-weight: 300;
+      max-width: 680px;
+      margin-bottom: 1.4rem;
+    }
+
+    .cs-p strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .cs-p:last-child {
+      margin-bottom: 0;
+    }
+
+    .two-col-wide {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 5rem;
+      margin-top: 2rem;
+    }
 
     .callout {
-      border-left: 2px solid var(--accent); padding: 1.5rem 2rem;
-      background: var(--white); margin: 2.5rem 0;
+      border-left: 2px solid var(--accent);
+      padding: 1.5rem 2rem;
+      background: var(--white);
+      margin: 2.5rem 0;
     }
-    .callout p { font-family: var(--ff-head); font-size: 1.1rem; font-style: italic; color: var(--ink); line-height: 1.65; font-weight: 400; }
 
-    .insight-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 3rem 0; }
-    .insight-card { background: var(--white); padding: 2rem; }
-    .insight-num { font-family: var(--ff-head); font-size: 2.5rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 1rem; letter-spacing: -0.03em; }
-    .insight-title { font-size: 0.92rem; font-weight: 500; color: var(--ink); margin-bottom: 0.75rem; }
-    .insight-body { font-size: 0.85rem; color: var(--mid); line-height: 1.75; font-weight: 300; }
+    .callout p {
+      font-family: var(--ff-head);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.65;
+      font-weight: 400;
+    }
 
-    .decision-list { display: flex; flex-direction: column; border: 1px solid var(--border); margin: 3rem 0; background: var(--white); }
-    .decision { padding: 2rem 2.5rem; display: grid; grid-template-columns: 3rem 1fr; gap: 2rem; align-items: start; border-bottom: 1px solid var(--border); transition: background 0.2s; }
-    .decision:last-child { border-bottom: none; }
-    .decision:hover { background: var(--bg); }
-    .decision-num { font-family: var(--ff-head); font-size: 2rem; font-weight: 900; color: var(--border2); line-height: 1; transition: color 0.3s; }
-    .decision:hover .decision-num { color: var(--accent); }
-    .decision-title { font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.6rem; }
-    .decision-body { font-size: 0.9rem; color: var(--mid); line-height: 1.8; font-weight: 300; }
-    .decision-tag { display: inline-block; margin-top: 0.75rem; font-family: var(--ff-mono); font-size: 0.57rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(26,26,255,0.25); padding: 0.2rem 0.6rem; }
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+    }
 
-    .constraint-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 3rem 0; }
-    .constraint-card { border: 1px solid var(--border); padding: 2rem; background: var(--white); }
-    .constraint-head { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: block; }
-    .constraint-body { font-size: 0.9rem; color: var(--mid); line-height: 1.8; font-weight: 300; }
+    .insight-card {
+      background: var(--white);
+      padding: 2rem;
+    }
 
-    .own-table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); margin: 3rem 0; background: var(--white); }
-    .own-table th { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); text-align: left; padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--bg1); }
-    .own-table td { padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--mid); line-height: 1.6; vertical-align: top; }
-    .own-table tr:last-child td { border-bottom: none; }
-    .own-table tr:hover td { background: var(--bg); }
-    .own-tag { font-family: var(--ff-mono); font-size: 0.57rem; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.2rem 0.6rem; white-space: nowrap; }
-    .own-tag.solo { color: var(--accent); border: 1px solid rgba(26,26,255,0.25); }
-    .own-tag.collab { color: var(--dim); border: 1px solid var(--border); }
-    .own-tag.led { color: #0369a1; border: 1px solid rgba(3,105,161,0.25); }
+    .insight-num {
+      font-family: var(--ff-head);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      letter-spacing: -0.03em;
+    }
 
-    .cs-ba { margin: 4rem 0; }
-    .cs-ba-label { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0 1.5rem; border-top: 1px solid var(--border); }
-    .cs-ba-title { font-size: 1rem; font-weight: 500; color: var(--ink); }
-    .cs-ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    .cs-ba-side { display: flex; flex-direction: column; gap: 0.75rem; }
+    .insight-title {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
 
-    .reflection-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 3rem 0; }
-    .reflection-card { background: var(--white); padding: 2.5rem 2rem; }
-    .rc-label { font-family: var(--ff-mono); font-size: 0.6rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 1rem; }
-    .rc-body { font-size: 0.9rem; color: var(--mid); line-height: 1.8; font-weight: 300; }
+    .insight-body {
+      font-size: 0.85rem;
+      color: var(--mid);
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    .decision-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+      background: var(--white);
+    }
+
+    .decision {
+      padding: 2rem 2.5rem;
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 2rem;
+      align-items: start;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+
+    .decision:last-child {
+      border-bottom: none;
+    }
+
+    .decision-num {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--border2);
+      line-height: 1;
+      transition: color 0.3s;
+    }
+
+    .decision:hover .decision-num {
+      color: var(--accent);
+    }
+
+    .decision-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .decision-body {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .decision-tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-family: var(--ff-mono);
+      font-size: 0.57rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(26, 26, 255, 0.25);
+      padding: 0.2rem 0.6rem;
+    }
+
+    .constraint-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .constraint-card {
+      border: 1px solid var(--border);
+      padding: 2rem;
+      background: var(--white);
+    }
+
+    .constraint-head {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .constraint-body {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .own-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+      background: var(--white);
+    }
+
+    .own-table th {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--dim);
+      text-align: left;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg1);
+    }
+
+    .own-table td {
+      padding: 1.1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+
+    .own-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .own-tag {
+      font-family: var(--ff-mono);
+      font-size: 0.57rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      white-space: nowrap;
+    }
+
+    .own-tag.solo {
+      color: var(--accent);
+      border: 1px solid rgba(26, 26, 255, 0.25);
+    }
+
+    .own-tag.collab {
+      color: var(--dim);
+      border: 1px solid var(--border);
+    }
+
+    .own-tag.led {
+      color: #0369a1;
+      border: 1px solid rgba(3, 105, 161, 0.25);
+    }
+
+    .cs-ba {
+      margin: 4rem 0;
+    }
+
+    .cs-ba-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .cs-ba-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .cs-ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .cs-ba-side {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .reflection-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+
+    .reflection-card {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+    }
+
+    .rc-label {
+      font-family: var(--ff-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .rc-body {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+      font-weight: 300;
+    }
 
 
-    .sketch-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1.5rem; margin: 2rem 0; align-items: start; }
-    .sketch-card--tall { grid-row: span 2; }
-    .sketch-frame { overflow: hidden; border: 1px solid var(--border); background: var(--bg1); transition: border-color 0.3s; }
-    .sketch-card { display: flex; flex-direction: column; gap: 0.75rem; }
-    .sketch-frame { overflow: hidden; border: 1px solid var(--border); background: var(--bg1); transition: border-color 0.3s; }
-    .sketch-frame:hover { border-color: var(--accent); }
-    .sketch-frame img { width: 100%; height: auto; display: block; transition: transform 0.6s var(--ease); filter: contrast(1.08) brightness(1.02); }
-    .sketch-frame:hover img { transform: scale(1.015); }
-    .sketch-caption { font-size: 0.82rem; color: var(--dim); font-style: italic; line-height: 1.55; }
-    .process-steps { display: flex; flex-direction: column; border: 1px solid var(--border); margin: 3rem 0; background: var(--white); }
-    .process-step { display: grid; grid-template-columns: 3.5rem 1fr; gap: 2rem; align-items: start; padding: 2rem 2.5rem; border-bottom: 1px solid var(--border); transition: background 0.2s; }
-    .process-step:last-child { border-bottom: none; }
-    .process-step:hover { background: var(--bg); }
-    .ps-num { font-family: var(--ff-head); font-size: 2rem; font-weight: 900; color: var(--border2); line-height: 1; transition: color 0.3s; }
-    .process-step:hover .ps-num { color: var(--accent); }
-    .ps-title { font-size: 0.95rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
-    .ps-body { font-size: 0.88rem; color: var(--mid); line-height: 1.8; font-weight: 300; }
+    .sketch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      align-items: start;
+    }
 
-    .next-project { padding: 6rem var(--pad); border-top: 1px solid var(--border); }
-    .next-inner { max-width: var(--max); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-    .next-label { font-family: var(--ff-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); margin-bottom: 0.75rem; }
-    .next-title { font-family: var(--ff-head); font-size: 2.5rem; font-weight: 700; color: var(--ink); line-height: 1.05; letter-spacing: -0.025em; }
-    .next-arr { font-size: 3rem; color: var(--border); transition: color 0.3s, transform 0.3s; }
-    .next-inner a { display: flex; align-items: center; gap: 3rem; }
-    .next-inner a:hover .next-arr { color: var(--accent); transform: translateX(8px); }
+    .sketch-card--tall {
+      grid-row: span 2;
+    }
+
+    .sketch-frame {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg1);
+      transition: border-color 0.3s;
+    }
+
+    .sketch-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .sketch-frame {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg1);
+      transition: border-color 0.3s;
+    }
+
+    .sketch-frame:hover {
+      border-color: var(--accent);
+    }
+
+    .sketch-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s var(--ease);
+      filter: contrast(1.08) brightness(1.02);
+    }
+
+    .sketch-frame:hover img {
+      transform: scale(1.015);
+    }
+
+    .sketch-caption {
+      font-size: 0.82rem;
+      color: var(--dim);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+      background: var(--white);
+    }
+
+    .process-step {
+      display: grid;
+      grid-template-columns: 3.5rem 1fr;
+      gap: 2rem;
+      align-items: start;
+      padding: 2rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+
+    .process-step:last-child {
+      border-bottom: none;
+    }
+
+    .ps-num {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--border2);
+      line-height: 1;
+      transition: color 0.3s;
+    }
+
+    .process-step:hover .ps-num {
+      color: var(--accent);
+    }
+
+    .ps-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .ps-body {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .next-project {
+      padding: 6rem var(--pad);
+      border-top: 1px solid var(--border);
+    }
+
+    .next-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .next-label {
+      font-family: var(--ff-mono);
+      font-size: 0.64rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 0.75rem;
+    }
+
+    .next-title {
+      font-family: var(--ff-head);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+    }
+
+    .next-arr {
+      font-size: 3rem;
+      color: var(--border);
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .next-inner a {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .next-inner a:hover .next-arr {
+      color: var(--accent);
+      transform: translateX(8px);
+    }
 
     @media (max-width: 960px) {
-      .cs-meta-grid { grid-template-columns: 1fr 1fr; }
-      .two-col-wide { grid-template-columns: 1fr; gap: 2rem; }
-      .insight-grid, .constraint-grid, .reflection-grid { grid-template-columns: 1fr; }
-      .cs-ba-grid { grid-template-columns: 1fr; }
-      .next-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
-      .decision { grid-template-columns: 1fr; gap: 0.5rem; }
-      .sketch-grid { grid-template-columns: 1fr; }
-      .sketch-card--tall { grid-row: span 1; }
+      .cs-meta-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .two-col-wide {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .insight-grid,
+      .constraint-grid,
+      .reflection-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cs-ba-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .next-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+
+      .decision {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+
+      .sketch-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sketch-card--tall {
+        grid-row: span 1;
+      }
+
       /* ownership table: hide thead, stack rows as cards */
-      .own-table thead { display: none; }
-      .own-table tbody tr { display: flex; flex-direction: column; gap: 0.4rem; padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border); }
-      .own-table tbody tr:last-child { border-bottom: none; }
-      .own-table td { padding: 0; border: none; font-size: 0.85rem; }
-      .own-table td:first-child { font-weight: 500; color: var(--ink); }
-      .own-table td:nth-child(2) { order: -1; }
+      .own-table thead {
+        display: none;
+      }
+
+      .own-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        padding: 1.2rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .own-table tbody tr:last-child {
+        border-bottom: none;
+      }
+
+      .own-table td {
+        padding: 0;
+        border: none;
+        font-size: 0.85rem;
+      }
+
+      .own-table td:first-child {
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .own-table td:nth-child(2) {
+        order: -1;
+      }
     }
+
     @media (max-width: 600px) {
-      .cs-meta-grid { grid-template-columns: 1fr; }
-      .cs-title { font-size: clamp(3rem,12vw,5rem); }
-      .nav-center { display: none; }
-      .nav-links a:not(.nav-cta) { display: none; }
-      .nav-cta { padding: 0.4rem 0.8rem; font-size: 0.58rem; }
+      .cs-meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cs-title {
+        font-size: clamp(3rem, 12vw, 5rem);
+      }
+
+      .nav-center {
+        display: none;
+      }
+
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .nav-cta {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.58rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="cursor"></div>
@@ -197,11 +729,11 @@
         <span class="chip">Pilot Platform</span>
         <span class="chip">Design + Implementation</span>
       </div>
-      <h1 class="cs-title">CCS+ <em>Trade</em><br/>Center</h1>
+      <h1 class="cs-title">CCS+ <em>Trade</em><br />Center</h1>
       <div class="cs-meta-grid reveal">
         <div>
           <span class="cs-meta-label">My Role</span>
-          <span class="cs-meta-val">Senior Designer, Frontend Implementation</span>
+          <span class="cs-meta-val">Senior Designer, Frontend Implementation, Design Leadership</span>
         </div>
         <div>
           <span class="cs-meta-label">Team</span>
@@ -230,14 +762,21 @@
       </div>
       <div class="two-col-wide">
         <div>
-          <h2 class="cs-h2">Two legacy tools.<br/><em>One modern platform</em><br/>built from scratch.</h2>
-          <p class="cs-p">Before CCS+, United Airlines pilots managed their schedules across two separate tools: a legacy internal system and a third-party app called Crew Companion. Both were non-responsive, built on 90s-era UI patterns, and deeply frustrating to use. Neither communicated with the other, forcing pilots to constantly context-switch to complete a single workflow.</p>
-          <p class="cs-p">United's answer was CCS+, a single, modern, mobile-responsive platform built in-house to replace both. I joined the project from day one, before it had a name, when the team was still designing and building the foundational components from scratch.</p>
-          <p class="cs-p">The <strong>Trade Center</strong> is the most critical and highest-traffic feature of CCS+. It is where pilots trade trips, pick up open trips, manage requests, and check schedule legality. For a pilot, a wrong trade doesn't just mean inconvenience. It can mean a compliance issue or a missed paycheck.</p>
+          <h2 class="cs-h2">Two legacy tools.<br /><em>One modern platform</em><br />built from scratch.</h2>
+          <p class="cs-p">Before CCS+, United Airlines pilots managed their schedules across two separate tools: a
+            legacy internal system and a third-party app called Crew Companion. Both were non-responsive, built on
+            90s-era UI patterns, and deeply frustrating to use. Neither communicated with the other, forcing pilots to
+            constantly context-switch to complete a single workflow.</p>
+          <p class="cs-p">United's answer was CCS+, a single, modern, mobile-responsive platform built in-house to
+            replace both. I joined the project from day one, before it had a name, when the team was still designing and
+            building the foundational components from scratch.</p>
+          <p class="cs-p">The <strong>Trade Center</strong> is the most critical and highest-traffic feature of CCS+. It
+            is where pilots trade trips, pick up open trips, manage requests, and check schedule legality.</p>
         </div>
         <div>
           <div class="callout">
-            <p>"Before CCS+, the tools were so outdated that pilots had to switch between two separate apps just to complete one task. There was no trust in the system. They were scared to click things."</p>
+            <p>"Before CCS+, the tools were so outdated that pilots had to switch between two separate apps just to
+              complete one task. There was no trust in the system. They were scared to click things."</p>
           </div>
           <div class="metrics" style="margin-top:2rem;">
             <div class="metric"><span class="mn">15K+</span><span class="mono ml">pilots on platform</span></div>
@@ -255,31 +794,45 @@
         <div class="cs-sec-line"></div>
         <span class="cs-sec-name">Research &amp; User Testing</span>
       </div>
-      <h2 class="cs-h2">I flew to Houston, Denver,<br/>and Chicago to find out<br/><em>what pilots actually need.</em></h2>
-      <p class="cs-p">In-person research wasn't optional for this project. Pilots operate in high-stakes, time-pressured environments where a wrong tap can have real consequences. To understand that, I needed to be in the room with them.</p>
-      <p class="cs-p">I traveled to Houston twice, Denver, and Chicago, sitting with pilots, watching them use the legacy tools and early CCS+ prototypes, and listening to what made them hesitate. What I found wasn't just a list of feature requests. It was a trust problem.</p>
+      <h2 class="cs-h2">I flew to Houston, Denver,<br />and Chicago to find out<br /><em>what pilots actually need.</em>
+      </h2>
+      <p class="cs-p">I traveled to Houston, Denver, and Chicago, sitting with pilots, watching them use the legacy
+        tools and early CCS+ prototypes, and listening to what made them hesitate. What I found wasn't just a list of
+        feature requests. It was a trust problem.</p>
 
       <div class="callout">
-        <p>Pilots would hover over a button and pause, visibly unsure whether clicking it would trigger something irreversible. They were not confused by the interface. They were scared of it. That shifted everything about how I approached the design.</p>
+        <p>Pilots would hover over a button and pause, visibly unsure whether clicking it would trigger something
+          irreversible. They were not confused by the interface. They were scared of it. That shifted everything about
+          how I approached the design.</p>
       </div>
 
-      <p class="cs-p">The key insight was that <strong>experience level changed everything</strong>. Frequent traders had muscle memory and tolerance for ambiguity. Trainers and infrequent users had none of that. They needed explicit signaling, clear reversibility, and visible confirmation at every step. Designing for both meant building a system that was efficient for power users without being intimidating for everyone else.</p>
+      <p class="cs-p">The key insight was that <strong>experience level changed everything</strong>. Frequent traders
+        had muscle memory and tolerance for ambiguity. Infrequent users had none of that. They needed explicit
+        signaling, clear reversibility, and visible confirmation at every step. Designing for both meant
+        <strong>building a system that was efficient for power users without being intimidating for everyone
+          else.</strong></p>
 
       <div class="insight-grid">
         <div class="insight-card">
           <div class="insight-num">01</div>
           <div class="insight-title">Trust is a design problem</div>
-          <div class="insight-body">Pilots hesitated before clicking, scared of triggering irreversible actions. We designed explicit confirmation states, reversible flows, and visible feedback to rebuild confidence in the system.</div>
+          <div class="insight-body">Pilots hesitated before clicking, scared of triggering irreversible actions. We
+            designed explicit confirmation states, reversible flows, and visible feedback to rebuild confidence in the
+            system.</div>
         </div>
         <div class="insight-card">
           <div class="insight-num">02</div>
           <div class="insight-title">Pay and legality come first</div>
-          <div class="insight-body">Pilots primarily care about two things: how a trade affects their pay and whether it is schedule-legal. Every other piece of information is secondary. This changed how we prioritized data visibility in the trade grid.</div>
+          <div class="insight-body">Pilots primarily care about two things: how a trade affects their pay and whether it
+            is schedule-legal. Every other piece of information is secondary. This changed how we prioritized data
+            visibility in the trade grid.</div>
         </div>
         <div class="insight-card">
           <div class="insight-num">03</div>
           <div class="insight-title">Data density is a feature</div>
-          <div class="insight-body">Pilots want to see as much information as possible at once. They scan and decide fast. Progressive disclosure and hidden columns weren't options. The design had to honor density, not fight it.</div>
+          <div class="insight-body">Pilots want to see as much information as possible at once. They scan and decide
+            fast. Progressive disclosure and hidden columns weren't options. The design had to honor density, not fight
+            it.</div>
         </div>
       </div>
     </section>
@@ -292,59 +845,86 @@
         <div class="cs-sec-line"></div>
         <span class="cs-sec-name">Process</span>
       </div>
-      <h2 class="cs-h2">From requirements<br/>to <em>shipped code.</em></h2>
-      <p class="cs-p">Every feature in CCS+ went through the same four-stage process. Not as a formality, but because each stage catches something the others miss. Skipping one almost always created rework downstream.</p>
+      <h2 class="cs-h2">From requirements<br />to <em>shipped code.</em></h2>
+      <p class="cs-p">Every CCS+ feature followed the same four-stage process: A repeatable system that increased speed
+        while maintaining alignment with the broader product and user experience.</p>
 
       <div class="process-steps">
         <div class="process-step">
           <div class="ps-num">01</div>
           <div>
             <div class="ps-title">Understand requirements before touching Figma</div>
-            <p class="ps-body">Before sketching anything, I read the user story carefully, then had direct conversations with the business analyst, stakeholders, and the lead designer. The goal was to surface ambiguity early. What does done actually look like? What constraints exist that are not written in the ticket? What are stakeholders optimizing for versus what the user actually needs? Misalignment at this stage is far cheaper to fix than misalignment after designs are presented.</p>
+            <p class="ps-body">Before sketching anything, I read the user story carefully, then had direct conversations
+              with the business analyst, stakeholders, and the lead designer. The goal was to surface ambiguity early.
+              What does done actually look like? What constraints exist that are not written in the ticket? What are
+              stakeholders optimizing for versus what the user actually needs? Misalignment at this stage is far cheaper
+              to fix than misalignment after designs are presented.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="ps-num">02</div>
           <div>
             <div class="ps-title">Rapid sketch iteration, all directions, no filtering</div>
-            <p class="ps-body">Paper first, always. I sketch fast and broadly, getting every possible direction out before evaluating any of them. The point is volume, not quality. The early trade board sketches below show this: multiple layout approaches for the same dashboard, different ways of surfacing the engine run timer, different structures for the calendar and pay summary. Nothing is precious at this stage.</p>
+            <p class="ps-body">I sketch fast and broadly, getting every possible direction out before evaluating any of
+              them. The point is volume and rapid iteration. The early trade board sketches below show this: multiple
+              layout approaches for the same dashboard, different ways of surfacing the engine run timer, different
+              structures for the calendar and pay summary.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="ps-num">03</div>
           <div>
             <div class="ps-title">Pressure-test against four constraints before proceeding</div>
-            <p class="ps-body">Before moving a sketch into Figma, I check it against four things simultaneously: Does it solve the actual user story? Does it align with existing design standards and Orion components already in the app? Is the technical lift reasonable given the sprint scope? Does it fit the page or flow it needs to live in? If a direction fails more than one check, I go back to sketches rather than investing in a Figma mock that will get rejected.</p>
+            <p class="ps-body">Before moving a sketch into Figma, I check it against four things simultaneously: Does it
+              solve the actual user story? Does it align with existing design standards and Orion components already in
+              the app? Is the technical lift reasonable given the sprint scope? Does it fit the page or flow it needs to
+              live in? If a direction fails more than one check, I go back to sketches rather than investing in a Figma
+              mock that will get rejected.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="ps-num">04</div>
           <div>
             <div class="ps-title">Figma, present, iterate, implement</div>
-            <p class="ps-body">The strongest sketches go into Figma for higher-fidelity exploration. I iterate until the design is ready to present, incorporating feedback from design review and stakeholder sessions before final approval. On CCS+, I also implemented approved designs in Angular and SCSS, which meant I caught edge cases before engineering did and resolved them in the same sprint rather than opening new tickets.</p>
+            <p class="ps-body">The strongest sketches go into Figma for higher-fidelity exploration. I iterate until the
+              design is ready to present, incorporating feedback from design review and stakeholder sessions before
+              final approval. On CCS+, I also implemented approved designs in Angular and SCSS, which meant I caught
+              edge cases before engineering did and resolved them in the same sprint rather than opening new tickets.
+            </p>
           </div>
         </div>
       </div>
 
-      <h3 style="font-family:var(--ff-head);font-size:1.4rem;font-weight:700;color:var(--ink);letter-spacing:-0.015em;margin:3rem 0 0.75rem;">Early sketches</h3>
-      <p class="cs-p">These are from the earliest exploration phase of the Trade Board, before anything went into Figma. You can see the dashboard structure being worked out, the engine run timer concept forming, and the timeline color-coding system for seniority windows taking shape.</p>
+      <h3
+        style="font-family:var(--ff-head);font-size:1.4rem;font-weight:700;color:var(--ink);letter-spacing:-0.015em;margin:3rem 0 0.75rem;">
+        Early sketches</h3>
+      <p class="cs-p">These are from the earliest exploration phase of the Trade Board, before anything went into Figma.
+        You can see the dashboard structure being worked out, the engine run timer concept forming, and the timeline
+        color-coding system for seniority windows taking shape.</p>
 
       <div class="sketch-grid">
         <div class="sketch-card">
-          <div class="sketch-frame"><img src="images/sketch-trade-board-overview.png" alt="Early trade board overview sketch" /></div>
-          <p class="sketch-caption">Trade Board overview: navigation structure, trade pool table, and pay summary accordion taking shape in first pass.</p>
+          <div class="sketch-frame"><img src="images/sketch-trade-board-overview.png"
+              alt="Early trade board overview sketch" /></div>
+          <p class="sketch-caption">Trade Board overview: navigation structure, trade pool table, and pay summary
+            accordion taking shape in first pass.</p>
         </div>
         <div class="sketch-card sketch-card">
-          <div class="sketch-frame"><img src="images/sketch-timeline-colorcoded.png" alt="Engine run timeline with color-coded seniority windows" /></div>
-          <p class="sketch-caption">Engine run timeline with color-coded seniority windows: green for all pilots, blue for line holders only, purple for reserve windows.</p>
+          <div class="sketch-frame"><img src="images/sketch-timeline-colorcoded.png"
+              alt="Engine run timeline with color-coded seniority windows" /></div>
+          <p class="sketch-caption">Engine run timeline with color-coded seniority windows: green for all pilots, blue
+            for line holders only, purple for reserve windows.</p>
         </div>
         <div class="sketch-card">
           <div class="sketch-frame"><img src="images/sketch-calendar-v1.png" alt="Calendar iteration sketch" /></div>
-          <p class="sketch-caption">Calendar layout iteration: exploring how to surface pay summary, engine run info, and schedule in one scannable view.</p>
+          <p class="sketch-caption">Calendar layout iteration: exploring how to surface pay summary, engine run info,
+            and schedule in one scannable view.</p>
         </div>
         <div class="sketch-card">
-          <div class="sketch-frame"><img src="images/sketch-engine-run-detail.png" alt="Engine run detail state sketch" /></div>
-          <p class="sketch-caption">Engine run detail state: in-progress timer, processing message, and next-run scheduling details alongside the calendar view.</p>
+          <div class="sketch-frame"><img src="images/sketch-engine-run-detail.png"
+              alt="Engine run detail state sketch" /></div>
+          <p class="sketch-caption">Engine run detail state: in-progress timer, processing message, and next-run
+            scheduling details alongside the calendar view.</p>
         </div>
       </div>
     </section>
@@ -356,8 +936,10 @@
         <div class="cs-sec-line"></div>
         <span class="cs-sec-name">Before / After</span>
       </div>
-      <h2 class="cs-h2">From legacy chaos<br/>to <em>structured clarity.</em></h2>
-      <p class="cs-p">The before state wasn't just visually outdated. It had no information hierarchy, no visual language for trip data, and no way to scan across multiple items efficiently. Every screen required the pilot to read, not scan.</p>
+      <h2 class="cs-h2">From legacy chaos<br />to <em>structured clarity.</em></h2>
+      <p class="cs-p">The before state was visually outdated. It had no information hierarchy, no visual language for
+        trip data, and no way to scan across multiple items efficiently. Every screen required the pilot to read, not
+        scan.</p>
 
       <div class="cs-ba">
         <div class="cs-ba-label">
@@ -368,12 +950,14 @@
           <div class="cs-ba-side">
             <span class="badge badge-old">Legacy CCS</span>
             <div class="frame"><img src="images/pool-display-old.png" alt="Legacy pool display" /></div>
-            <p class="frame-note">Dense legacy table, no visual hierarchy, no data prioritization, no trip visualization.</p>
+            <p class="frame-note">Dense legacy table, no visual hierarchy, no data prioritization, no trip
+              visualization.</p>
           </div>
           <div class="cs-ba-side">
             <span class="badge badge-new">CCS+</span>
             <div class="frame"><img src="images/pool-display-new.png" alt="New Trade Center" /></div>
-            <p class="frame-note">Modernized Trade Center with visual trip bars, horizontal and vertical scroll to surface all data in a single row, and clear hierarchy.</p>
+            <p class="frame-note">Modernized Trade Center with visual trip bars, horizontal and vertical scroll to
+              surface all data in a single row, and clear hierarchy.</p>
           </div>
         </div>
       </div>
@@ -392,7 +976,8 @@
           <div class="cs-ba-side">
             <span class="badge badge-new">CCS+</span>
             <div class="frame"><img src="images/modal-new.png" alt="New modal" /></div>
-            <p class="frame-note">Live trip bar preview, drag-and-drop column reordering, multi-breakpoint support, reusable template component shared across multiple views.</p>
+            <p class="frame-note">Live trip bar preview, drag-and-drop column reordering, multi-breakpoint support,
+              reusable template component shared across multiple views.</p>
           </div>
         </div>
       </div>
@@ -406,12 +991,14 @@
           <div class="cs-ba-side">
             <span class="badge badge-old">Legacy CCS</span>
             <div class="frame"><img src="images/rad-old.png" alt="Old RAD" /></div>
-            <p class="frame-note">Raw data dump. No grouping, no visual structure, no way to orient quickly by date or position.</p>
+            <p class="frame-note">Raw data dump. No grouping, no visual structure, no way to orient quickly by date or
+              position.</p>
           </div>
           <div class="cs-ba-side">
             <span class="badge badge-new">CCS+</span>
             <div class="frame"><img src="images/rad-new.png" alt="New RAD" /></div>
-            <p class="frame-note">Date-grouped, collapsible sections, searchable filters, consistent with the table system used across CCS+.</p>
+            <p class="frame-note">Date-grouped, collapsible sections, searchable filters, consistent with the table
+              system used across CCS+.</p>
           </div>
         </div>
       </div>
@@ -424,50 +1011,70 @@
         <div class="cs-sec-line"></div>
         <span class="cs-sec-name">Key Design Decisions</span>
       </div>
-      <h2 class="cs-h2">The decisions that<br/><em>mattered most.</em></h2>
-      <p class="cs-p">Every major decision on CCS+ had downstream consequences. The platform shares components across features, so a change to one pattern ripples through the entire system. These were the calls I made or advocated for that had the biggest impact.</p>
+      <h2 class="cs-h2">The decisions that<br /><em>mattered most.</em></h2>
+      <p class="cs-p">Every major decision on CCS+ had downstream consequences. The platform shares components across
+        features, so a change to one pattern ripples through the entire system. These were the calls I made or advocated
+        for that had the biggest impact.</p>
 
       <div class="decision-list">
         <div class="decision">
           <div class="decision-num">01</div>
           <div>
-            <div class="decision-title">Horizontal and vertical scroll on the trade grid</div>
-            <div class="decision-body">Pilots need to see all data in a single row. Collapsing or hiding columns wasn't an option. It forces more clicks to find information evaluated for every single trade. The solution was a scrollable grid that respects both axes, so nothing is hidden and everything is reachable. This was the foundational layout decision for the Trade Center.</div>
-            <span class="decision-tag">Data Architecture</span>
+            <div class="decision-title">Reusable filter template component</div>
+            <div class="decision-body">The filter modal needed to work identically across the Trade Board: In Trips list
+              and Category summary. Rather than designing each separately, I designed a single configurable template
+              component that lived inside the main Filters modal as well as a standalone component in other pages of the
+              Trade Board. One design decision propagated consistently across the product, reduced engineering rework,
+              and created predictable behavior wherever pilots encountered filters.</div>
+            <span class="decision-tag">Design Systems</span>
           </div>
         </div>
         <div class="decision">
           <div class="decision-num">02</div>
           <div>
-            <div class="decision-title">Visual trip bars as first-class data</div>
-            <div class="decision-body">The trip bar, a horizontal visual representation of a trip's timeline, which was new to CCS+. It gives pilots an at-a-glance way to compare trips without reading raw time data. I advocated for making it a prominent column in the trade grid, not an optional detail, because it directly maps to how pilots mentally evaluate trips. It also became a reusable component used across multiple features.</div>
-            <span class="decision-tag">Visual Design</span>
+            <div class="decision-title">Standardizing System Feedback Patterns</div>
+            <div class="decision-body">I led a systemization effort for error states, success messages, and confirmation
+              modals by auditing the app, aligning with engineers on data constraints, and creating a standardized
+              message framework. This enabled developers and QA to build consistent flows without design involvement,
+              reducing ambiguity and speeding up delivery.</div>
+            <span class="decision-tag">Design Systems</span>
           </div>
         </div>
         <div class="decision">
           <div class="decision-num">03</div>
           <div>
-            <div class="decision-title">Shopping cart pattern for trade requests</div>
-            <div class="decision-body">Stakeholders requested a way for pilots to queue multiple trade requests before submitting. I designed a shopping cart interaction that lets pilots stage requests, review them together, and submit in batch. This reduced server round trips and gave pilots a clear moment to review before committing, directly addressing the fear of irreversible actions seen in user testing.</div>
-            <span class="decision-tag">Interaction Design</span>
+            <div class="decision-title">Horizontal and vertical scroll on the trade grid</div>
+            <div class="decision-body">Pilots need to see all data in a single row. Collapsing or hiding columns wasn't
+              an option. It forces more clicks to find information evaluated for every single trade. The solution was a
+              scrollable grid that respects both axes, so nothing is hidden and everything is reachable. This was the
+              foundational layout decision for the Trade Center.</div>
+            <span class="decision-tag">Data Architecture</span>
           </div>
         </div>
         <div class="decision">
           <div class="decision-num">04</div>
           <div>
-            <div class="decision-title">Reusable filter template component</div>
-            <div class="decision-body">The filter modal needed to work identically across multiple views: Trade Board, Category Schedule, and Reserves Available. Rather than designing each separately, I designed a single configurable template component. One design decision propagated consistently across the product, reduced engineering rework, and created predictable behavior wherever pilots encountered filters.</div>
-            <span class="decision-tag">Design Systems</span>
+            <div class="decision-title">Visual trip bars as first-class data</div>
+            <div class="decision-body">The trip bar, a horizontal visual representation of a trip's timeline, gives
+              pilots an at-a-glance way to compare trips without reading raw time data. I advocated for making it a
+              prominent column in the trade grid, not an optional detail, because it directly maps to how pilots
+              mentally evaluate trips.</div>
+            <span class="decision-tag">Visual Design</span>
           </div>
         </div>
         <div class="decision">
           <div class="decision-num">05</div>
           <div>
-            <div class="decision-title">Pushing back on stakeholder overrides</div>
-            <div class="decision-body">One of the most consistent challenges was stakeholders, sometimes a single person, making UX decisions affecting 15,000+ pilots based on personal preference rather than user data. I advocated strongly for user-testing findings over subjective requests, even when it created friction. When we couldn't win outright, we proposed scope-limited versions and formally documented the risk. Not every battle was won, but the practice of documenting design rationale protected the team and kept us honest about tradeoffs.</div>
-            <span class="decision-tag">Design Leadership</span>
+            <div class="decision-title">Shopping cart pattern for trade requests</div>
+            <div class="decision-body">Stakeholders requested a way for pilots to queue multiple trade requests before
+              submitting. I contributed to the design of a robust shopping cart component that lets pilots stage
+              requests, review them together, and submit in batch. This reduced server round trips and gave pilots a
+              clear tool to review and submit trades without leaving the trips list, directly addressing the fear of
+              irreversible actions seen in user testing.</div>
+            <span class="decision-tag">Interaction Design</span>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -478,25 +1085,41 @@
         <div class="cs-sec-line"></div>
         <span class="cs-sec-name">Constraints</span>
       </div>
-      <h2 class="cs-h2">Designing inside<br/><em>real constraints.</em></h2>
-      <p class="cs-p">CCS+ wasn't a greenfield project. It was built on an established design system, with an engineering team managing complex backend business rules, a compressed timeline, and stakeholders with strong opinions and limited UX fluency. Navigating all of that simultaneously was part of the job.</p>
+      <h2 class="cs-h2">Designing inside<br /><em>real constraints.</em></h2>
+      <p class="cs-p">CCS+ was built on an established design system, with an engineering team managing complex backend
+        business rules, a compressed timeline, and stakeholders with strong opinions and limited UX fluency. Navigating
+        all of that simultaneously was part of the job.</p>
 
       <div class="constraint-grid">
         <div class="constraint-card">
           <span class="constraint-head">Design System Boundaries</span>
-          <p class="constraint-body">All UI was built using Orion, United's official design system, with Angular Material components aligned to Orion standards. Change requests that required new component variants meant frontend rework, backend integration changes, and regression testing everywhere those components were used. We frequently redesigned within existing constraints rather than requesting new components.</p>
+          <p class="constraint-body">All UI was built using Orion, United's official design system for internal apps, as
+            well as with Angular Material components aligned to Orion standards. Change requests that required new
+            component variants meant frontend rework, backend integration changes, and regression testing everywhere
+            those components were used. We frequently redesigned within existing constraints rather than requesting new
+            components.</p>
         </div>
         <div class="constraint-card">
           <span class="constraint-head">Complex Business Rules</span>
-          <p class="constraint-body">Trip trading is governed by union contract rules, FAA regulations, and United's scheduling logic. A pilot can only pick up a trip if it's schedule-legal, and "legal" involves dozens of overlapping constraints around rest periods, flight hours, and position qualifications. Every UI decision had to account for these rules without surfacing their complexity to the pilot.</p>
+          <p class="constraint-body">Trip trading is governed by union contract rules, FAA regulations, and United's
+            scheduling logic. A pilot can only be awarded a trip if it's schedule-legal, and "legal" involves dozens of
+            overlapping constraints around rest periods, flight hours, and position qualifications. Every UI decision
+            had to account for these rules without overly-surfacing their complexity to the pilot.</p>
         </div>
         <div class="constraint-card">
           <span class="constraint-head">Stakeholder Decision-Making</span>
-          <p class="constraint-body">Decisions affecting 15,000 pilots were sometimes made by a single stakeholder acting on personal preference rather than user data. We worked to counter this by bringing user testing findings into every design review, documenting rationale formally, and proposing phased releases that let us validate with real users before committing to large changes.</p>
+          <p class="constraint-body">Decisions affecting 15,000+ pilots were sometimes made by a single stakeholder
+            acting on personal preference rather than user data. We worked to counter this by bringing user testing
+            findings into design reviews, documenting rationale formally, and proposing phased releases that let us
+            validate with real users before committing to large changes.</p>
         </div>
         <div class="constraint-card">
-          <span class="constraint-head">Scope and Timeline</span>
-          <p class="constraint-body">CCS+ was one of several concurrent projects. I was simultaneously working on FA CCS features, the Trade Board Engine Admin App, and contributing to Orion extensions. Scope cuts were frequent and often painful. Features I had designed and tested were cut before reaching production. Knowing what to fight for and what to let go was a constant judgment call.</p>
+          <span class="constraint-head">Scope & Prioritization</span>
+          <p class="constraint-body">CCS+ was one of several concurrent projects. I was simultaneously working on FA CCS
+            features, the Trade Board Engine Admin App, and a Pilot Messaging App. I prioritized high-impact workflows
+            across these initiatives, balancing user needs with technical constraints. This required making strategic
+            tradeoffs and focusing on the most critical functionality to ensure meaningful features were delivered
+            despite evolving scope.</p>
         </div>
       </div>
     </section>
@@ -506,64 +1129,50 @@
       <div class="cs-sec-label">
         <span class="mono cs-sec-num">07</span>
         <div class="cs-sec-line"></div>
-        <span class="cs-sec-name">What I Owned</span>
+        <span class="cs-sec-name">Scope & Contributions</span>
       </div>
-      <h2 class="cs-h2">End-to-end ownership<br/>across <em>multiple workstreams.</em></h2>
-      <p class="cs-p">CCS+ was a large, multi-team effort spanning 30+ people. Here is an honest accounting of what was mine, what was collaborative, and where I took a leadership role beyond the design work itself.</p>
+      <h2 class="cs-h2">Driving <em>end-to-end design</em><br />across CCS+</h2>
+      <p class="cs-p">CCS+ was a large, multi-team initiative spanning 30+ contributors. I drove design across several
+        concurrent workstreams, owning key features end-to-end and contributing to shared systems and patterns used
+        across the platform.</p>
 
       <table class="own-table">
         <thead>
           <tr>
             <th>Feature / Area</th>
-            <th>Ownership</th>
             <th>Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Trade Board Pool Display redesign</td>
-            <td><span class="own-tag solo">Sole designer</span></td>
-            <td>End-to-end design and Angular / SCSS implementation</td>
+            <td>Led end-to-end redesign and implementation, improving clarity of trip evaluation and reducing decision
+              friction for pilots.</td>
           </tr>
           <tr>
             <td>New Request complete overhaul</td>
-            <td><span class="own-tag solo">Sole designer</span></td>
-            <td>Full redesign from scratch, designed and implemented</td>
+            <td>Redesigned from scratch, streamlining request flows and improving usability across key pilot workflows.
+            </td>
           </tr>
           <tr>
             <td>Customize Trip Modal</td>
-            <td><span class="own-tag solo">Sole designer</span></td>
-            <td>Live preview, drag-and-drop reordering, reusable template component</td>
-          </tr>
-          <tr>
-            <td>Trade Board Filtering</td>
-            <td><span class="own-tag solo">Sole designer</span></td>
-            <td>Filter modal pattern reused across multiple CCS+ views</td>
+            <td>Designed interactive modal with live preview and drag-and-drop reordering, enabling flexible trip
+              customization and reusable patterns.</td>
           </tr>
           <tr>
             <td>Admin Communications App</td>
-            <td><span class="own-tag led">Design lead</span></td>
-            <td>Owned from discovery to delivery; mentored a junior designer through this project</td>
+            <td>Drove design from discovery to delivery; mentored a junior designer and established patterns for
+              internal communications workflows.</td>
           </tr>
           <tr>
             <td>Trade Board Engine Admin App</td>
-            <td><span class="own-tag solo">Sole designer</span></td>
-            <td>Designed from scratch, no prior reference; extremely data-heavy audit tool for scheduling operations</td>
+            <td>Designed a data-heavy admin tool from scratch, enabling scheduling teams to audit and manage complex
+              trade logic.</td>
           </tr>
           <tr>
             <td>Orion Design System CCS+ extensions</td>
-            <td><span class="own-tag collab">Collaborative</span></td>
-            <td>CCS+ required Angular Material components rather than native Orion components due to platform constraints. We built a CCS+-specific layer that aligned visually with Orion standards while meeting the technical requirements of the application. Contributed to dark mode implementation and extended the system for use across other United employee apps.</td>
-          </tr>
-          <tr>
-            <td>In-person user research</td>
-            <td><span class="own-tag solo">Active participant</span></td>
-            <td>Traveled to Houston (x2), Denver, Chicago; sat with pilots, facilitated sessions, brought findings back to design</td>
-          </tr>
-          <tr>
-            <td>Acting design lead</td>
-            <td><span class="own-tag led">Interim leadership</span></td>
-            <td>Stepped in as primary design resource during team lead's maternity leave; reviewed designs, led standups, managed design priorities</td>
+            <td>Extended design system patterns to support Angular-based constraints, contributing reusable components
+              and dark mode adoption across CCS+.</td>
           </tr>
         </tbody>
       </table>
@@ -574,25 +1183,34 @@
       <div class="cs-sec-label">
         <span class="mono cs-sec-num">08</span>
         <div class="cs-sec-line"></div>
-        <span class="cs-sec-name">Reflection</span>
+        <span class="cs-sec-name">Impact at a glance</span>
       </div>
-      <h2 class="cs-h2">What I learned<br/>building <em>from scratch.</em></h2>
-      <p class="cs-p">I have been with CCS+ since before it had a name. I've watched it grow through dozens of iterations, two major releases, and collaboration across 30+ people. That continuity, from blank canvas to production, shaped how I think about product design at scale.</p>
+      <!-- <h2 class="cs-h2">What I learned<br />building <em>from scratch.</em></h2>
+      <p class="cs-p">I have been with CCS+ since before it had a name. I've watched it grow through dozens of
+        iterations, two major releases, and collaboration across 30+ people. That continuity, from blank canvas to
+        production, shaped how I think about product design at scale.</p>
 
       <div class="reflection-grid">
         <div class="reflection-card">
           <span class="rc-label">What worked</span>
-          <p class="rc-body">In-person research was non-negotiable for this type of product. Watching pilots hesitate in real time gave us insights no survey would have surfaced. And building in code, implementing our own designs in Angular, meant we caught problems before engineering did, and shipped faster.</p>
+          <p class="rc-body">In-person research was extremely valuable for this product. Watching pilots hesitate in
+            real time gave us real, valuable insights. Building in code and implementing our own designs
+            in Angular allowed us to experience and see first-hand how our users will experience the features we were designing.</p>
         </div>
         <div class="reflection-card">
           <span class="rc-label">What was hard</span>
-          <p class="rc-body">Organizational design is as hard as product design. The biggest friction was not technical. It was navigating stakeholder decisions that prioritized preference over evidence. Learning to document rationale, propose phased alternatives, and pick battles strategically was as important as the design itself.</p>
+          <p class="rc-body">Organizational design is as hard as product design. The biggest friction was not technical.
+            It was navigating stakeholder decisions that prioritized preference over evidence. Learning to document
+            rationale, propose phased alternatives, and pick battles strategically was as important as the design
+            itself.</p>
         </div>
         <div class="reflection-card">
           <span class="rc-label">What I'd do differently</span>
-          <p class="rc-body">Earlier and broader user pilots. We got great signal from power users but caught some edge cases late that trainers and infrequent users would have surfaced sooner. Broadening the testing group earlier would have saved rework in later iterations.</p>
+          <p class="rc-body">Earlier and broader user pilots. We got great signal from power users but caught some edge
+            cases late that trainers and infrequent users would have surfaced sooner. Broadening the testing group
+            earlier would have saved rework in later iterations.</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="metrics" style="margin-top:3rem;">
         <div class="metric"><span class="mn">15K+</span><span class="mono ml">pilots on platform</span></div>
@@ -611,7 +1229,7 @@
     <div class="next-inner">
       <div>
         <div class="next-label">Next project</div>
-        <div class="next-title">Cosmos Design System<br/>at StackPath</div>
+        <div class="next-title">Cosmos Design System<br />at StackPath</div>
       </div>
       <a href="index.html#stackpath">
         <span class="next-arr">→</span>
@@ -625,4 +1243,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
